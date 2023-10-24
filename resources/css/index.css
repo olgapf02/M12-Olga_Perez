@@ -1,0 +1,24 @@
+
+/* Estilos para el contenedor principal */
+.photo-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para cada foto y texto */
+.photo {
+    margin: 10px;
+    text-align: center;
+}
+
+.photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.photo p {
+    margin-top: 10px;
+}
