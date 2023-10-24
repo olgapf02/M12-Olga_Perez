@@ -7,8 +7,8 @@
     <footer>
         <div class="botones">
             <ul>
-                <li><button>Botón 1</button></li>
-                <li><button>Botón 2</button></li>
+                <li><button>Reservar</button></li>
+                <li><button>LAB a casa</button></li>
                 <li><button>Botón 3</button></li>
                 <li><button>Botón 4</button></li>
             </ul>
@@ -18,7 +18,7 @@
         </div>
         <div class="contacto">
             <ul>
-                <li><img src="icono_telefono.png" alt="Teléfono">123456789</li>
+                <li><img src="telefono.png" alt="Teléfono">123456789</li>
                 <li><img src="icono_telefono.png" alt="Teléfono">987654321</li>
                 <li><img src="icono_telefono.png" alt="Teléfono">456789123</li>
                 <li><img src="icono_telefono.png" alt="Teléfono">321654987</li>

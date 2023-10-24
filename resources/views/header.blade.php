@@ -2,7 +2,9 @@
 <html>
 <head>
     <!-- <link href="{{ asset('css/header.css') }}" rel="stylesheet"> -->
-    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../css/header.css" /> -->
+    <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+
 </head>
 <body>
     <header>
