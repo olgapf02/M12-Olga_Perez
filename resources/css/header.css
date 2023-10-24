@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+/* .logo img {
+    max-width: 100px;
+} */
+.menu{
+    background-color: black;
+    width: 1000px;
+}
+.menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.botones button {
+    margin-left: 10px;
+}
+
+/* Estilos para la versión móvil */
+/* @media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .mobile-menu span {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 4px;
+    }
+
+    .botones button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+} */
