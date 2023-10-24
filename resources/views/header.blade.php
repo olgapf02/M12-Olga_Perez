@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
     <!-- <link href="{{ asset('css/header.css') }}" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="../css/header.css" />
 </head>

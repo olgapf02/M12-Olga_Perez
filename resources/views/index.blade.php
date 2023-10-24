@@ -8,5 +8,17 @@
     
     <body class="antialiased">
         <p>deu</p>
+
+
+
+
+
+
+
+
+
+        <footer>
+            @include('footer') 
+        </footer>
     </body>
 </html>
