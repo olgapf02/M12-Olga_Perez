@@ -5,8 +5,17 @@
         <link rel="stylesheet" href="{{ asset('css/principal.css') }}">
         @include('header')
     </head>
+
     <body >
-    <img src="{{ asset('../imagenes/la-cantina.png') }}" class="imagen-fija">
+    <div class="imagen-entera-container">
+        <div class="image-container">
+            <img src="{{ asset('../imagenes/la-cantina.png') }}" class="imagen-fija">
+        </div>
+        <div class="texto-container">
+            <h1>Quienes Somos</h1>
+        </div>
+    </div>
+
 @extends('layout')
 @section('content')
 <div class="container">

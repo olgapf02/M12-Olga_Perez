@@ -9,7 +9,15 @@
     </head>
     
     <body >
-    <img src="{{ asset('../imagenes/fachada-cantina.png') }}" class="imagen-fija">
+
+    <div class="imagen-entera-container">
+        <div class="image-container">
+            <img src="{{ asset('../imagenes/fachada-cantina.png') }}" class="imagen-fija">
+        </div>
+        <div class="texto-container">
+            <h1>Cantina LAB</h1>
+        </div>
+    </div>
 @extends('layout')
 @section('content')
 

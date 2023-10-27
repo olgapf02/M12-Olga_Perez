@@ -7,10 +7,17 @@
         <link rel="stylesheet" href="{{ asset('css/tipografia.css') }}">
     </head>
     <body >
-    <img src="{{ asset('../imagenes/comida.avif') }}" class="imagen-fija">
+    <div class="imagen-entera-container">
+        <div class="image-container">
+            <img src="{{ asset('../imagenes/comida.jpg') }}" class="imagen-fija">
+        </div>
+        <div class="texto-container">
+            <h3>Nuestros Proveedores</h3>
+        </div>
+    </div>
 @extends('layout')
 @section('content')
-<h1>Nuestros Proveedores</h1>
+
    <div class="container">
             <div class="item">
                 <div class="photo">
