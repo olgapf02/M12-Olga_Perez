@@ -1,0 +1,54 @@
+body {
+    font-family: 'Helvetica';
+}
+
+
+
+.container {
+
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.photo {
+    flex: 1;
+}
+
+.photo .imagen {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.contenido {
+    flex: 1;
+    padding: 0 20px;
+}
+
+
+
+
+.button {
+    padding: 10px 20px;
+    background-color: #AD0E17;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    color: white;
+    float: right;
+}
+
+.button:hover {
+    background-color: #ee0d18;
+}
+
+
+

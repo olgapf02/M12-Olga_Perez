@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- <link href="{{ asset('css/header.css') }}" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="../css/header.css" /> -->
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tipografia.css') }}">
 
 </head>
 <body>
     <header>
         <div class="logo">
-            <!-- <img src="ruta_del_logo" alt="Logo"> -->
+            <img src="{{ asset('imagenes/logo_rojo.png') }}" alt="Logo">
+
         </div>
         <div class="menu">
             <var >

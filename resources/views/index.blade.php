@@ -1,43 +1,79 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tipografia.css') }}">
         <meta charset="utf-8">
         <!-- Styles -->
         @include('header')
     </head>
     
-    <body class="antialiased">
+    <body >
+    <img src="{{ asset('../imagenes/fachada-cantina.png') }}" class="imagen-fija">
+@extends('layout')
+@section('content')
 
-        <div class="photo-grid">
-            <div class="photo">
-                <img src="ruta_de_la_primera_imagen.jpg" alt="Foto 1">
-                <p><h3>Qué Hacemos</h3>
-                    Nuestra actividad principal es la restauración. 
-                    Ofrecemos productos de calidad elaborados con mucho cariño por profesionales especializados y con una gran 
-                    pasión por la cocina. Nuestro compromiso parte de la proximidad con el territorio, la sostenibilidad 
-                    medioambiental y la diversidad gastronómica. Los alimentos son lo más variados posible pero con la idea 
-                    de promover al máximo una dieta saludable, nutritiva y de temporada, dando opciones veganas y vegetarianas. 
+    <div class="container">
+        <table class="custom-table">
+            <tr>
+                <th>Día</th>
+                <th>Horas</th>
+            </tr>
+            <tr>
+                <td>Lunes</td>
+                <td>12:00 - 00:00</td>
+            </tr>
+            <tr>
+                <td>Martes</td>
+                <td>12:00 - 17:00</td>
+            </tr>
+            <tr>
+                <td>Miércoles</td>
+                <td>12:00 - 00:00</td>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td>12:00 - 00:00</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>12:00 - 00:00</td>
+            </tr>
+            <tr>
+                <td>Sábado</td>
+                <td>12:00 - 00:00</td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>12:00 - 00:00</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="cuadrado">
+        <div class="left-section">
+            <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
+            <div class="texto">
+                <p>Reserva una mesa para comer en nuestro 
+                    bar la cantinalab
                 </p>
             </div>
-
-            <div class="photo">
-                <img src="ruta_de_la_segunda_imagen.jpg" alt="Foto 2">
-                <p>Texto de la segunda foto</p>
-            </div>
-            
-            <div class="photo">
-                <img src="ruta_de_la_segunda_imagen.jpg" alt="Foto 3">
-                <p>Texto de la segunda foto</p>
-            </div>
+            <a href="https://www.calvalls.com/web/es/" target="_blank" class="button">reservar</a>
         </div>
 
+        <div class="right-section">
+            <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
+            <div class="texto">
+                <p>Quieres llevarte la comida de la 
+                    cantina lab a casa
+                </p>
+            </div>
+            <a href="https://www.calvalls.com/web/es/" target="_blank" class="button">LAB para Casa</a>
+        </div>
+    </div>
 
 
-
-
-
-
-
+    @endsection
         <footer>
             @include('footer') 
         </footer>

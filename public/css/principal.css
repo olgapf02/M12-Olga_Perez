@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.photo {
+    flex: 1;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contenido {
+    flex: 1;
+    padding: 0 20px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
+}

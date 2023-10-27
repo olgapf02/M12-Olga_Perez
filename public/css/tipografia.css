@@ -1,0 +1,30 @@
+body {
+    font-family: 'Helvetica';
+}
+
+h1 {
+    font-family: 'Helvetica' 50px;
+}
+
+h2 {
+    font-family: 'Helvetica';
+}
+
+h3{
+    font-family: 'Helvetica black ' 20px ;
+}
+
+p {
+    font-family: 'Helvetica';
+}
+
+a {
+    text-decoration: none;
+}
+
+.imagen-fija{
+    width: 100%;
+    height: 500%;
+    padding-bottom: 20px;
+
+}

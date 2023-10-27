@@ -11,7 +11,7 @@ class HolaMundoController extends Controller
     }
 
     public function principal(){
-        return view('primer');    
+        return view('principal');    
     }
 
     public function eventos(){
