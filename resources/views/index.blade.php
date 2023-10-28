@@ -1,5 +1,5 @@
 @extends('layout')
-@section('content')
+@section('imagen_entera')
     <div class="imagen-entera-container">
         <div class="image-container">
             <img src="{{ asset('../imagenes/fachada-cantina.png') }}" class="imagen-fija">
@@ -8,6 +8,9 @@
             <h1>Cantina LAB</h1>
         </div>
     </div>
+@endsection
+@section('content')
+
     <div class="container-horario">
         <table class="custom-table">
             <tr>
@@ -66,6 +69,5 @@
             <a href="https://www.calvalls.com/web/es/" target="_blank" class="button">LAB para Casa</a>
         </div>
     </div>
-
 
     @endsection

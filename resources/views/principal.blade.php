@@ -1,5 +1,5 @@
 @extends('layout')
-@section('content')
+@section('imagen_entera')
     <div class="imagen-entera-container">
         <div class="image-container">
             <img src="{{ asset('../imagenes/la-cantina.png') }}" class="imagen-fija">
@@ -8,6 +8,9 @@
             <h1>Quienes Somos</h1>
         </div>
     </div>
+@endsection
+@section('content')
+
 
 <div class="container-equipo">
     <div class="item">

@@ -1,3 +1,67 @@
+/*botones*/
+.button,.button-saber,.botones button {
+    padding: 10px 20px;
+    background-color: #c01018;
+    border-radius: 4px;
+    margin-top: 10px;
+    color: white;
+    margin-top: 10px;
+    float: right;
+
+}
+.button:hover {
+    background-color: #ee0d18;
+}
+/****************************************/
+/*tipografia e imagen entera*/
+body {
+    font-family: 'Helvetica';
+}
+h1 {
+    font-family: 'Helvetica' 50px;
+}
+h2 {
+    font-family: 'Helvetica';
+}
+h3{
+    font-family: 'Helvetica black ' 20px ;
+    font-weight: bold;
+}
+p {
+    font-family: 'Helvetica';
+    text-indent: 50px;
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 10px;
+}
+a { text-decoration: none;
+}
+
+.imagen-entera-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.image-container {
+    position: relative;
+}
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.titulo-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #D3D1D1B2;
+    padding-bottom: 20px;
+}
+/*************************************************/
 /*layout*/
 .container {
     width: 80%; /* Ajusta el ancho de la container según tus necesidades */
@@ -10,3 +74,223 @@
     height: 200px; /* Ajusta la altura de la franja lateral derecha según tus necesidades */
 }
 /**********************************************/
+/*index*/
+/* tabla */
+.container-horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin:  0px;  /* Ajusta el margen superior a un valor menor, por ejemplo, 20px */
+
+}
+
+.custom-table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    margin: 0px;  /* Ajusta el margen superior a un valor menor, por ejemplo, 20px */
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+
+}
+
+.custom-table tr {
+    border-bottom: 1px dashed #000;
+}
+
+.custom-table th {
+    background-color: #f2f2f2;
+    color: #000;
+    font-weight: bold;
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.cuadrado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section,.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+
+}
+
+.imagen {
+    max-width: 300px;
+    /*background-color: #ee0d18;*/
+}
+
+.texto p{
+    text-align: center;
+    margin-top: 10px;
+    margin: 0;
+    font-size: 20px;
+    width: 300px;;
+
+}
+/* ********************************** */
+/*eventos y proveedores*/
+.container-de-eventos {
+
+    flex-direction: column;
+    align-items: center;
+
+}
+.item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.photo {
+    flex: 1;
+}
+.photo .imagen {
+    max-width: 400px;
+    max-height: 400px;
+}
+.contenido {
+    flex: 1;
+    padding: 0 20px;
+}
+.container-proveedor {
+    flex-direction: column;
+    align-items: center;
+}
+/* ********************************** */
+/*quienes somos (principal)*/
+.container-equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.photo-equipo {
+    flex: 1;
+}
+.photo-equipo img {
+    max-width: 100%;
+    height: auto;
+}
+.contenido-equipo {
+    flex: 1;
+    padding: 0 20px;
+}
+/* ********************************** */
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #e9e4e4;
+}
+.logo img {
+    max-width: 100px;
+}
+.menu {
+    width: 1000px;
+}
+.menu ul,.meniu li,.menu a {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+    text-decoration: none;
+    color:black;
+}
+.container-menu-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.botones{
+    display: flex;
+    margin-right: 10px;
+}
+.iconos,iconos img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 10px;
+    width: 60px;
+    height: 50px;
+}
+/* ********************************** */
+/*footer*/
+footer {
+    margin-top: auto;
+    width: 100%;
+    max-height: 60%;
+    background-color: #ee0d18;
+}
+
+/* Estilos del logo */
+.logo-fotter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Logo img {
+    max-width: 150px;
+    margin-bottom: 50px;
+}
+
+/* Estilos del primer container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.link-item {
+    margin-left: 100px;
+}
+
+/* Estilos del segundo container */
+.footer-container-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.redes {
+    order: 2;
+    margin-right: 40px;
+}
+
+.info-restaurante {
+    order: 1;
+    margin-right: 40px;
+}
+
+.info-restaurante {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+/* ********************************** */
+
+
+

@@ -4,7 +4,7 @@
         <div class="image-container">
             <img src="{{ asset('../imagenes/cantina.png') }}" class="imagen-fija">
         </div>
-        <div class="texto-container">
+        <div class="titulo-container">
             <h3> Nuestros Eventos</h3>
         </div>
     </div>
@@ -208,7 +208,6 @@
         <div class="item">
             <div class="photo">
                 <img src="{{ asset('imagenes/baile.png') }}" class="imagen">
-                <link rel="stylesheet" href="{{ asset('css/tipografia.css') }}">
             </div>
             <div class="contenido">
                 <h3>baile</h3>

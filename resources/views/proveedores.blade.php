@@ -24,7 +24,7 @@
                      un oficio que ahora se esfuerza por incorporar nuevas tecnologías y para cuidar el impacto medioambiental. Contamos con dos barcos,
                     ‘La Ostia’, en honor a nuestra querida Barceloneta, y el ‘Nus’, el jovencito que ha desencadenado esta aventura.
                     </p>
-                    <a href="https://laplatjeta.net/" target="_blank" class="button">Saber Mas</a>
+                    <a href="https://laplatjeta.net/" target="_blank" class="button-saber">Saber Mas</a>
                 </div>
             </div>
 

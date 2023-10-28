@@ -23,8 +23,8 @@ Route::get('/quienes-somos',[HolaMundoController::class,"principal"]);
 Route::get('/events',[HolaMundoController::class,"eventos"]);
 Route::get('/proveedor',[HolaMundoController::class,"proveedores"]);
 // *************************************************************************
- Route::get('/contacto',[FormulariosController::class,"mostrarFormulario"]);
- Route::post('/contacto',[FormulariosController::class,"procesarFormulario"]);
+// Route::get('/contacto',[FormulariosController::class,"mostrarFormulario"]);
+// Route::post('/contacto',[FormulariosController::class,"procesarFormulario"]);
 //Route::get('/contact', function () {
 //    return view('formulariOpinion');
 //});
