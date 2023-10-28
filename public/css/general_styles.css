@@ -236,6 +236,9 @@ header {
 /* ********************************** */
 /*footer*/
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: auto;
     width: 100%;
     max-height: 60%;
@@ -245,9 +248,9 @@ footer {
 /* Estilos del logo */
 .logo-fotter {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .Logo img {
@@ -270,9 +273,7 @@ footer {
 /* Estilos del segundo container */
 .footer-container-2 {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    margin: 0 auto;
 }
 
 .redes {
@@ -290,6 +291,7 @@ footer {
     flex-direction: column;
     margin-bottom: 100px;
 }
+
 /* ********************************** */
 
 

@@ -52,9 +52,7 @@
         <div class="left-section">
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
             <div class="texto">
-                <p>Reserva una mesa para comer en nuestro
-                    bar la cantinalab
-                </p>
+                <p>Reserva una mesa para comer en nuestro bar</p>
             </div>
             <a href="https://www.calvalls.com/web/es/" target="_blank" class="button">reservar</a>
         </div>
