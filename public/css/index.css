@@ -1,24 +1,24 @@
 /* tabla */
-.container {
+.container-horario {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%; 
+    width: 50%;
     margin:  0px;  /* Ajusta el margen superior a un valor menor, por ejemplo, 20px */
 
 }
 
 .custom-table {
-    border: 1px solid #ddd; 
-    border-collapse: collapse; 
+    border: 1px solid #ddd;
+    border-collapse: collapse;
     margin: 0px;  /* Ajusta el margen superior a un valor menor, por ejemplo, 20px */
 }
 
 .custom-table th, .custom-table td {
-    border: 1px solid #ddd; 
-    padding: 8px; 
-    text-align: left; 
-    
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+
 }
 
 .custom-table tr {
@@ -61,8 +61,8 @@
 .left-section,.right-section {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    margin-right: 15px; 
+    align-items: center;
+    margin-right: 15px;
 
 }
 
@@ -70,7 +70,7 @@
     max-width: 300px;
     background-color: #ee0d18;
 
-  
+
 }
 
 .texto p{

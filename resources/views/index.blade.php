@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/tipografia.css') }}">
-        <meta charset="utf-8">
-        <!-- Styles -->
-        @include('header')
-    </head>
-    
-    <body >
-
+@extends('layout')
+@section('content')
     <div class="imagen-entera-container">
         <div class="image-container">
             <img src="{{ asset('../imagenes/fachada-cantina.png') }}" class="imagen-fija">
@@ -18,10 +8,7 @@
             <h1>Cantina LAB</h1>
         </div>
     </div>
-@extends('layout')
-@section('content')
-
-    <div class="container">
+    <div class="container-horario">
         <table class="custom-table">
             <tr>
                 <th>Día</th>
@@ -62,7 +49,7 @@
         <div class="left-section">
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
             <div class="texto">
-                <p>Reserva una mesa para comer en nuestro 
+                <p>Reserva una mesa para comer en nuestro
                     bar la cantinalab
                 </p>
             </div>
@@ -72,7 +59,7 @@
         <div class="right-section">
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
             <div class="texto">
-                <p>Quieres llevarte la comida de la 
+                <p>Quieres llevarte la comida de la
                     cantina lab a casa
                 </p>
             </div>
@@ -82,8 +69,3 @@
 
 
     @endsection
-        <footer>
-            @include('footer') 
-        </footer>
-    </body>
-</html>

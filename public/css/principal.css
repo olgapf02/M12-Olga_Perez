@@ -1,4 +1,4 @@
-.container {
+.container-equipo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,26 +12,18 @@
     margin-bottom: 50px;
 }
 
-.photo {
+.photo-equipo {
     flex: 1;
 }
 
-.photo img {
+.photo-equipo img {
     max-width: 100%;
     height: auto;
 }
 
-.contenido {
+.contenido-equipo {
     flex: 1;
     padding: 0 20px;
 }
 
-h3 {
-    font-size: 24px;
-    font-weight: bold;
-}
 
-p {
-    font-size: 16px;
-    margin-top: 10px;
-}

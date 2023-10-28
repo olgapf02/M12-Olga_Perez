@@ -27,7 +27,7 @@ header {
     text-decoration: none;
     color:black;
 }
-
+/* ************************************ */
 .botones button {
     width: 100px;
     height: 40px;
@@ -36,8 +36,11 @@ header {
     font-weight: bold;
     border-radius: 8px;
 }
+.button:hover {
+    background-color: #ee0d18;
+}
 /* ************************************ */
-.container {
+.container-menu-2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +51,7 @@ header {
     display: flex;
 }
 
-.botones button {
+.botones-comida button {
     margin-right: 10px;
 }
 
