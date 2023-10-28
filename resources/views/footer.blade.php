@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 </head>
-<body>
+<body> 
     <footer>
     <div class="footer-container">
         <div class="footer-links">
@@ -45,14 +45,9 @@
             </div>
     </div>
 
-
-
-
-                   
-
-
     
     </footer>
-    <link rel="stylesheet" href="{{ asset('js/footer.js') }}">
-</body>
+    </html>
+    <!-- <link rel="stylesheet" href="{{ asset('js/footer.js') }}"> -->
+<!-- </body>
 </html> -->

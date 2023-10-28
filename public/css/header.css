@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f3bfbf;
+    background-color: #e9e4e4;
 }
 
 .logo img {
@@ -35,5 +35,32 @@ header {
     background-color: #AD0E17;
     font-weight: bold;
     border-radius: 8px;
+}
+/* ************************************ */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.botones {
+    display: flex;
+}
+
+.botones button {
+    margin-right: 10px;
+}
+
+.iconos {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.iconos img {
+    margin-left: 10px;
+    width: 60px;
+    height: 50px;
 }
 
