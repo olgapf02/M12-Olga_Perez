@@ -1,5 +1,5 @@
 /*botones*/
-.button,.button-saber,.botones button {
+.button,.button-saber,.botones button,.footer-btn {
     padding: 10px 20px;
     background-color: #c01018;
     border-radius: 4px;
@@ -34,7 +34,10 @@ p {
     font-size: 16px;
     margin-top: 10px;
 }
-a { text-decoration: none;
+a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
 }
 
 .imagen-entera-container {
@@ -194,6 +197,28 @@ a { text-decoration: none;
     padding: 0 20px;
 }
 /* ********************************** */
+/*franja antes del header*/
+/*.top-bar {*/
+/*    width: 100%;*/
+/*    height: 30px;*/
+/*    background-color: #5e5e5e;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    padding: 0 20px;*/
+/*}*/
+
+/*.social-icons {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.social-icons img {*/
+/*    width: 20px;*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/* ********************************** */
 /*header*/
 header {
     display: flex;
@@ -223,9 +248,9 @@ header {
 }
 .botones{
     display: flex;
-    margin-right: 10px;
+    margin-right: 55px;
 }
-.iconos,iconos img {
+.iconos,.iconos img {
     position: absolute;
     top: 0;
     right: 0;
@@ -242,7 +267,7 @@ footer {
     margin-top: auto;
     width: 100%;
     max-height: 60%;
-    background-color: #ee0d18;
+    background-color: #ff2931;
 }
 
 /* Estilos del logo */
@@ -250,7 +275,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+
 }
 
 .Logo img {
@@ -267,7 +292,7 @@ footer {
 }
 
 .link-item {
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 /* Estilos del segundo container */
@@ -278,18 +303,24 @@ footer {
 
 .redes {
     order: 2;
-    margin-right: 40px;
+    margin-right: 150px;
+    margin-top: 100px;
 }
 
 .info-restaurante {
     order: 1;
     margin-right: 40px;
+    margin-bottom: 10px;
 }
 
 .info-restaurante {
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+}
+
+.links-redes{
+    margin-bottom: 10px;
 }
 
 /* ********************************** */

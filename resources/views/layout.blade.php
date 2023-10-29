@@ -5,6 +5,7 @@
 
 </head>
 <body>
+@include('section')
 @include('header')
 <div>
     @yield('imagen_entera')
@@ -15,6 +16,5 @@
     <div class="right-strip"></div>
 </div>
 @include('footer')
-{{--<!-- <link rel="stylesheet" href="{{ asset('js/footer.js') }}"> -->--}}
 </body>
 </html>

@@ -26,9 +26,8 @@
                 <button>LAB a casa</button>
             </a>
         </div>
-{{--        <div class="iconos">--}}
-{{--            <a href="https://tupagina.com"><img src="{{ asset('imagenes/usuario.png') }}" alt="Icono de usuario"></a>--}}
-{{--            <a href="https://tupagina.com"><img src="{{ asset('imagenes/usuario.png') }}" alt="Icono de usuario"></a>--}}
-{{--        </div>--}}
+        <div class="iconos">
+            <a href="https://tupagina.com"><img src="{{ asset('imagenes/idiomas.png') }}" alt="Icono de usuario"></a>
+        </div>
     </div>
 </header>
