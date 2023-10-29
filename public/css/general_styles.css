@@ -142,6 +142,7 @@ a {
     width: 300px;;
 
 }
+
 /* ********************************** */
 /*eventos y proveedores*/
 .container-de-eventos {
@@ -259,7 +260,23 @@ header {
     height: 50px;
 }
 /*carusell*/
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
 
+.slides {
+    display: flex;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
 /* ********************************** */
 /*footer*/
 footer {

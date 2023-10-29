@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\FormulariosController;
+//use App\Http\Controllers\FormulariosController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HolaMundoController;
 use App\Http\Controllers\ApiController;
@@ -31,4 +31,5 @@ Route::get('/proveedor',[HolaMundoController::class,"proveedores"]);
 //});
 // *************************************************************************
 // api
+Route::get('/api-tiempo', [ApiController::class, 'getApi']);
 

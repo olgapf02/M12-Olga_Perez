@@ -10,8 +10,8 @@
         <var>
             <ul>
                 <li><a href="{{ url('/quienes-somos') }}">Quienes Somos</a></li>
-                <li><a href="{{ url('/events') }}">eventos</a></li>
-                <li><a href="{{ url('/proveedor') }}">proveedores</a></li>
+                <li><a href="{{ url('/events') }}">Eventos</a></li>
+                <li><a href="{{ url('/proveedor') }}">Proveedores</a></li>
                 <li>Tel: 937 44 47 99</li>
             </ul>
         </var>
