@@ -4,13 +4,15 @@
         <div class="image-container">
             <img src="{{ asset('../imagenes/fachada-cantina.png') }}" class="imagen-fija">
         </div>
-        <div class="texto-container">
-            <h1>Cantina LAB</h1>
+        <div class="titulo-container">
+            <h3>Cantina LAB</h3>
         </div>
     </div>
 @endsection
 @section('content')
 
+
+{{-----------------------------------------------------------------------}}
     <div class="container-horario">
         <table class="custom-table">
             <tr>
@@ -47,7 +49,7 @@
             </tr>
         </table>
     </div>
-
+    {{-----------------------------------------------------------------------}}
     <div class="cuadrado">
         <div class="left-section">
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">

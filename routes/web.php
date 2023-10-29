@@ -3,6 +3,7 @@
 use App\Http\Controllers\FormulariosController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HolaMundoController;
+use App\Http\Controllers\ApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,6 @@ Route::get('/proveedor',[HolaMundoController::class,"proveedores"]);
 //Route::get('/contact', function () {
 //    return view('formulariOpinion');
 //});
+// *************************************************************************
+// api
+

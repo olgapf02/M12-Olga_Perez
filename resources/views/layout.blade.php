@@ -16,5 +16,6 @@
     <div class="right-strip"></div>
 </div>
 @include('footer')
+{{--<link rel="stylesheet" href="{{ asset('js/carusell.js') }}">--}}
 </body>
 </html>
