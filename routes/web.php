@@ -2,8 +2,7 @@
 
 //use App\Http\Controllers\FormulariosController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HolaMundoController;
-use App\Http\Controllers\ApiController;
+use App\Http\Controllers\PortadaPrincipalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,10 +18,11 @@ use App\Http\Controllers\ApiController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/',[HolaMundoController::class,"inicio"]);
-Route::get('/quienes-somos',[HolaMundoController::class,"principal"]);
-Route::get('/events',[HolaMundoController::class,"eventos"]);
-Route::get('/proveedor',[HolaMundoController::class,"proveedores"]);
+Route::get('/',[PortadaPrincipalController::class,"inicio"]);
+Route::get('/quienes-somos',[PortadaPrincipalController::class,"principal"]);
+Route::get('/events',[PortadaPrincipalController::class,"eventos"]);
+Route::get('/proveedor',[PortadaPrincipalController::class,"proveedores"]);
+Route::get('/carta',[PortadaPrincipalController::class,"carta"]);
 // *************************************************************************
 // Route::get('/contacto',[FormulariosController::class,"mostrarFormulario"]);
 // Route::post('/contacto',[FormulariosController::class,"procesarFormulario"]);
@@ -31,6 +31,6 @@ Route::get('/proveedor',[HolaMundoController::class,"proveedores"]);
 //});
 // *************************************************************************
 // api
-Route::get('/', [ApiController::class, 'index']);
+//Route::get('/', [ApiController::class, 'index']);
 
 

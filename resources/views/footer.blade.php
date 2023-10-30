@@ -28,7 +28,7 @@
                     </div>
                     <div class="info-restaurante">
                         <a href="https://www.lateral.com/carta" >Carta</a>
-                        <a href="https://register.cheerfy.com/?portal_id=05b3e13ba6c5446189dd46298bd62e1a"  target="_blank">Únete a "SOMOS LTL"</a>
+                        <a href="https://register.cheerfy.com/?portal_id=05b3e13ba6c5446189dd46298bd62e1a"  target="_blank">Únete a "La Cantina"</a>
                         <a href="{{ url('/events') }}">Eventos</a>
                         <a href="https://www.lateral.com/contacto" >Tu opinión nos importa</a>
                         <h4>937 44 47 99</h4>

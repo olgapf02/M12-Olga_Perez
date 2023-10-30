@@ -106,7 +106,7 @@ ul{
 /* tabla */
 .container-horario {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 50%;
     margin:  10px;  /* Ajusta el margen superior a un valor menor, por ejemplo, 20px */
@@ -137,6 +137,7 @@ ul{
 
 .cuadrado {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -358,11 +359,31 @@ footer {
     margin-bottom: 100px;
 }
 
-.links-redes{
+.links-redes {
+    display: flex;
     margin-bottom: 10px;
 }
 
+.links-redes a {
+    margin-right: 10px; /* Ajusta el margen según tu preferencia */
+}
 /* ********************************** */
+/*carta*/
+.weather-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: #f86a6a;
+    border-radius: 10px;
 
-
+}
+.weather-info {
+    padding: 20px;
+    display: inline-block;
+}
+.terrassa-info {
+    font-size: 1.2em;
+}
 

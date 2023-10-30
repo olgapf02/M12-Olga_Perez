@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 
-class HolaMundoController extends Controller
+class PortadaPrincipalController extends Controller
 {
     public function inicio(){
         $apiKey = '173772d42b398e917dd548e73bc94a48';
@@ -13,7 +13,7 @@ class HolaMundoController extends Controller
         $response = Http::get($url);
         $json=$response->json();
         return view('index',[
-            "nombre"=>$json
+            "infoTiempo"=>$json
         ]);
     }
 
@@ -27,6 +27,10 @@ class HolaMundoController extends Controller
 
     public function proveedores(){
         return view('proveedores');
+    }
+
+    public function carta(){
+        return view('carta');
     }
 
 }

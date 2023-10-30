@@ -11,28 +11,30 @@
 @endsection
 @section('content')
 
+    <div class="weather-container">
+        <h2>{{ date('l, jS F Y') }}</h2>
+        <div class="weather-info">
+            <h2>Condiciones meteorológicas en {{ $infoTiempo['name'] }}</h2>
+            <p><strong>Temperatura:</strong> {{ $infoTiempo['main']['temp'] - 273.15 }}°C</p>
+            <p><strong>Descripción del clima:</strong> {{ $infoTiempo['weather'][0]['description'] }}</p>
+            <p><strong>Velocidad del viento:</strong> {{ $infoTiempo['wind']['speed'] }} m/s</p>
+            <p><strong>Nubes:</strong> {{ $infoTiempo['clouds']['all'] }}%</p>
+        </div>
 
-{{--    <h1>Weather Information</h1>--}}
-{{--    <p>City: {{ $data['name'] }}</p>--}}
-{{--    <p>Weather: {{ $data['weather'][0]['description'] }}</p>--}}
-{{--    <p>Temperature: {{ $data['main']['temp'] }} Kelvin</p>--}}
-{{--    <div class="weather-data">--}}
-{{--        <h1>Weekly Weather Forecast</h1>--}}
-{{--        @if(isset($dailyWeather))--}}
-{{--            @foreach($dailyWeather as $day)--}}
-{{--                <p><strong>Date:</strong> {{ date('Y-m-d', $day['dt']) }}</p>--}}
-{{--                <p><strong>Weather:</strong> {{ $day['weather'][0]['description'] }}</p>--}}
-{{--                <p><strong>Temperature:</strong> {{ $day['temp']['day'] }}°C</p>--}}
-{{--                <p><strong>Humidity:</strong> {{ $day['humidity'] }}%</p>--}}
-{{--                <hr>--}}
-{{--            @endforeach--}}
-{{--        @else--}}
-{{--            <p>No Hay Datos Del Tiempo Disponibles</p>--}}
-{{--        @endif--}}
-{{--    </div>--}}
+        <div class="terraza-info">
+            @if ($infoTiempo['weather'][0]['id'] === 801 || $infoTiempo['weather'][0]['id'] === 802)
+                <h3>Hoy hay algunas nubes en la zona. ¡Puede ser un buen día para disfrutar de la terraza!</h3>
+            @else
+                <h3>Hoy no parece ser un día ideal para la terraza debido a las condiciones climáticas.</h3>
+            @endif
+        </div>
+    </div>
 
 
     {{-----------------------------------------------------------------------}}
+    <div id="carousel">
+        <img src="{{ url('/') }}" width="150" height="100" />
+    </div>
 {{--    <div class="carousel">--}}
 {{--        <div class="slides">--}}
 {{--            <div class="slide">--}}
