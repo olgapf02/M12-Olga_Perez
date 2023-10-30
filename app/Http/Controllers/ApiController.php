@@ -2,24 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
+use GuzzleHttp\Client;
 
 class ApiController extends Controller
 {
-    public function getApi()
+    public function index()
     {
         $apiKey = '173772d42b398e917dd548e73bc94a48';
-        $latitude = '41.38879';
-        $longitude = '2.15899';
-        $part = 'part';
+        $city = 'Barcelona';
+        $url = "http://api.openweathermap.org/data/2.5/weather?q={$city}&appid={$apiKey}";
 
-        $response = Http::get("https://api.openweathermap.org/data/2.5/onecall?lat=$latitude&lon=$longitude&exclude=$part&appid=$apiKey");
+        $client = new Client();
+        $response = $client->get($url);
+        $data = json_decode($response->getBody(), true);
 
-        $weatherData = $response->json();
-
-        $dailyWeather = $weatherData['daily'];
-
-        return view('weather', ['dailyWeather' => $dailyWeather]);
+        return view('weather', ['data' => $data]);
     }
 }

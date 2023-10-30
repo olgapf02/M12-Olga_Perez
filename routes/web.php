@@ -31,5 +31,6 @@ Route::get('/proveedor',[HolaMundoController::class,"proveedores"]);
 //});
 // *************************************************************************
 // api
-Route::get('/api-tiempo', [ApiController::class, 'getApi']);
+Route::get('/', [ApiController::class, 'index']);
+
 

@@ -1,3 +1,25 @@
+/*api del tiempo*/
+hr {
+    border: none;
+    border-top: 1px solid #ef4e4e;
+    margin: 10px 0;
+}
+.weather-data {
+    background-color: #c01018;
+    border: 1px solid #ff2b2b;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+}
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+p {
+    margin: 10px 0;
+}
+/****************************************/
 /*botones*/
 .button,.button-saber,.botones button,.footer-btn {
     padding: 10px 20px;
@@ -38,6 +60,9 @@ a {
     text-decoration: none;
     color: white;
     margin-bottom: 10px;
+}
+ul{
+    list-style: none;
 }
 
 .imagen-entera-container {
@@ -84,14 +109,13 @@ a {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    margin:  0px;  /* Ajusta el margen superior a un valor menor, por ejemplo, 20px */
+    margin:  10px;  /* Ajusta el margen superior a un valor menor, por ejemplo, 20px */
 
 }
 
 .custom-table {
-    border: 1px solid #ddd;
-    border-collapse: collapse;
-    margin: 0px;  /* Ajusta el margen superior a un valor menor, por ejemplo, 20px */
+
+    margin: 20px;  /* Ajusta el margen superior a un valor menor, por ejemplo, 20px */
 }
 
 .custom-table th, .custom-table td {
@@ -99,10 +123,6 @@ a {
     padding: 8px;
     text-align: left;
 
-}
-
-.custom-table tr {
-    border-bottom: 1px dashed #000;
 }
 
 .custom-table th {

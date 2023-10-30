@@ -10,49 +10,58 @@
     </div>
 @endsection
 @section('content')
-    <div class="weather-data">
-        <h1>Weekly Weather Forecast</h1>
-        @if(isset($dailyWeather))
-            @foreach($dailyWeather as $day)
-                <p>Date: {{ date('Y-m-d', $day['dt']) }}</p>
-                <p>Weather: {{ $day['weather'][0]['description'] }}</p>
-                <p>Temperature: {{ $day['temp']['day'] }}°C</p>
-                <p>Humidity: {{ $day['humidity'] }}%</p>
-                <hr>
-            @endforeach
-        @endif
-    </div>
+
+
+{{--    <h1>Weather Information</h1>--}}
+{{--    <p>City: {{ $data['name'] }}</p>--}}
+{{--    <p>Weather: {{ $data['weather'][0]['description'] }}</p>--}}
+{{--    <p>Temperature: {{ $data['main']['temp'] }} Kelvin</p>--}}
+{{--    <div class="weather-data">--}}
+{{--        <h1>Weekly Weather Forecast</h1>--}}
+{{--        @if(isset($dailyWeather))--}}
+{{--            @foreach($dailyWeather as $day)--}}
+{{--                <p><strong>Date:</strong> {{ date('Y-m-d', $day['dt']) }}</p>--}}
+{{--                <p><strong>Weather:</strong> {{ $day['weather'][0]['description'] }}</p>--}}
+{{--                <p><strong>Temperature:</strong> {{ $day['temp']['day'] }}°C</p>--}}
+{{--                <p><strong>Humidity:</strong> {{ $day['humidity'] }}%</p>--}}
+{{--                <hr>--}}
+{{--            @endforeach--}}
+{{--        @else--}}
+{{--            <p>No Hay Datos Del Tiempo Disponibles</p>--}}
+{{--        @endif--}}
+{{--    </div>--}}
+
 
     {{-----------------------------------------------------------------------}}
-    <div class="carousel">
-        <div class="slides">
-            <div class="slide">
-                <img src="{{ asset('../imagenes/fachada-cantina.png') }}" alt="Imagen 1">
-                <div class="caption">Fachada de la cantina</div>
-            </div>
+{{--    <div class="carousel">--}}
+{{--        <div class="slides">--}}
+{{--            <div class="slide">--}}
+{{--                <img src="{{ asset('../imagenes/fachada-cantina.png') }}" alt="Imagen 1">--}}
+{{--                <div class="caption">Fachada de la cantina</div>--}}
+{{--            </div>--}}
 
-            <div class="slide">
-                <img src="{{ asset('../imagenes/dj.png') }}" alt="Imagen 2">
-                <div class="caption">Taller de DJ</div>
-            </div>
+{{--            <div class="slide">--}}
+{{--                <img src="{{ asset('../imagenes/dj.png') }}" alt="Imagen 2">--}}
+{{--                <div class="caption">Taller de DJ</div>--}}
+{{--            </div>--}}
 
-            <div class="slide">
-                <img src="{{ asset('../imagenes/baile.png') }}" alt="Imagen 3">
-                <div class="caption">Baile</div>
-            </div>
+{{--            <div class="slide">--}}
+{{--                <img src="{{ asset('../imagenes/baile.png') }}" alt="Imagen 3">--}}
+{{--                <div class="caption">Baile</div>--}}
+{{--            </div>--}}
 
-            <div class="slide">
-                <img src="{{ asset('../imagenes/cine.png') }}" alt="Imagen 4">
-                <div class="caption">Cine a la Fresca 1</div>
-            </div>
+{{--            <div class="slide">--}}
+{{--                <img src="{{ asset('../imagenes/cine.png') }}" alt="Imagen 4">--}}
+{{--                <div class="caption">Cine a la Fresca 1</div>--}}
+{{--            </div>--}}
 
-            <div class="slide">
-                <img src="{{ asset('../imagenes/lgtbi.png') }}" alt="Imagen 5">
-                <div class="caption">Mani al Bar</div>
-            </div>
+{{--            <div class="slide">--}}
+{{--                <img src="{{ asset('../imagenes/lgtbi.png') }}" alt="Imagen 5">--}}
+{{--                <div class="caption">Mani al Bar</div>--}}
+{{--            </div>--}}
 
-        </div>
-    </div>
+{{--        </div>--}}
+{{--    </div>--}}
 {{-----------------------------------------------------------------------}}
     <div class="container-horario">
         <table class="custom-table">
@@ -90,7 +99,7 @@
             </tr>
         </table>
     </div>
-    {{-----------------------------------------------------------------------}}
+{{--    ---------------------------------------------------------------------}}
     <div class="cuadrado">
         <div class="left-section">
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
