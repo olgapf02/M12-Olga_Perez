@@ -58,7 +58,7 @@ p {
 }
 a {
     text-decoration: none;
-    color: white;
+    color: black;
     margin-bottom: 10px;
 }
 ul{
@@ -487,20 +487,6 @@ footer {
 .carta-item:not(:last-child) {
     border-bottom: 1px solid #ddd;
 }
-.menu-carta {
-    text-align: center;
-}
-
-.menu-carta ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.menu-carta li {
-    display: inline;
-    margin: 0 10px;
-}
-
 
 
 

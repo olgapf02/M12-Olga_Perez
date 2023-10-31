@@ -10,71 +10,50 @@
     </div>
 @endsection
 @section('content')
-<div class="carta-container">
-    <div class="carta-item">
-        <h1 class="carta-title">Menu del dia</h1>
-        <ul>
-            <h2 class="carta-title">Primeros</h2>
-            <li>
-                <h3 class="carta-name">Plato 1</h3>
-                <p class="carta-description">Descripción del plato 1.</p>
-            </li>
-            <hr/>
-            <li>
-                <h3 class="carta-name">Plato 2</h3>
-                <p class="carta-description">Descripción del plato 2.</p>
-            </li>
-            <hr/>
-            <li>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
-            </li>
-            <hr/>
-
-            <li>
-                <h2 class="carta-title">Segundos</h2>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
-            </li>
-            <hr/>
-            <li>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
-            </li>
-            <hr/>
-            <li>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
-            </li>
-            <hr/>
-            <li>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
-            </li>
-            <hr/>
-
-            <li>
-                <h2 class="carta-title">Postres</h2>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
-            </li>
-            <hr/>
-            <li>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
-            </li>
-            <hr/>
-            <li>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
-            </li>
-            <hr/>
-            <li>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
-            </li>
-
-        </ul>
+    <div class="menu-container">
+        <var>
+            <ul>
+                <li><a href="{{ url('/bebidas') }}">Bebidas</a></li>
+                <li><a href="{{ url('/tapas') }}">Tapas y platos</a></li>
+                <li><a href="{{ url('/menu') }}">Menu del Dia</a></li>
+            </ul>
+        </var>
     </div>
-</div>
+    <div class="carta-container">
+        <div class="carta-item">
+            <h1 class="carta-title">Bebidas</h1>
+            <ul>
+                <li>
+                    <h3 class="carta-name">Kombucha</h3>
+                    <li>
+                        <p class="carta-name">Manzana y Pepino</p>
+                    </li>
+                    <li>
+                        <p class="carta-name">Remolacha y Naranja</p>
+                    </li>
+                </li>
+                <hr/>
+                <li>
+                    <h3 class="carta-name">Wostok</h3>
+                    <li>
+                        <p class="carta-name">Ciruela y Cardamomo</p>
+                    </li>
+                    <li>
+                        <p class="carta-name">Estragon y Jengibre</p>
+                    </li>
+                </li>
+                <hr/>
+                <li>
+                    <h3 class="carta-name">Zumo Cal Valls</h3>
+                    <li>
+                        <p class="carta-name">uva y Melocoton</p>
+                    </li>
+                    <li>
+                        <p class="carta-name">Manzana</p>
+                    </li>
+                </li>
+
+            </ul>
+        </div>
+    </div>
 @endsection

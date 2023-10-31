@@ -22,15 +22,17 @@ Route::get('/',[PortadaPrincipalController::class,"inicio"]);
 Route::get('/quienes-somos',[PortadaPrincipalController::class,"principal"]);
 Route::get('/events',[PortadaPrincipalController::class,"eventos"]);
 Route::get('/proveedor',[PortadaPrincipalController::class,"proveedores"]);
+
 Route::get('/menu',[PortadaPrincipalController::class,"carta"]);
+Route::get('/bebidas',[PortadaPrincipalController::class,"bebidas"]);
+Route::get('/tapas',[PortadaPrincipalController::class,"tapas"]);
+
 // *************************************************************************
 // Route::get('/contacto',[FormulariosController::class,"mostrarFormulario"]);
 // Route::post('/contacto',[FormulariosController::class,"procesarFormulario"]);
 //Route::get('/contact', function () {
 //    return view('formulariOpinion');
 //});
-// *************************************************************************
-// api
-//Route::get('/', [ApiController::class, 'index']);
+
 
 

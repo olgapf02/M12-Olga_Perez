@@ -33,5 +33,13 @@ class PortadaPrincipalController extends Controller
         return view('carta');
 
     }
+    public function bebidas(){
+        return view('bebidas');
+
+    }
+    public function tapas(){
+        return view('tapas');
+
+    }
 
 }

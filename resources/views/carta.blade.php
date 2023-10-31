@@ -10,17 +10,15 @@
     </div>
 @endsection
 @section('content')
-{{--    <div class="menu-carta">--}}
-{{--        <ul>--}}
-{{--            <li><a href="#" onclick="loadContent('quienes-somos')">Quienes Somos</a></li>--}}
-{{--            <li><a href="#" onclick="loadContent('events')">Eventos</a></li>--}}
-{{--            <li><a href="#" onclick="loadContent('proveedor')">Proveedores</a></li>--}}
-{{--            <li><a href="#" onclick="loadContent('menu')">Carta</a></li>--}}
-{{--            <li>Tel: 937 44 47 99</li>--}}
-{{--        </ul>--}}
-{{--    </div>--}}
-
-
+    <div class="menu-container">
+        <var>
+            <ul>
+                <li><a href="{{ url('/bebidas') }}">Bebidas</a></li>
+                <li><a href="{{ url('/tapas') }}">Tapas y platos</a></li>
+                <li><a href="{{ url('/menu') }}">Menu del Dia</a></li>
+            </ul>
+        </var>
+    </div>
 <div class="carta-container">
     <div class="carta-item">
         <h1 class="carta-title">Menu del dia</h1>
@@ -28,61 +26,49 @@
             <h2 class="carta-title">Primeros</h2>
             <li>
                 <h3 class="carta-name">Crema de Calabaza y Coco</h3>
-                <p class="carta-description">Descripción del plato 1.</p>
             </li>
             <hr/>
             <li>
-                <h3 class="carta-name">Plato 2</h3>
-                <p class="carta-description">Descripción del plato 2.</p>
+                <h3 class="carta-name">tortillas de trigo con Chile Vegano</h3>
             </li>
             <hr/>
             <li>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
+                <h3 class="carta-name">Alitas Coreanas -Ecologicas-</h3>
             </li>
             <hr/>
 
             <li>
                 <h2 class="carta-title">Segundos</h2>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
+                <h3 class="carta-name">Chana Masala(Giso de garbanzos,con una salsa de yogur y especias)</h3>
             </li>
             <hr/>
             <li>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
+                <h3 class="carta-name">Renon de Ternera(curry y arroz)</h3>
             </li>
             <hr/>
             <li>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
+                <h3 class="carta-name">Gannaci de boniato con Queso de Cabra</h3>
             </li>
             <hr/>
             <li>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
+                <h3 class="carta-name">Butifarra de pages ecologica con patatas </h3>
             </li>
             <hr/>
-
             <li>
                 <h2 class="carta-title">Postres</h2>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
+                <h3 class="carta-name">Brownie Vegano</h3>
             </li>
             <hr/>
             <li>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
+                <h3 class="carta-name">Flan de Mató artesano</h3>
             </li>
             <hr/>
             <li>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
+                <h3 class="carta-name">Flan de Café artesano</h3>
             </li>
             <hr/>
             <li>
-                <h3 class="carta-name">Plato 3</h3>
-                <p class="carta-description">Descripción del plato 3.</p>
+                <h3 class="carta-name">Fruta Variada</h3>
             </li>
 
         </ul>
