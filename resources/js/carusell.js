@@ -1,21 +1,30 @@
-var images = [
-    "{{ url('/') }}",
-    "{{ asset('ruta-a-tu-imagen-1.jpg') }}",
-    "{{ asset('ruta-a-tu-imagen-2.jpg') }}",
-    "{{ asset('ruta-a-tu-imagen-3.jpg') }}",
-    "{{ asset('ruta-a-tu-imagen-4.jpg') }}",
-    "{{ asset('ruta-a-tu-imagen-5.jpg') }}"
-];
+let slideIndex = 1;
+showSlides(slideIndex);
 
-var currentImageIndex = 0;
-var imageElement = document.querySelector("#carousel img");
-
-function changeImage() {
-    if (currentImageIndex === images.length) {
-        currentImageIndex = 0;
-    }
-    imageElement.src = images[currentImageIndex];
-    currentImageIndex++;
+function plusSlides(n) {
+    showSlides((slideIndex += n));
 }
 
-setInterval(changeImage, 2000);
+function currentSlide(n) {
+    showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let quadrates = document.getElementsByClassName("quadrate");
+
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < quadrates.length; i++) {
+        quadrates[i].className = quadrates[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    quadrates[slideIndex - 1].className += " active";
+}

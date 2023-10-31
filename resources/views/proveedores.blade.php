@@ -4,13 +4,12 @@
         <div class="image-container">
             <img src="{{ asset('../imagenes/comida.jpg') }}" class="imagen-fija">
         </div>
-        <div class="texto-container">
+        <div class="titulo-container">
             <h3>Nuestros Proveedores</h3>
         </div>
     </div>
 @endsection
 @section('content')
-
    <div class="container-proveedor">
             <div class="item">
                 <div class="photo">

@@ -31,6 +31,7 @@ class PortadaPrincipalController extends Controller
 
     public function carta(){
         return view('carta');
+
     }
 
 }

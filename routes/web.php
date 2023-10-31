@@ -22,7 +22,7 @@ Route::get('/',[PortadaPrincipalController::class,"inicio"]);
 Route::get('/quienes-somos',[PortadaPrincipalController::class,"principal"]);
 Route::get('/events',[PortadaPrincipalController::class,"eventos"]);
 Route::get('/proveedor',[PortadaPrincipalController::class,"proveedores"]);
-Route::get('/carta',[PortadaPrincipalController::class,"carta"]);
+Route::get('/menu',[PortadaPrincipalController::class,"carta"]);
 // *************************************************************************
 // Route::get('/contacto',[FormulariosController::class,"mostrarFormulario"]);
 // Route::post('/contacto',[FormulariosController::class,"procesarFormulario"]);

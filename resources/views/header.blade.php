@@ -12,7 +12,7 @@
                 <li><a href="{{ url('/quienes-somos') }}">Quienes Somos</a></li>
                 <li><a href="{{ url('/events') }}">Eventos</a></li>
                 <li><a href="{{ url('/proveedor') }}">Proveedores</a></li>
-                <li><a href="{{ url('/proveedor') }}">Carta</a></li>
+                <li><a href="{{ url('/menu') }}">Carta</a></li>
                 <li>Tel: 937 44 47 99</li>
             </ul>
         </var>
@@ -26,9 +26,6 @@
             <a href="{{ url('/events') }}">
                 <button>LAB a casa</button>
             </a>
-        </div>
-        <div class="iconos">
-            <a href="https://tupagina.com"><img src="{{ asset('imagenes/idiomas.png') }}" alt="Icono de usuario"></a>
         </div>
     </div>
 </header>
