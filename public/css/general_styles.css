@@ -100,7 +100,10 @@ ul{
 }
 
 .right-strip {
-    height: 200px; /* Ajusta la altura de la franja lateral derecha según tus necesidades */
+    height: 250px; /* Ajusta la altura de la franja lateral derecha según tus necesidades */
+}
+.left-strip {
+    height: 250px; /* Ajusta la altura de la franja lateral derecha según tus necesidades */
 }
 /**********************************************/
 /*index*/
@@ -440,17 +443,27 @@ footer {
 /* ********************************** */
 /*carta de comer */
 .carta-container {
+    width: 100%;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px 0;
     padding: 20px;
+    font-family: Arial, sans-serif;
+    float: left;
+    box-sizing: border-box;
 }
 
 .carta-item {
-    border: 1px solid #ddd;
-    border-radius: 5px;
     margin: 10px 0;
-    padding: 10px;
-    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carta-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .carta-name {
@@ -461,10 +474,33 @@ footer {
 
 .carta-description {
     color: #555;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    flex: 1;
 }
 
 .carta-price {
     color: #d9534f;
     font-weight: bold;
+    align-self: flex-end;
 }
+
+.carta-item:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+.menu-carta {
+    text-align: center;
+}
+
+.menu-carta ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-carta li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+
+

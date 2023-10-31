@@ -7,7 +7,7 @@
 
 <div class="top-bar">
     <div class="social-icons">
-        <span>937 44 47 99</span>
+        <span> tel: 937 44 47 99</span>
         <a target="_blank" href="https://www.facebook.com/cantinalab.coop/?locale=es_ES"><img
                 src="https://lateral-production.s3.eu-west-3.amazonaws.com/public/icon/facebook.svg" alt="Facebook"></a>
         <a target="_blank" href="https://www.instagram.com/cantinalab.coop/"><img
