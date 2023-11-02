@@ -33,7 +33,7 @@
         <option value="otro">Otro</option>
     </select><br>
 
-    <label for="guest_count">Número de Invitados:</label><br>
+    <label for="guest_count">Número de Gente:</label><br>
     <input type="number" id="guest_count" name="guest_count" required><br>
 
     <label for="additional_requests">Explicacion del Evento y Necesidades:</label><br>
