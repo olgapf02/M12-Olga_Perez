@@ -60,14 +60,18 @@
             </p>
         </div>
     </div>
+    {{-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------}}
+    <div class="mapa">
+        <h1>Localización de La Cantina Lab</h1>
+        <p>Nos podras encontrar aqui mismo</p>
+        <p>Esta situada en la Calle : Gran Via de les Corts Catalanes, 169, 08014 Barcelona</p>
+        @if(!empty($mapa))
+            <iframe width="600" height="450" style="border:0"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox={{ $mapa[0]['lon'] }},{{ $mapa[0]['lat'] }},{{ $mapa[0]['lon'] }},{{ $mapa[0]['lat'] }}&amp;layer=mapnik" allowfullscreen></iframe>
+        @else
+            <p>No se encontraron datos de ubicación para el lugar especificado.</p>
+        @endif
+    </div>
 </div>
-{{-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------}}
-<h1>Locacicion de La Cantina Lab</h1>
 
-@if(!empty($mapa))
-    <iframe width="600" height="450"  style="border:0"
-            src="https://www.openstreetmap.org/export/embed.html?bbox={{ $mapa[0]['lon'] }},{{ $mapa[0]['lat'] }},{{ $mapa[0]['lon'] }},{{ $mapa[0]['lat'] }}&amp;layer=mapnik" allowfullscreen></iframe>
-@else
-    <p>No se encontraron datos de ubicación para el lugar especificado.</p>
-@endif
 @endsection

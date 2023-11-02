@@ -3,6 +3,8 @@
 //use App\Http\Controllers\FormulariosController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PortadaPrincipalController;
+use App\Http\Controllers\FormulariosController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,11 +30,9 @@ Route::get('/bebidas',[PortadaPrincipalController::class,"bebidas"]);
 Route::get('/tapas',[PortadaPrincipalController::class,"tapas"]);
 
 // *************************************************************************
-// Route::get('/contacto',[FormulariosController::class,"mostrarFormulario"]);
-// Route::post('/contacto',[FormulariosController::class,"procesarFormulario"]);
-//Route::get('/contact', function () {
-//    return view('formulariOpinion');
-//});
+Route::get('/quieres_un_evento',[FormulariosController::class,"querer_evento"]);
+Route::get('/trabajo',[FormulariosController::class,"querer_trabajo"]);
+Route::get('/opiniones',[FormulariosController::class,"opiniones"]);
 
 
 

@@ -207,19 +207,25 @@ p {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
 .photo-equipo {
     flex: 1;
 }
 .photo-equipo img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 .contenido-equipo {
     flex: 1;
     padding: 0 20px;
 }
+/*mapa*/
+.mapa {
+    position: static;
+    height: 100vh;
+}
+
 /* ********************************** */
 /*franja antes del header*/
 .top-bar {
@@ -485,6 +491,54 @@ footer {
 .carta-item:not(:last-child) {
     border-bottom: 1px solid #ddd;
 }
+/*---------------------------------------*/
+/*formularios*/
+form {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ee6363;
+    border-radius: 5px;
+}
 
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #88150f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #d9534f;
+}
 
 

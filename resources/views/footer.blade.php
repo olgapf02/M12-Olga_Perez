@@ -28,9 +28,9 @@
                     </div>
                     <div class="info-restaurante">
                         <a href="{{ url('/menu') }}" >Carta</a>
-                        <a href="https://register.cheerfy.com/?portal_id=05b3e13ba6c5446189dd46298bd62e1a"  target="_blank">Únete a "La Cantina"</a>
-                        <a href="{{ url('/events') }}">quieres hacer un evento</a>
-                        <a href="https://www.lateral.com/contacto" >Tu opinión nos importa</a>
+                        <a href="{{ url('/trabajo') }}" >Únete a "La Cantina"</a>
+                        <a href="{{ url('/quieres_un_evento') }}">quieres hacer un evento</a>
+                        <a href="{{ url('/opiniones') }}" >Tu opinión nos importa</a>
                         <h4>937 44 47 99</h4>
                         <a href="https://unete-al-equipo.lateral.com/" target="_blank"  class="footer-btn">Únete al equipo</a>
                     </div>
