@@ -18,9 +18,17 @@ class PortadaPrincipalController extends Controller
     }
 
     public function principal(){
-        return view('principal');
+        $place = 'Gran Via de les Corts Catalanes, 169, 08014 Barcelona';
+        $response = Http::get('https://nominatim.openstreetmap.org/search', [
+            'q' => $place,
+            'format' => 'json'
+        ]);
+        $location = $response->json();
+        return view('principal',[
+            "mapa"=>$location
+        ]);
     }
-
+//        return view('map', ['locationData' => $locationData, 'place' => $place]);
     public function eventos(){
         return view('eventos');
     }

@@ -1,24 +1,4 @@
-/*api del tiempo*/
-hr {
-    border: none;
-    border-top: 1px solid #ef4e4e;
-    margin: 10px 0;
-}
-.weather-data {
-    background-color: #c01018;
-    border: 1px solid #ff2b2b;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px;
-    width: 300px;
-}
-h1 {
-    font-size: 24px;
-    text-align: center;
-}
-p {
-    margin: 10px 0;
-}
+
 /****************************************/
 /*botones*/
 .button,.button-saber,.botones button,.footer-btn {
@@ -153,10 +133,8 @@ ul{
     margin-right: 15px;
 
 }
-
 .imagen {
     max-width: 300px;
-    /*background-color: #ee0d18;*/
 }
 
 .texto p{
@@ -165,7 +143,27 @@ ul{
     margin: 0;
     font-size: 20px;
     width: 300px;;
-
+}
+/*api del tiempo*/
+hr {
+    border: none;
+    border-top: 1px solid #ef4e4e;
+    margin: 10px 0;
+}
+.weather-data {
+    background-color: #c01018;
+    border: 1px solid #ff2b2b;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+}
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+p {
+    margin: 10px 0;
 }
 
 /* ********************************** */

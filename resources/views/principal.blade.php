@@ -61,5 +61,13 @@
         </div>
     </div>
 </div>
+{{-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------}}
+<h1>Locacicion de La Cantina Lab</h1>
 
+@if(!empty($mapa))
+    <iframe width="600" height="450"  style="border:0"
+            src="https://www.openstreetmap.org/export/embed.html?bbox={{ $mapa[0]['lon'] }},{{ $mapa[0]['lat'] }},{{ $mapa[0]['lon'] }},{{ $mapa[0]['lat'] }}&amp;layer=mapnik" allowfullscreen></iframe>
+@else
+    <p>No se encontraron datos de ubicación para el lugar especificado.</p>
+@endif
 @endsection

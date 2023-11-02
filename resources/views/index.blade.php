@@ -23,9 +23,9 @@
 
             <div class="terraza-info">
                 @if ($infoTiempo['weather'][0]['id'] === 801 || $infoTiempo['weather'][0]['id'] === 802)
-                    <h3>Hoy hay algunas nubes en la zona. ¡Puede ser un buen día para disfrutar de la terraza!</h3>
+                    <h3>Hoy hay algunas nubes en la zona. ¡Puede  No ser un buen día para disfrutar de la terraza!</h3>
                 @else
-                    <h3>Hoy no parece ser un día ideal para la terraza debido a las condiciones climáticas.</h3>
+                    <h3>Hoy  parece ser un día ideal para la terraza debido a las condiciones climáticas.</h3>
                 @endif
             </div>
         </div>

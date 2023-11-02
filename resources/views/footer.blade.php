@@ -27,9 +27,9 @@
                         <a target="_blank" href="https://www.instagram.com/cantinalab.coop/"><img src="https://lateral-production.s3.eu-west-3.amazonaws.com/public/icon/instagram.svg" alt="Instagram"></a>
                     </div>
                     <div class="info-restaurante">
-                        <a href="https://www.lateral.com/carta" >Carta</a>
+                        <a href="{{ url('/menu') }}" >Carta</a>
                         <a href="https://register.cheerfy.com/?portal_id=05b3e13ba6c5446189dd46298bd62e1a"  target="_blank">Únete a "La Cantina"</a>
-                        <a href="{{ url('/events') }}">Eventos</a>
+                        <a href="{{ url('/events') }}">quieres hacer un evento</a>
                         <a href="https://www.lateral.com/contacto" >Tu opinión nos importa</a>
                         <h4>937 44 47 99</h4>
                         <a href="https://unete-al-equipo.lateral.com/" target="_blank"  class="footer-btn">Únete al equipo</a>
