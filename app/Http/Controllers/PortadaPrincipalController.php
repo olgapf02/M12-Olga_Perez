@@ -50,4 +50,9 @@ class PortadaPrincipalController extends Controller
 
     }
 
+    public function reservas(){
+        return view('reservas');
+
+    }
+
 }

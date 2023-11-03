@@ -30,9 +30,10 @@ Route::get('/bebidas',[PortadaPrincipalController::class,"bebidas"]);
 Route::get('/tapas',[PortadaPrincipalController::class,"tapas"]);
 
 // *************************************************************************
+//formularios
 Route::get('/quieres_un_evento',[FormulariosController::class,"querer_evento"]);
 Route::get('/trabajo',[FormulariosController::class,"querer_trabajo"]);
 Route::get('/opiniones',[FormulariosController::class,"opiniones"]);
-
-
-
+// *************************************************************************
+//reservas
+Route::get('/resrvas',[FormulariosController::class,"reservas"]);
