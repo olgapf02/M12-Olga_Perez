@@ -32,7 +32,7 @@
                         <a href="{{ url('/quieres_un_evento') }}">quieres hacer un evento</a>
                         <a href="{{ url('/opiniones') }}" >Tu opinión nos importa</a>
                         <h4>937 44 47 99</h4>
-                        <a href="https://unete-al-equipo.lateral.com/" target="_blank"  class="footer-btn">Únete al equipo</a>
+                        <a href="{{ url('/trabajo') }}"  target="_blank"  class="footer-btn">Únete al equipo</a>
                     </div>
                 </div>
 

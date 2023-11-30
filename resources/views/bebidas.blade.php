@@ -10,7 +10,7 @@
     </div>
 @endsection
 @section('content')
-    <div class="menu-container">
+    <div class="menu">
         <var>
             <ul>
                 <li><a href="{{ url('/bebidas') }}">Bebidas</a></li>

@@ -55,4 +55,9 @@ class PortadaPrincipalController extends Controller
 
     }
 
+    public function calendario(){
+        return view('calendario');
+
+    }
+
 }

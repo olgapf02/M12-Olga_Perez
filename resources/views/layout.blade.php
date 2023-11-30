@@ -31,5 +31,6 @@
 </div>
 @include('footer')
 <script src="{{ asset('js/carusell.js') }}"></script>
+{{--<script src="{{ asset('js/calendario.js') }}"></script>--}}
 </body>
 </html>

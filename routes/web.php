@@ -36,4 +36,7 @@ Route::get('/trabajo',[FormulariosController::class,"querer_trabajo"]);
 Route::get('/opiniones',[FormulariosController::class,"opiniones"]);
 // *************************************************************************
 //reservas
-Route::get('/resrvas',[FormulariosController::class,"reservas"]);
+//Route::get('/resrvas',[FormulariosController::class,"reservas"]);
+
+Route::get('/prox eventos',[PortadaPrincipalController::class,"calendario"]);
+

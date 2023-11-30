@@ -12,6 +12,13 @@
 @section('content')
 
     <div class="container-de-eventos">
+        <div class="menu">
+            <var>
+                <ul>
+                    <button class="footer-btn"><li><a href="{{ url('/prox eventos') }}">Proximos Eventos</a></li></button>
+                </ul>
+            </var>
+        </div>
         <div class="item">
             <div class="photo">
                 <img src="{{ asset('imagenes/aniversario-1.png') }}" class="imagen">
@@ -241,6 +248,8 @@
             </div>
         </div>
 
+
     </div>
+
 
 @endsection
