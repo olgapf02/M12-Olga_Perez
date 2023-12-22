@@ -13,7 +13,6 @@
         <a target="_blank" href="https://www.instagram.com/cantinalab.coop/"><img
                 src="https://lateral-production.s3.eu-west-3.amazonaws.com/public/icon/instagram.svg"
                 alt="Instagram"></a>
-        <!-- Agrega más iconos aquí si es necesario -->
     </div>
     <div class="language-icon">
         <img src="{{ asset('imagenes/idiomas.png') }}" alt="Icono de usuario">

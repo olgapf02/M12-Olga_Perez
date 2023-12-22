@@ -20,7 +20,7 @@ body {
     font-family: 'Helvetica';
 }
 h1 {
-    font-family: 'Helvetica' 50px;
+    font-family:'Helvetica' 50px;
 }
 h2 {
     font-family: 'Helvetica';
@@ -38,7 +38,7 @@ p {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: white;
     margin-bottom: 10px;
 }
 ul{
@@ -87,19 +87,15 @@ ul{
 }
 /**********************************************/
 /*index*/
+.home{
+    display: inline-block;
+}
 /* tabla */
 .container-horario {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    width: 50%;
-    margin:  10px;  /* Ajusta el margen superior a un valor menor, por ejemplo, 20px */
-
-}
-
-.custom-table {
-
-    margin: 20px;  /* Ajusta el margen superior a un valor menor, por ejemplo, 20px */
+    margin: 20px;
 }
 
 .custom-table th, .custom-table td {
@@ -123,6 +119,7 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /*background-color: #d73333;*/
     align-items: center;
 }
 
@@ -130,11 +127,12 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     margin-right: 15px;
 
 }
 .imagen {
-    max-width: 300px;
+    max-width: 250px;
 }
 
 .texto p{
@@ -157,18 +155,23 @@ hr {
     padding: 20px;
     margin: 20px;
     width: 300px;
+    text-align: center;
 }
 h1 {
     font-size: 24px;
     text-align: center;
 }
 p {
-    margin: 10px 0;
+    margin: 5px 0;
+}
+.foto-container{
+    margin-top: 30px;
 }
 
 /* ********************************** */
 /*eventos y proveedores*/
 .container-de-eventos {
+    padding-top: 50px;
     flex-direction: column-reverse;
 }
 .item {
@@ -423,16 +426,13 @@ footer {
     margin-top: 100px;
 }
 
-.info-restaurante {
-    order: 1;
-    margin-right: 40px;
-    margin-bottom: 10px;
-}
-
-.info-restaurante {
+.info-restaurante{
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    order: 1;
+    margin-right: 40px;
+
 }
 
 .links-redes {
@@ -556,4 +556,8 @@ input[type="submit"]:hover {
     background-color: #d9534f;
 }
 
-
+@media (max-width: 767px) {
+    .container {
+        width: 90%; /* Ajusta el ancho de la container para pantallas más pequeñas */
+}
+}

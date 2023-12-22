@@ -24,8 +24,9 @@ class PortadaPrincipalController extends Controller
             'format' => 'json'
         ]);
         $location = $response->json();
-        return view('principal',[
-            "mapa"=>$location
+
+        return view('principal', [
+            'mapa' => $location
         ]);
     }
 //        return view('map', ['locationData' => $locationData, 'place' => $place]);
