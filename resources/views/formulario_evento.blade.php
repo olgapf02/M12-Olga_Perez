@@ -11,7 +11,8 @@
 @endsection
 @section('content')
 
-<form action="/submit_event_form" method="post">
+    <form action="/submit_event_form" method="post">
+        @csrf
     <h1>Quieres hacer un Evento Con Nosotros</h1>
 
     <label for="organizer_name">Nombre del Organizador:</label><br>
@@ -39,7 +40,10 @@
     <label for="additional_requests">Explicacion del Evento y Necesidades:</label><br>
     <textarea id="additional_requests" name="additional_requests" rows="4" cols="50"></textarea><br><br>
 
-    <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar">
 </form>
+    @if(session('success'))
+        <a href="/" class="btn btn-primary">Volver al Inicio</a>
+    @endif
 
 @endsection

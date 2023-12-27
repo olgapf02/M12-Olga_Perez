@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Mail\MensajeRecibido;
-use Iluminate\Support\Facades\Mail;
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class FormulariosController extends Controller
 {
@@ -13,19 +13,27 @@ class FormulariosController extends Controller
     }
     public function submitEventForm(Request $request)
     {
-        $message=[
+        $request->validate([
             'organizer_name' => 'required|string|max:255',
-            'organizer_lastname' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'phone' => 'required|string|max:15',
+            'event_date' => 'required|date',
+            'event_type' => 'required|string',
+            'guest_count' => 'required|integer',
             'additional_requests' => 'nullable|string',
+        ]);
+
+        $data = [
+            'organizer_name' => $request->input('organizer_name'),
+            'email' => $request->input('email'),
+            'phone' => $request->input('phone'),
+            'event_date' => $request->input('event_date'),
+            'event_type' => $request->input('event_type'),
+            'guest_count' => $request->input('guest_count'),
+            'additional_requests' => $request->input('additional_requests'),
         ];
-
-        // Ajusta la dirección de correo electrónico del destinatario
-        $recipientEmail = 'olgapf02@gmail.com';
-
-        Mail::to($message['email'])-> send(new MensajeRecibido($message));
-        return redirect()->route('/querer_evento')->with('success', '¡Formulario de evento enviado correctamente!');
+        Mail::to('olgapf02@gmail.com')->send(new EventFormMail($data));
+        return redirect('/querer_evento')->with('success', '¡Formulario de evento enviado correctamente!');
     }
 //**********************************************************************************************************************
 

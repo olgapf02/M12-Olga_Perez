@@ -3,7 +3,7 @@
 /*botones*/
 .button,.button-saber,.botones button,.footer-btn {
     padding: 10px 20px;
-    background-color: #c01018;
+    background-color: #980b11;
     border-radius: 4px;
     margin-top: 10px;
     color: white;
@@ -11,8 +11,8 @@
     float: right;
 
 }
-.button:hover {
-    background-color: #ee0d18;
+.button,.button-saber,.footer-btn:hover {
+    background-color: #ff1a1f;
 }
 /****************************************/
 /*tipografia e imagen entera*/
