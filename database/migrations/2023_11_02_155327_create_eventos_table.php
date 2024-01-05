@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nombre_organizador');
             $table->string('email');
             $table->string('telefono');
-            $table->date('Fecha_evento');
+            $table->date('fecha_evento');
             $table->string('tipo_evento');
             $table->integer('Comensales');
             $table->text('Explicacion');

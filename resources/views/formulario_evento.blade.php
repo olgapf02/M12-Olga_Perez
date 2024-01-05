@@ -10,7 +10,18 @@
     </div>
 @endsection
 @section('content')
-
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+    @if(session('success'))
+        <a href="/" class="btn btn-primary">Volver al Inicio</a>
+    @endif
     <form action="/submit_event_form" method="post">
         @csrf
     <h1>Quieres hacer un Evento Con Nosotros</h1>
@@ -27,6 +38,9 @@
     <label for="event_date">Fecha del Evento:</label><br>
     <input type="date" id="event_date" name="event_date" required><br>
 
+    <label for="hora">Hora:</label><br>
+    <input type="time" id="hora" name="hora" required><br>
+
     <label for="event_type">Tipo de Evento:</label><br>
     <select id="event_type" name="event_type" required>
         <option value="corporativo">Empresa</option>
@@ -42,8 +56,6 @@
 
         <input type="submit" value="Enviar">
 </form>
-    @if(session('success'))
-        <a href="/" class="btn btn-primary">Volver al Inicio</a>
-    @endif
+
 
 @endsection

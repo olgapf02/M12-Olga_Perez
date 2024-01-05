@@ -30,12 +30,6 @@
         <textarea id="additional_requests" name="additional_requests" rows="4" cols="50"></textarea><br><br>
 
         <input type="submit" value="Enviar">
-{{--        <h2>Nuevo Formulario de Evento</h2>--}}
-{{--        <p><strong>Nombre :</strong> {{ $organizer_name }} {{ $organizer_lastname }}</p>--}}
-{{--        <p><strong>Correo Electrónico:</strong> {{ $email }}</p>--}}
-{{--        <p><strong>Teléfono de Contacto:</strong> {{ $phone }}</p>--}}
-{{--        <p><strong>Mensaje Adicional:</strong> {{ $additional_requests }}</p>--}}
-{{--        <input type="submit" value="Enviar">--}}
     </form>
 
 @endsection
