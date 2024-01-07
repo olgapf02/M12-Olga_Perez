@@ -5,13 +5,13 @@
 </head>
 <body>
 <div>
-    <label for="name">Nombre del Organizador:</label>
+    <label for="name">Nombre :</label>
     <p>{{ $datos['name'] }}</p>
 
     <p>Correo Electrónico:{{ $datos['lastname'] }}</p>
 
-    <label for="email">email:</label>
-    <p>{{ $datos['email'] }}</p>
+    <label for="mail">email:</label>
+    <p>{{ $datos['mail'] }}</p>
 
     <label for="phone">Teléfono:</label>
     <p>{{ $datos['phone'] }}</p>

@@ -21,7 +21,7 @@
         </div>
     @endif
     @if(session('success'))
-        <a href="/" class="btn btn-primary">Volver al Inicio</a>
+{{--        <a href="/" class="btn btn-primary">Volver al Inicio</a>--}}
     @endif
 {{--**************************************************************************--}}
     <form action="/submit_event_form" method="post">

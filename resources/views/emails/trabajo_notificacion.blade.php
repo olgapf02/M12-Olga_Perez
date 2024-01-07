@@ -5,19 +5,16 @@
 </head>
 <body>
 <div>
-    <label for="name">Nombre del Organizador:</label>
+    <label for="name">Nombre :</label>
     <p>{{ $datos['name'] }}</p>
 
     <p>Correo Electrónico:{{ $datos['lastname'] }}</p>
 
-    <label for="email">email:</label>
-    <p>{{ $datos['email'] }}</p>
+    <label for="disponibility">email:</label>
+    <p>{{ $datos['disponibility'] }}</p>
 
-    <label for="phone">Teléfono:</label>
-    <p>{{ $datos['phone'] }}</p>
-
-    <label for="comment">Opinion:</label>
-    <p>{{ $datos['comment'] ?? 'Ninguno' }}</p>
+    <label for="file">cv:</label>
+    <p>{{ $datos['file']  }}</p>
 
 </div>
 </body>

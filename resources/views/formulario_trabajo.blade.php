@@ -10,18 +10,35 @@
     </div>
 @endsection
 @section('content')
+    {{--**************************************************************************--}}
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+    @if(session('success'))
+{{--        <a href="/" class="btn btn-primary">Volver al Inicio</a>--}}
+    @endif
+    {{--**************************************************************************--}}
 
-    <form action="/submit_event_form" method="post">
+    <form action="/submit_trabajo_form" method="post" enctype="multipart/form-data">{{--para que el formulario sepa que se va a añadir un archivo al formulario--}}
+        @csrf
+{{--te aseguras de que el form se a enviado desde la web --}}
         <h1>Quieres Trabajar Con Nosotros</h1>
 
         <label for="name">Nombre :</label><br>
-        <input type="text" id="organizer_name" name="_name" required><br>
+        <input type="text" id="name" name="name" required><br>
 
         <label for="lastname">Apellido:</label><br>
-        <input type="text" id="organizer_name" name="lastname" required><br>
+        <input type="text" id="lastname" name="lastname" required><br>
 
-        <label for="phone">Disponibilidad:</label><br>
-        <select id="event_type" name="event_type" required>
+        <label for="disponibility">Disponibilidad:</label><br>
+
+        <select id="event_type" name="disponibility" required>
             <option value="corporativo">Mañana</option>
             <option value="social">Tarde</option>
             <option value="otro">Noche</option>

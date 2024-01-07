@@ -4,21 +4,24 @@ namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Mail\Attachment;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class trabajo extends Mailable
+class Trabajo extends Mailable
 {
     use Queueable, SerializesModels;
 
+    protected $data;
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct($contenido)
     {
-        //
+        $this->data = $contenido ;
     }
 
     /**
@@ -27,7 +30,8 @@ class trabajo extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Trabajo',
+            from: new Address('olgapf02@gmail.com', 'Olga Perez'),
+            subject: 'Trabajar con Nosotros',
         );
     }
 
@@ -37,8 +41,12 @@ class trabajo extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'emails.trabajo_notificacion',
+            with: [
+                'datos' => $this->data
+            ]
         );
+
     }
 
     /**
@@ -48,6 +56,9 @@ class trabajo extends Mailable
      */
     public function attachments(): array
     {
-        return [];
+        return [
+            Attachment::fromData(fn () => $this->data['file'], 'Report.pdf')
+                ->withMime('application/pdf'),
+        ];
     }
 }

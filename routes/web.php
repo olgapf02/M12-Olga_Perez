@@ -32,13 +32,14 @@ Route::get('/tapas',[PortadaPrincipalController::class,"tapas"]);
 // *************************************************************************
 //formularios
 Route::get('/quieres_un_evento', [FormulariosController::class, 'querer_evento']);
-Route::get('/trabajo',[FormulariosController::class,"querer_trabajo"]);
-Route::get('/opiniones',[FormulariosController::class,"opiniones"]);
-
-////formularios enviados
 Route::post('/submit_event_form', [FormulariosController::class, 'submitEventForm']);
-Route::post('/submit_event_form', [FormulariosController::class, 'submitOpiniones']);
-Route::post('/submit_event_form', [FormulariosController::class, 'submitrabajo']);
+
+Route::get('/trabajo',[FormulariosController::class,"querer_trabajo"]);
+Route::post('/submit_trabajo_form', [FormulariosController::class, 'submitrabajo']);
+
+Route::get('/opiniones',[FormulariosController::class,"opiniones"]);
+Route::post('/submit_opinion_form', [FormulariosController::class, 'submitOpiniones']);
+
 // *************************************************************************
 //calendario de proximos eventos
 Route::get('/prox eventos',[PortadaPrincipalController::class,"calendario"]);

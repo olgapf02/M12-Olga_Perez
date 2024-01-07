@@ -10,21 +10,21 @@
     </div>
 @endsection
 @section('content')
-
-    <form action="{{ url('/submit_event_form') }}" method="post">
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-        @if(session('success'))
-            <p>Gracias por tu mensaje.</p>
-        @endif
-
+    {{--**************************************************************************--}}
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+    @if(session('success'))
+        {{--        <a href="/" class="btn btn-primary">Volver al Inicio</a>--}}
+    @endif
+    {{--**************************************************************************--}}
+    <form action="{{ url('/submit_opinion_form') }}" method="post">
         @csrf
         <h1>Tu Opinion Nos Importa</h1>
 
@@ -35,7 +35,7 @@
         <input type="text" id="lastname" name="lastname" required><br>
 
         <label for="email">Correo Electrónico:</label><br>
-        <input type="email" id="email" name="email" required><br>
+        <input type="email" id="email" name="mail" required><br>
 
         <label for="phone">Teléfono de Contacto:</label><br>
         <input type="text" id="phone" name="phone" required><br>
