@@ -10,6 +10,7 @@
     </div>
 @endsection
 @section('content')
+{{--**************************************************************************--}}
     @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
@@ -22,6 +23,7 @@
     @if(session('success'))
         <a href="/" class="btn btn-primary">Volver al Inicio</a>
     @endif
+{{--**************************************************************************--}}
     <form action="/submit_event_form" method="post">
         @csrf
     <h1>Quieres hacer un Evento Con Nosotros</h1>
