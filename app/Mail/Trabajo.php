@@ -56,8 +56,13 @@ class Trabajo extends Mailable
      */
     public function attachments(): array
     {
+//        return [
+//            Attachment::fromData(fn () => $this->data['file'], 'name.pdf')
+//                ->withMime('application/pdf'),
+//        ];
         return [
-            Attachment::fromData(fn () => $this->data['file'], 'Report.pdf')
+            Attachment::fromPath($this->data['file'])
+                ->as('CV.pdf')
                 ->withMime('application/pdf'),
         ];
     }
