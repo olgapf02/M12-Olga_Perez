@@ -308,6 +308,8 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    width: 8px;
+    height: 8px;
 }
 .botones{
     display: flex;

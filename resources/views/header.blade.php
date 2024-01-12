@@ -18,14 +18,9 @@
         </var>
     </div>
 
-    <div class="container-menu-2">
-        <div class="botones">
-            <a href="{{ url('/events') }}">
-                <button>Reservar</button>
-            </a>
-            <a href="{{ url('/events') }}">
-                <button>LAB a casa</button>
-            </a>
-        </div>
-    </div>
+{{--    <div class="container-menu-2">--}}
+{{--        <a href="{{ url('/') }}">--}}
+{{--            <img src="{{ asset('imagenes/usuario.png') }}" alt="Logo">--}}
+{{--        </a>--}}
+{{--    </div>--}}
 </header>
