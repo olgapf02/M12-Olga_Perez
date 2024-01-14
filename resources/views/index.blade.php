@@ -11,7 +11,6 @@
 @endsection
 @section('content')
 
-
 <div class="home">
 {{--    <div class="foto-container">--}}
 {{--            <div class="foto">--}}
@@ -88,7 +87,7 @@
         <div class="left-section">
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
             <div class="texto">
-                <p>Reserva una mesa para comer en nuestro bar</p>
+                <p>{{ __('Reserve a table to eat at our bar') }}</p>
             </div>
             <a  href="https://www.dish.co/ES/es/" target="_blank" class="button">reservar</a>
         </div>

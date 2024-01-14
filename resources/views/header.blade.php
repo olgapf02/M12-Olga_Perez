@@ -18,9 +18,9 @@
         </var>
     </div>
 
-{{--    <div class="container-menu-2">--}}
-{{--        <a href="{{ url('/') }}">--}}
-{{--            <img src="{{ asset('imagenes/usuario.png') }}" alt="Logo">--}}
-{{--        </a>--}}
-{{--    </div>--}}
+
+        <a href="{{ url('/') }}" class="usuario">
+            <img src="{{ asset('imagenes/usuarios.png') }}" alt="usuario">
+        </a>
+
 </header>

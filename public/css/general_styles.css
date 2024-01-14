@@ -290,6 +290,11 @@ header {
     padding: 20px;
     background-color: #e9e4e4;
 }
+.usuario img{
+    width: 40px;
+    height: 40px;
+    float: right;
+}
 .logo img {
     max-width: 100px;
 }
@@ -306,10 +311,10 @@ header {
 .container-menu-2 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 8px;
-    height: 8px;
+    /*align-items: center;*/
+    float: right;
+    width: 5px;
+    height: 5px;
 }
 .botones{
     display: flex;

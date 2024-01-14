@@ -46,15 +46,9 @@ class PortadaPrincipalController extends Controller
         return view('bebidas');
 
     }
-    public function tapas(){
-        return view('tapas');
-
-    }
-
-    public function reservas(){
-        return view('reservas');
-
-    }
+//    public function tapas(){
+//        return view('tapas');
+//    }
 
     public function calendario(){
         return view('calendario');

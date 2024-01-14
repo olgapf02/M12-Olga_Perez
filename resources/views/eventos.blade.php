@@ -243,13 +243,8 @@
         </div>
 
         <div class="menu">
-            <var>
-                <ul>
-                    <button class="botones button"><li><a href="{{ url('/prox eventos') }}">Proximos Eventos</a></li></button>
-                </ul>
-            </var>
+            <button class="prox-button"><a class="link-item" href="{{ url('/prox eventos') }}">Proximos Eventos</a></button>
         </div>
-
 
     </div>
 
