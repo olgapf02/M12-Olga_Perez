@@ -61,28 +61,7 @@
             </tr>
         </table>
     </div>
-    <!-- {{--    ---------------------------------------------------------------------}} -->
 
-{{--    <div class="weather-container">--}}
-{{--        <h2>{{ date('l, jS F Y') }}</h2>--}}
-{{--        <div class="weather-info">--}}
-{{--            <h2>Condiciones meteorológicas en {{ $infoTiempo['name'] }}</h2>--}}
-{{--            <p><strong>Temperatura:</strong> {{ $infoTiempo['main']['temp'] - 273.15 }}°C</p>--}}
-{{--            <p><strong>Descripción del clima:</strong> {{ $infoTiempo['weather'][0]['description'] }}</p>--}}
-{{--            <p><strong>Velocidad del viento:</strong> {{ $infoTiempo['wind']['speed'] }} m/s</p>--}}
-{{--            <p><strong>Nubes:</strong> {{ $infoTiempo['clouds']['all'] }}%</p>--}}
-{{--        </div>--}}
-
-{{--        <div class="terraza-info">--}}
-{{--            @if ($infoTiempo['weather'][0]['id'] === 801 || $infoTiempo['weather'][0]['id'] === 802)--}}
-{{--                <h3>Hoy hay algunas nubes en la zona. ¡Puede  No ser un buen día para disfrutar de la terraza!</h3>--}}
-{{--            @else--}}
-{{--                <h3>Hoy  parece ser un día ideal para la terraza debido a las condiciones climáticas.</h3>--}}
-{{--            @endif--}}
-{{--        </div>--}}
-{{--    </div>--}}
-
-    <!-- {{-----------------------------------------------------------------------}} -->
     <div class="cuadrado">
         <div class="left-section">
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
