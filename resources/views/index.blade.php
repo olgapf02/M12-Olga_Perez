@@ -37,11 +37,11 @@
                 <td>12:00 - 00:00</td>
             </tr>
             <tr>
-                <td>Martes</td>
+                <td>{{ __('Tuesday') }}</td>
                 <td>12:00 - 18:00</td>
             </tr>
             <tr>
-                <td>Miércoles</td>
+                <td>{{ __('Wednesday') }}</td>
                 <td>12:00 - 00:00</td>
             </tr>
             <tr>
