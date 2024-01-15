@@ -67,19 +67,18 @@
         <div class="left-section">
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
             <div class="texto">
-                <p>Reserva una mesa para comer en nuestro bar</p>
+                <p>{{ __('Reserve a table to eat at our bar') }}</p>
             </div>
-            <a  href="https://www.dish.co/ES/es/" target="_blank" class="button">reservar</a>
+            <a  href="https://www.dish.co/ES/es/" target="_blank" class="button">{{ __('Reserve') }}</a>
         </div>
 
         <div class="right-section">
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
             <div class="texto">
-                <p>Quieres llevarte la comida de la
-                    cantina lab a casa
+                <p>{{ __('Do you want to take the food from the canteen lab home') }}
                 </p>
             </div>
-            <a href="https://mensakas.coopcycle.org/es/" target="_blank" class="button">LAB para Casa</a>
+            <a href="https://mensakas.coopcycle.org/es/" target="_blank" class="button">{{ __('home Lab') }}</a>
         </div>
     </div>
 </div>
