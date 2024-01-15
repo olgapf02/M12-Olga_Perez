@@ -41,16 +41,13 @@
         </div>
         <div class="contenido-equipo">
             <h3>{{ __('Our values')}}</h3>
-            <p>
-                {{ __('text Our values')}}
-            </p>
+            <p>{{ __('text Our values')}}</p>
         </div>
     </div>
     <!-- {{-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------}} -->
     <div class="mapa">
-        <h1>Localización de La Cantina Lab</h1>
-        <p>Nos podras encontrar aqui mismo</p>
-        <p>Esta situada en la Calle : Gran Via de les Corts Catalanes, 169, 08014 Barcelona</p>
+        <h1>{{ __('Location of La Cantina Lab')}}</h1>
+        <p>{{__("location")}}</p>
         @if(!empty($mapa))
             <iframe width="600" height="450" style="border:0"
                     src="https://www.openstreetmap.org/export/embed.html?bbox={{ $mapa[0]['lon'] }},{{ $mapa[0]['lat'] }},{{ $mapa[0]['lon'] }},{{ $mapa[0]['lat'] }}&amp;layer=mapnik" allowfullscreen></iframe>
