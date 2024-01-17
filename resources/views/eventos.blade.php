@@ -19,9 +19,7 @@
             </div>
             <div class="contenido">
                 <h3>{{ __('First anniversary of La Cantina Laab ')}}</h3>
-                <p>
-                    {{ __('text anniversary')}}
-                </p>
+                <p>{{ __('text anniversary')}}</p>
             </div>
         </div>
 
@@ -31,9 +29,7 @@
             </div>
             <div class="contenido">
                 <h3>{{ __('second anniversary ')}}</h3>
-                <p>
-                    {{ __('text anniversary2')}}
-                </p>
+                <p>{{ __('text anniversary2')}}</p>
             </div>
         </div>
 
@@ -64,8 +60,8 @@
                 <img src="{{ asset('imagenes/calcotada.png') }}" class="imagen">
             </div>
             <div class="contenido">
-                <h3>{{ __('Calçotada')}}</h3>
-                <p>{{ __('text de calçot')}}</p>
+                <h3>{{ __('pantyhose')}}</h3>
+                <p>{{ __('text de pantyhose')}}</p>
             </div>
         </div>
 
@@ -75,8 +71,8 @@
                 <img src="{{ asset('imagenes/cine.png') }}" class="imagen">
             </div>
             <div class="contenido">
-                <h3>{{ __('cine a la fresca')}}</h3>
-                <p>{{ __('text cine')}}</p>
+                <h3>{{ __('outdoor cinema')}}</h3>
+                <p>{{ __('text cinema')}}</p>
             </div>
         </div>
 
@@ -95,8 +91,8 @@
                 <img src="{{ asset('imagenes/salchichada.png') }}" class="imagen">
             </div>
             <div class="contenido">
-                <h3>{{ __('salchichada')}}Salchichada</h3>
-                <p>{{ __('text salchicha')}}</p>
+                <h3>{{ __('sausage')}}</h3>
+                <p>{{ __('text sausage')}}</p>
             </div>
         </div>
 
@@ -115,8 +111,8 @@
                 <img src="{{ asset('imagenes/baile.png') }}" class="imagen">
             </div>
             <div class="contenido">
-                <h3>{{ __('baile')}}</h3>
-                <p>{{ __('text baile')}}</p>
+                <h3>{{ __('dance')}}</h3>
+                <p>{{ __('text dance')}}</p>
             </div>
         </div>
 
@@ -125,7 +121,7 @@
                 <img src="{{ asset('imagenes/volante-flamenco.png') }}" class="imagen">
             </div>
             <div class="contenido">
-                <h3>{{ __('baile2')}}baile</h3>
+                <h3>{{ __('dance2')}}baile</h3>
                 <p>{{ __('texto flamenco')}}</p>
             </div>
         </div>
@@ -133,7 +129,7 @@
         <div class="menu">
             <var>
                 <ul>
-                    <button class="botones button"><li><a href="{{ url('/prox eventos') }}">{{ __('prox eventos')}}Proximos Eventos</a></li></button>
+                    <button class="botones button"><li><a href="{{ url('/prox eventos') }}">{{ __('prox events')}}Proximos Eventos</a></li></button>
                 </ul>
             </var>
         </div>
