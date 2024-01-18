@@ -7,10 +7,10 @@
                             <a href="https://www.dish.co/ES/es/" class="footer-btn">Reservar</a>
                         </div>
                         <div class="link-item">
-                            <a href="https://mensakas.coopcycle.org/es/" class="footer-btn">LTL a CASA</a>
+                            <a href="https://mensakas.coopcycle.org/es/" class="footer-btn">La Cantina a CASA</a>
                         </div>
                         <div class="link-item">
-                            <a href="https://mensakas.coopcycle.org/es/" class="footer-btn">LTL to GO</a>
+                            <a href="https://mensakas.coopcycle.org/es/" class="footer-btn">La Cantina to GO</a>
                         </div>
                     </div>
                 </div>
