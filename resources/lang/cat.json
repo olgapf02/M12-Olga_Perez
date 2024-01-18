@@ -116,11 +116,8 @@
 
 
     "reserve": "Reservar",
-    "night": "Nit:",
-    "night": "Nit:",
-    "night": "Nit:",
-    "night": "Nit:",
-    "night": "Nit:",
-    "night": "Nit:",
-    "night": "Nit:"
+    "La Cantina to home": "La Cantina per a casa",
+    "La Cantina to GO": "La Cantina per emportar",
+    "Join " : "Uneix-te a La Cantina",
+"you want to do an event": "Vols Fer un event"
 }
