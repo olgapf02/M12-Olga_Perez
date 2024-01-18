@@ -26,34 +26,34 @@
 {{--**************************************************************************--}}
     <form action="/submit_event_form" method="post">
         @csrf
-    <h1>Quieres hacer un Evento Con Nosotros</h1>
+    <h1>{{ __('Do you want to do an event with us?')}}</h1>
 
-    <label for="organizer_name">Nombre del Organizador:</label><br>
+    <label for="organizer_name">{{ __('name organizer')}}</label><br>
     <input type="text" id="organizer_name" name="organizer_name" required><br>
 
-    <label for="email">Correo Electrónico:</label><br>
+    <label for="email">{{ __('mail')}}</label><br>
     <input type="email" id="email" name="email" required><br>
 
-    <label for="phone">Teléfono :</label><br>
+    <label for="phone">{{ __('tel')}}</label><br>
     <input type="text" id="phone" name="phone" required><br>
 
-    <label for="event_date">Fecha del Evento:</label><br>
+    <label for="event_date">{{ __('about us')}}</label><br>
     <input type="date" id="event_date" name="event_date" required><br>
 
-    <label for="hora">Hora:</label><br>
+    <label for="hora">{{ __('hour')}}Hora:</label><br>
     <input type="time" id="hora" name="hora" required><br>
 
-    <label for="event_type">Tipo de Evento:</label><br>
+    <label for="event_type">{{ __('tipe of event')}}</label><br>
     <select id="event_type" name="event_type" required>
-        <option value="corporativo">Empresa</option>
-        <option value="social">Informal</option>
-        <option value="otro">Otro</option>
+        <option value="corporativo">{{ __('company')}}</option>
+        <option value="social">{{ __('informal')}}</option>
+        <option value="otro">{{ __('other')}}</option>
     </select><br>
 
-    <label for="guest_count">Número de Gente:</label><br>
+    <label for="guest_count">{{ __('number of people')}}</label><br>
     <input type="number" id="guest_count" name="guest_count" required><br>
 
-    <label for="additional_requests">Explicacion del Evento y Necesidades:</label><br>
+    <label for="additional_requests">{{ __('needs')}}</label><br>
     <textarea id="additional_requests" name="additional_requests" rows="4" cols="50"></textarea><br><br>
 
         <input type="submit" value="Enviar">

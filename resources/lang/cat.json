@@ -85,47 +85,32 @@
     "Subversiva": "Subversiva - Eloi Serra Farres",
     "text Subversiva": "Som una cerveseria quefacerveça artesana desde fa molt de temps i el que ens agrada: elaborar i distribuir cerveses amb un caràcter especial,\n innovant tant com podem amb les cerveses que fem i participant de l’expansió de la cultura cervesera.",
 
+    "Do you want to do an event with us?": " Vols fer un Event amb Nosaltres",
+    "name organizer": "Nom del Organizador:",
+    "mail": "Correu electrónic:",
+    "tel": "Telefon :",
+    "event date": "Data de l'event:",
+    "hour": "Hora:",
+    "tipo of event": "Tipus de event:",
+    "company": "Empresa",
+    "Informal": "Informal",
+    "other": "Otro",
+    "number of people": "Número de gent:",
+    "needs": "Explicació de l'event y necesitats:",
 
+    "your opinion matters to us": "La Teva Opinion Ens Importa",
+    "Name": "Nombre:",
+    "lastname": "Apellido:",
+    "email": "Correu Electronic:",
+    "tel contact": "Teléfono de Contacto:",
+    "message": "Mensaje:",
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    "Do you want to work with us": "Vols Treballar amb Nosaltres",
+    "namee": "Nom :",
+    "lastnamee": "Cognoms:",
+    "disponibility": "Disponibilitat:",
+    "morning": "Matí",
+    "afternoon": "Tarda",
+    "night": "Nit:",
+    "Attach your CV:": "Adjunta El Teu CV:"
 }
