@@ -12,17 +12,37 @@
 @section('content')
 
 <div class="home">
-{{--    <div class="foto-container">--}}
-{{--            <div class="foto">--}}
-{{--                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">--}}
-{{--                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">--}}
-{{--                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">--}}
-{{--                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">--}}
-{{--                <div class="linea"></div>--}}
-{{--            </div>--}}
 
-{{--    </div>--}}
-
+    <div class="carousel-container">
+        <div class="carousel-slider" id="slider">
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
+            </div>
+        </div>
+        <button class="prev-btn" onclick="changeSlide(-1)">❮</button>
+        <button class="next-btn" onclick="changeSlide(1)">❯</button>
+    </div>
 
     <div class="container-horario">
         <table class="custom-table">
