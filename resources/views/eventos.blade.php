@@ -88,16 +88,6 @@
 
         <div class="item">
             <div class="photo">
-                <img src="{{ asset('imagenes/salchichada.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('sausage')}}</h3>
-                <p>{{ __('text sausage')}}</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="photo">
                 <img src="{{ asset('imagenes/dj.png') }}" class="imagen">
             </div>
             <div class="contenido">
