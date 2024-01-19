@@ -32,7 +32,6 @@
                         <a href="{{ url('/quieres_un_evento') }}">{{ __('you want to do an event')}}</a>
                         <a href="{{ url('/opiniones') }}" >{{ __('your opinion matters to us')}}</a>
                         <h4>937 44 47 99</h4>
-                        <a href="{{ url('/trabajo') }}"  target="_blank"  class="footer-btn">{{ __('about us')}}Únete al equipo</a>
                     </div>
                 </div>
 
