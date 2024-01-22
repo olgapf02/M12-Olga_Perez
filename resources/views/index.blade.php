@@ -13,36 +13,8 @@
 
 <div class="home">
 
-    <div class="carousel-container">
-        <div class="carousel-slider" id="slider">
-            <div class="carousel-item">
-                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
-            </div>
-            <div class="carousel-item">
-                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
-            </div>
-            <div class="carousel-item">
-                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
-            </div>
-            <div class="carousel-item">
-                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
-            </div>
-            <div class="carousel-item">
-                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
-            </div>
-            <div class="carousel-item">
-                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
-            </div>
-            <div class="carousel-item">
-                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
-            </div>
-            <div class="carousel-item">
-                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
-            </div>
-        </div>
-        <button class="prev-btn" onclick="changeSlide(-1)">❮</button>
-        <button class="next-btn" onclick="changeSlide(1)">❯</button>
-    </div>
+
+{{---------------------------------------------------------------------------------------------------------------------------------------}}
 
     <div class="container-horario">
         <table class="custom-table">
@@ -81,10 +53,12 @@
             </tr>
         </table>
     </div>
+    {{---------------------------------------------------------------------------------------------------------------------------------------}}
+
 
     <div class="cuadrado">
         <div class="left-section">
-            <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
+            <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen-cuadrado">
             <div class="texto">
                 <p>{{ __('Reserve a table to eat at our bar') }}</p>
             </div>
@@ -92,7 +66,7 @@
         </div>
 
         <div class="right-section">
-            <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
+            <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen-cuadrado">
             <div class="texto">
                 <p>Quieres llevarte la comida de la
                     cantina lab a casa

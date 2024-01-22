@@ -18,6 +18,8 @@
         <img src="{{ asset('imagenes/idiomas.png') }}" alt="Icono de usuario">
     </div>
 
+
+
 </div>
 @include('header')
 <div>
@@ -30,6 +32,6 @@
 </div>
 @include('footer')
 <script src="{{ asset('js/carusell.js') }}"></script>
-{{--<script src="{{ asset('js/calendario.js') }}"></script>--}}
+
 </body>
 </html>

@@ -5,7 +5,7 @@
             <img src="{{ asset('../imagenes/la-cantina.png') }}" class="imagen-fija">
         </div>
         <div class="titulo-container">
-            <h1>Quienes Somos</h1>
+            <h3>Quienes Somos</h3>
         </div>
     </div>
 @endsection
