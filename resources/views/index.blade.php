@@ -13,16 +13,6 @@
 
 
 <div class="home">
-{{--    <div class="foto-container">--}}
-{{--            <div class="foto">--}}
-{{--                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">--}}
-{{--                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">--}}
-{{--                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">--}}
-{{--                <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">--}}
-{{--                <div class="linea"></div>--}}
-{{--            </div>--}}
-
-{{--    </div>--}}
 
 
     <div class="container-horario">
