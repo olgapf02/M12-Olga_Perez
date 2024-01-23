@@ -13,6 +13,64 @@
 
 <div class="home">
 
+    <div class="carousel-container">
+        <h1>Experiencias de La Cantina LAB</h1>
+        <div class="carousel-slider" id="slider">
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/cine.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/doppler.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/lgtbi.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/logo_rojo.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/baile.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/blablabar.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/logo_cant.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/calcotada.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/baile.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/dj.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/volante-flamenco.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/vermut.png') }}" class="ima">
+            </div>
+        </div>
+        <button class="prev-btn" onclick="changeSlide(-1)">❮</button>
+        <button class="next-btn" onclick="changeSlide(1)">❯</button>
+    </div>
+    <script>
+        let currentIndex = 0;
+
+        function changeSlide(direction) {
+            const slider = document.getElementById('slider');
+            const totalItems = document.querySelectorAll('.carousel-item').length;
+            const items = document.querySelectorAll('.carousel-item');
+
+            currentIndex = (currentIndex + direction + totalItems) % totalItems;
+
+            items.forEach(item => {
+                item.style.transform = `translateX(-${currentIndex * 100}%)`;
+            });
+        }
+    </script>
 
 {{---------------------------------------------------------------------------------------------------------------------------------------}}
 

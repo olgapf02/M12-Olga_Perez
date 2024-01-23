@@ -91,9 +91,56 @@ ul{
     display: inline-block;
 }
 /*carrusell*/
+.parent-container{
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    justify-content: center;
+    /*background-color: #d9534f;*/
+}
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    overflow: hidden;
+    background-color: #d9534f;
+}
 
+.carousel-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
 
+.carousel-item {
+    min-width: 50%;
+}
 
+.ima {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para los botones de navegación */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    cursor: pointer;
+    color: #f31818;
+    margin-top: 190px;
+}
+
+.prev-btn {
+    left: 50px;
+}
+
+.next-btn {
+    right: 50px;
+}
 
 /**********************************************/
 /* tabla */
