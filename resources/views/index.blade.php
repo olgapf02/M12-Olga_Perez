@@ -40,7 +40,7 @@
                 <img src="{{ asset('imagenes/calcotada.png') }}" class="ima">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('imagenes/baile.png') }}" class="ima">
+                <img src="{{ asset('imagenes/postre.png') }}" class="ima">
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('imagenes/dj.png') }}" class="ima">
@@ -50,6 +50,15 @@
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('imagenes/vermut.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/aniversario-1.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/ensalada.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('imagenes/blablabar-2.png') }}" class="ima">
             </div>
             <button class="prev-btn" onclick="changeSlide(-1)">❮</button>
             <button class="next-btn" onclick="changeSlide(1)">❯</button>
@@ -71,7 +80,6 @@
             });
         }
     </script>
-
 {{---------------------------------------------------------------------------------------------------------------------------------------}}
     <h2 class="carta-title">Horarios La Cantina LAB</h2>
     <div class="container-horario">
@@ -115,34 +123,38 @@
     {{---------------------------------------------------------------------------------------------------------------------------------------}}
     <h2 class="carta-title">Nuestro Restaurante</h2>
     <div class="galeria">
-        <div class="photo">
+        <div class="photo" onclick="zoomIn(this)">
             <img src="{{ asset('imagenes/logo_cant.png') }}" alt="foto 1">
         </div>
-        <div class="photo">
+        <div class="photo" onclick="zoomIn(this)">
             <img src="{{ asset('imagenes/can-batllo.jpg') }}" alt="foto 2">
         </div>
-        <div class="photo">
+        <div class="photo" onclick="zoomIn(this)">
             <img src="{{ asset('imagenes/cantina-cerrada.png') }}" alt="foto 3">
         </div>
-        <div class="photo">
+        <div class="photo" onclick="zoomIn(this)">
             <img src="{{ asset('imagenes/equipo.jpg') }}" alt="foto 4">
         </div>
-        <div class="photo">
+        <div class="photo" onclick="zoomIn(this)">
             <img src="{{ asset('imagenes/cantina-noche.png') }}" alt="foto 5">
         </div>
-        <div class="photo">
+        <div class="photo" onclick="zoomIn(this)">
             <img src="{{ asset('imagenes/primera-cantina.png') }}" alt="foto 6">
         </div>
-        <div class="photo">
+        <div class="photo" onclick="zoomIn(this)">
             <img src="{{ asset('imagenes/opertura.png') }}" alt="foto 7">
         </div>
-        <div class="photo">
+        <div class="photo" onclick="zoomIn(this)">
             <img src="{{ asset('imagenes/plantas-cantina.png') }}" alt="foto 8">
         </div>
-        <div class="photo">
+        <div class="photo" onclick="zoomIn(this)">
             <img src="{{ asset('imagenes/terraza.png') }}" alt="foto 9">
         </div>
+        <div class="photo" onclick="zoomIn(this)">
+            <img src="{{ asset('imagenes/terraza-sol.png') }}" alt="foto 9">
+        </div>
     </div>
+
     {{---------------------------------------------------------------------------------------------------------------------------------------}}
 
 

@@ -93,19 +93,15 @@ ul{
 /*carrusell*/
 .parent-container{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    /*background-color: #d9534f;*/
+    margin-left: 50px;
 }
 .carousel-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
     overflow: hidden;
-    background-color: #d9534f;
+    /*background-color: #d9534f;*/
+    margin-bottom: 50px;
 }
 
 .carousel-slider {
@@ -114,12 +110,13 @@ ul{
 }
 
 .carousel-item {
-    min-width: 50%;
+    min-width: calc(100% / 4);
 }
 
 .ima {
-    width: 70%;
+    width: 80%;
     height: auto;
+    display: block;
     border-radius: 8px;
 }
 
@@ -128,10 +125,16 @@ ul{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 15px;
+    font-size: 50px;
     cursor: pointer;
+    background: none;
+    border: none;
     color: #f31818;
     margin-top: 190px;
+}
+.prev-btn::before, .next-btn::before {
+    /*content: '\2190'; !* Código unicode para la flecha izquierda '\2190' y derecha '\2192' *!*/
+    font-family: 'Arial', sans-serif; /* Puedes cambiar la fuente según tus preferencias */
 }
 
 .prev-btn {
@@ -149,6 +152,7 @@ ul{
     justify-content: center;
     align-items: center;
     margin: 20px;
+    margin-bottom: 50px;
 }
 
 .custom-table {
@@ -224,6 +228,7 @@ ul{
     display: block;
     grid-row-end: span 3;
 }
+
 /* ********************************** */
 /*eventos y proveedores*/
 .container-de-eventos {
