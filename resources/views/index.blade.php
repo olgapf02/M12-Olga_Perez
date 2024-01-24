@@ -12,9 +12,8 @@
 @section('content')
 
 <div class="home">
-
+    <h2 class="carta-title">Experiencias de La Cantina LAB</h2>
     <div class="carousel-container">
-        <h1>Experiencias de La Cantina LAB</h1>
         <div class="carousel-slider" id="slider">
             <div class="carousel-item">
                 <img src="{{ asset('imagenes/cine.png') }}" class="ima">
@@ -52,9 +51,10 @@
             <div class="carousel-item">
                 <img src="{{ asset('imagenes/vermut.png') }}" class="ima">
             </div>
+            <button class="prev-btn" onclick="changeSlide(-1)">❮</button>
+            <button class="next-btn" onclick="changeSlide(1)">❯</button>
         </div>
-        <button class="prev-btn" onclick="changeSlide(-1)">❮</button>
-        <button class="next-btn" onclick="changeSlide(1)">❯</button>
+
     </div>
     <script>
         let currentIndex = 0;
@@ -73,7 +73,7 @@
     </script>
 
 {{---------------------------------------------------------------------------------------------------------------------------------------}}
-
+    <h2 class="carta-title">Horarios La Cantina LAB</h2>
     <div class="container-horario">
         <table class="custom-table">
             <h1></h1>
@@ -111,6 +111,48 @@
             </tr>
         </table>
     </div>
+
+    {{---------------------------------------------------------------------------------------------------------------------------------------}}
+    <h2 class="carta-title">Nuestro Restaurante</h2>
+    <div class="galeria">
+        <div class="photo">
+            <img src="{{ asset('imagenes/logo_cant.png') }}" alt="foto 1">
+        </div>
+        <div class="photo">
+            <img src="{{ asset('imagenes/can-batllo.jpg') }}" alt="foto 2">
+        </div>
+        <div class="photo">
+            <img src="{{ asset('imagenes/cantina-cerrada.png') }}" alt="foto 3">
+        </div>
+        <div class="photo">
+            <img src="{{ asset('imagenes/equipo.jpg') }}" alt="foto 4">
+        </div>
+        <div class="photo">
+            <img src="{{ asset('imagenes/cantina-noche.png') }}" alt="foto 5">
+        </div>
+        <div class="photo">
+            <img src="{{ asset('imagenes/primera-cantina.png') }}" alt="foto 6">
+        </div>
+        <div class="photo">
+            <img src="{{ asset('imagenes/opertura.png') }}" alt="foto 7">
+        </div>
+        <div class="photo">
+            <img src="{{ asset('imagenes/plantas-cantina.png') }}" alt="foto 8">
+        </div>
+        <div class="photo">
+            <img src="{{ asset('imagenes/terraza.png') }}" alt="foto 9">
+        </div>
+{{--        <div class="photo">--}}
+{{--            <img src="{{ asset('imagenes/ensalada.png') }}" alt="foto 10">--}}
+{{--        </div>--}}
+{{--        <div class="photo">--}}
+{{--            <img src="{{ asset('imagenes/postre.png') }}" alt="foto 11">--}}
+{{--        </div>--}}
+{{--        <div class="photo">--}}
+{{--            <img src="{{ asset('imagenes/logo_rojo.png') }}" alt="foto 12">--}}
+{{--        </div>--}}
+
+    </div>
     {{---------------------------------------------------------------------------------------------------------------------------------------}}
 
 
@@ -134,6 +176,7 @@
         </div>
     </div>
 </div>
+
 
 
 @endsection
