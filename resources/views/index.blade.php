@@ -142,16 +142,6 @@
         <div class="photo">
             <img src="{{ asset('imagenes/terraza.png') }}" alt="foto 9">
         </div>
-{{--        <div class="photo">--}}
-{{--            <img src="{{ asset('imagenes/ensalada.png') }}" alt="foto 10">--}}
-{{--        </div>--}}
-{{--        <div class="photo">--}}
-{{--            <img src="{{ asset('imagenes/postre.png') }}" alt="foto 11">--}}
-{{--        </div>--}}
-{{--        <div class="photo">--}}
-{{--            <img src="{{ asset('imagenes/logo_rojo.png') }}" alt="foto 12">--}}
-{{--        </div>--}}
-
     </div>
     {{---------------------------------------------------------------------------------------------------------------------------------------}}
 
