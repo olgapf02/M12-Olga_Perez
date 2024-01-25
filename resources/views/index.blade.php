@@ -16,6 +16,9 @@
     <div class="carousel-container">
         <div class="carousel-slider" id="slider">
             <div class="carousel-item">
+                <img src="{{ asset('imagenes/salchichada.png') }}" class="ima">
+            </div>
+            <div class="carousel-item">
                 <img src="{{ asset('imagenes/cine.png') }}" class="ima">
             </div>
             <div class="carousel-item">

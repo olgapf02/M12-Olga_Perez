@@ -151,7 +151,6 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
     margin-bottom: 50px;
 }
 
@@ -164,7 +163,7 @@ ul{
 
 .custom-table th,
 .custom-table td {
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     padding: 12px;
     text-align: center;
     font-size: 14px;
@@ -277,6 +276,7 @@ ul{
 .highlight {
     background-color: #ffff99;
 }
+
 /* ********************************** */
 /*quienes somos (principal)*/
 .container-equipo {
