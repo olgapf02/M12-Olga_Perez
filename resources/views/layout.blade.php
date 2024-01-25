@@ -15,7 +15,7 @@
                 alt="Instagram"></a>
     </div>
     <div class="language-icon">
-        <img src="{{ asset('imagenes/idiomas.png') }}" alt="Icono de usuario">
+        <img src="{{ asset('imagenes/idiomas.png') }}" alt="Icono de idiomas">
     </div>
 
 </div>
