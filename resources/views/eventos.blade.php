@@ -50,7 +50,7 @@
             </div>
             <div class="contenido">
                 <h3>{{ __('blablabar')}}BlaBlaBar</h3>
-                <p>{{ __('text blabla')}}</p>
+                <p>{{ __('text blablabar')}}</p>
             </div>
         </div>
 
@@ -72,7 +72,7 @@
             </div>
             <div class="contenido">
                 <h3>{{ __('outdoor cinema')}}</h3>
-                <p>{{ __('text cinema')}}</p>
+                <p>{{ __('text cine')}}</p>
             </div>
         </div>
 

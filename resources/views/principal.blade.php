@@ -30,8 +30,8 @@
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
         </div>
         <div class="contenido-equipo">
-            <h3>{{ __('what do we do')}}</h3>
-            <p> {{ __('text what we do')}} </p>
+            <h3>{{ __('what_do_we_do')}}</h3>
+            <p> {{ __('text_what_we_do')}} </p>
         </div>
     </div>
 
@@ -40,13 +40,13 @@
             <img src="{{ asset('imagenes/canbatllo.png') }}" class="imagen">
         </div>
         <div class="contenido-equipo">
-            <h3>{{ __('Our values')}}</h3>
-            <p>{{ __('text Our values')}}</p>
+            <h3>{{ __('Our_values')}}</h3>
+            <p>{{ __('text_Our_values')}}</p>
         </div>
     </div>
     <!-- {{-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------}} -->
     <div class="mapa">
-        <h1>{{ __('Location of La Cantina Lab')}}</h1>
+        <h1>{{ __('Location_of_La_Cantina_Lab')}}</h1>
         <p>{{__("location")}}</p>
         @if(!empty($mapa))
             <iframe width="600" height="450" style="border:0"
