@@ -14,9 +14,37 @@
                 src="https://lateral-production.s3.eu-west-3.amazonaws.com/public/icon/instagram.svg"
                 alt="Instagram"></a>
     </div>
-    <div class="language-icon">
-        <img src="{{ asset('imagenes/idiomas.png') }}" alt="Icono de idiomas">
+{{--    <div class="language-icon">--}}
+{{--        <img src="{{ asset('imagenes/idiomas.png') }}" alt="Icono de idiomas">--}}
+{{--    </div>--}}
+
+    <div class="language-dropdown">
+        <button onclick="toggleLanguageDropdown()">Seleccionar Idioma</button>
+        <div id="language-options" class="language-options">
+            <a href="{{ route('change.language', ['language' => 'es']) }}">Español</a>
+            <a href="{{ route('change.language', ['language' => 'ing']) }}">English</a>
+            <a href="{{ route('change.language', ['language' => 'cat']) }}">Catalan</a>
+        </div>
     </div>
+
+    <script>
+        function toggleLanguageDropdown() {
+            var dropdown = document.getElementById("language-options");
+            dropdown.classList.toggle("show");
+        }
+        // Cierra el menú si el usuario hace clic fuera de él
+        window.onclick = function (event) {
+            if (!event.target.matches('.language-dropdown button')) {
+                var dropdowns = document.getElementsByClassName("language-options");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 
 </div>
 @include('header')
