@@ -12,10 +12,10 @@ class IdiomasController extends Controller
 {
     public function cambiarLanguage($language)
     {
-        // Validar si el idioma es válido (puedes personalizar esta lógica según tus necesidades)
+        // Validar si el idioma es válido
         $languages = ['es', 'ing', 'cat'];
         if (!in_array($language, $languages)) {
-            abort(404); // Puedes personalizar el manejo de error según tu aplicación
+            abort(404);
         }
 
         // Cambiar el idioma en la aplicación
