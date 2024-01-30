@@ -2,33 +2,34 @@
 
 namespace App\Http\Controllers;
 
-
 use Illuminate\Http\Request;
-use Cookie;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Session;
+
 class IdiomasController extends Controller
 {
     public function cambiarLanguage($language)
     {
-        $idiomas_validos = ['es', 'ing', 'cat'];
-
-        if (in_array($language, $idiomas_validos)) {
-            // Almacena el idioma en la cookie
-            Cookie::queue('idioma', $language, 60 * 24 * 30); // La cookie expirará en 30 días
-
-            // Obtén las traducciones desde el archivo JSON correspondiente
-            $translations = json_decode(file_get_contents(resource_path("lang/{$language}.json")), true);
-
-            return response()->json($translations);
+        // Validar si el idioma es válido (puedes personalizar esta lógica según tus necesidades)
+        $languages = ['es', 'ing', 'cat'];
+        if (!in_array($language, $languages)) {
+            abort(404); // Puedes personalizar el manejo de error según tu aplicación
         }
-        else{
-            return response()->json(['error' => 'Idioma no válido']);
-        }
-        $translations = json_decode(file_get_contents(resource_path("lang/{$language}.json")), true);
-        \Log::info("Traducciones cargadas: " . json_encode($translations));
 
-        return response()->json($translations);
+        // Cambiar el idioma en la aplicación
+        App::setLocale($language);
+        Session::put('locale', $language);
+
+        // Guardar el idioma en una cookie que dura 15 años
+        Cookie::queue(Cookie::forever('language', $language, 60 * 24 * 365 * 15));
+
+        // Cargar traducciones desde el archivo JSON correspondiente
+        $translations = File::get(resource_path('lang/'.$language.'.json'));
+        $translations = json_decode($translations, true);
+
+//        // Compartir las traducciones con la vista
+        return view('change.language')->with('translations', $translations);
     }
 }
-

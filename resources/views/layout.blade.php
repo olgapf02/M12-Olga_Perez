@@ -18,45 +18,45 @@
 {{--        <img src="{{ asset('imagenes/idiomas.png') }}" alt="Icono de idiomas">--}}
 {{--    </div>--}}
 
-    <div class="language-icon">
+    <div class="language-dropdown">
         <div id="language-options" class="language-options">
-            <a href="#" onclick="cambiarIdioma('es')">Esp |</a>
-            <a href="#" onclick="cambiarIdioma('ing')">Ing |</a>
-            <a href="#" onclick="cambiarIdioma('cat')">Cat</a>
+            <a href="{{ route('change.language', ['language' => 'es']) }}">Esp |</a>
+            <a href="{{ route('change.language', ['language' => 'ing']) }}">Ing |</a>
+            <a href="{{ route('change.language', ['language' => 'cat']) }}">Cat</a>
         </div>
     </div>
-<script>
-    function cambiarIdioma(idioma) {
-        fetch(`/change-language/${idioma}`)
-            .then(response => response.json())
-            .then(data => traducirPagina(data))
-            .catch(error => console.error('Error al cargar el archivo de idioma', error));
-    }
 
-    function traducirPagina(data) {
-        // Itera sobre las claves del objeto JSON y actualiza las cadenas en la página
-        Object.keys(data).forEach(key => {
-            const elementos = document.querySelectorAll(`[data-translate="${key}"]`);
-            elementos.forEach(elemento => {
-                elemento.innerHTML = data[key];
+
+{{--    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>--}}
+
+    <script>
+        function cambiarIdioma(language) {
+            // Utiliza el método replace de JavaScript para insertar el valor de language
+            var url = '/change.language/' + language;
+
+            // Realiza una petición AJAX para cambiar el idioma
+            $.ajax({
+                url: url,
+                type: 'GET',
+                success: function(translations) {
+                    console.log('Idioma cambiado exitosamente');
+                    aplicarTraducciones(translations);
+                },
+                error: function() {
+                    console.error('Error al cambiar el idioma');
+                }
             });
-        });
-    }
+        }
 
-    // Inicializa la página con el idioma almacenado en la cookie si existe
-    const idiomaAlmacenado = getCookie('idioma');
-    if (idiomaAlmacenado) {
-        cambiarIdioma(idiomaAlmacenado);
-    }
-
-    // Función para obtener el valor de una cookie
-    function getCookie(nombre) {
-        const value = `; ${document.cookie}`;
-        const partes = value.split(`; ${nombre}=`);
-        if (partes.length === 2) return partes.pop().split(';').shift();
-    }
-
-</script>
+        function aplicarTraducciones(translations) {
+            $('[data-translate]').each(function() {
+                var key = $(this).data('translate');
+                if (translations[key]) {
+                    $(this).text(translations[key]);
+                }
+            });
+        }
+    </script>
 
 </div>
 @include('header')
