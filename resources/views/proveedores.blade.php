@@ -29,7 +29,7 @@
                 </div>
                 <div class="contenido">
                     <h3>{{ __('cal notari')}}</h3>
-                    <p>{{ __('text cal notari')}}</p>
+                    <p>{{ __('text_cal_notari')}}</p>
                     <a href="https://calnotari2012.wordpress.com/" target="_blank" class="button">{{ __('know more')}}</a>
                 </div>
             </div>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="contenido">
                     <h3>{{ __('Bolet')}}</h3>
-                    <p>{{ __('text Bolet')}}</p>
+                    <p>{{ __('text_bolet')}}</p>
                     <a href="https://www.boletbenfet.com/es/" target="_blank" class="button">{{ __('know more')}}</a>
                 </div>
             </div>

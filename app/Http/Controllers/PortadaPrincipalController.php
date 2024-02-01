@@ -37,12 +37,12 @@ class PortadaPrincipalController extends Controller
     }
 //        return view('map', ['locationData' => $locationData, 'place' => $place]);
     public function eventos(){
-//        app()->setLocale(session()->get('locale'));
+        app()->setLocale(session()->get('locale'));
         return view('eventos');
     }
 
     public function proveedores(){
-//        app()->setLocale(session()->get('locale'));
+        app()->setLocale(session()->get('locale'));
         return view('proveedores');
     }
 
@@ -59,12 +59,6 @@ class PortadaPrincipalController extends Controller
     public function tapas(){
 //        app()->setLocale(session()->get('locale'));
         return view('tapas');
-
-    }
-
-    public function reservas(){
-//        app()->setLocale(session()->get('locale'));
-        return view('reservas');
 
     }
 

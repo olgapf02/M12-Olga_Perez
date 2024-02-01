@@ -39,8 +39,8 @@
                 <img src="{{ asset('imagenes/doppler.png') }}" class="imagen">
             </div>
             <div class="contenido">
-                <h3>{{ __('Doppler')}}Doppler</h3>
-                <p>{{ __('text doppler')}}</p>
+                <h3>{{ __('Doppler')}}</h3>
+                <p>{{ __('texto_doppler')}}</p>
             </div>
         </div>
 
@@ -49,8 +49,8 @@
                 <img src="{{ asset('imagenes/blablabar.png') }}" class="imagen">
             </div>
             <div class="contenido">
-                <h3>{{ __('blablabar')}}BlaBlaBar</h3>
-                <p>{{ __('text blablabar')}}</p>
+                <h3>{{ __('blablabar')}}</h3>
+                <p>{{ __('text blabla')}}</p>
             </div>
         </div>
 
@@ -71,8 +71,8 @@
                 <img src="{{ asset('imagenes/cine.png') }}" class="imagen">
             </div>
             <div class="contenido">
-                <h3>{{ __('outdoor cinema')}}</h3>
-                <p>{{ __('text cine')}}</p>
+                <h3>{{ __('cinema')}}</h3>
+                <p>{{ __('text_cine')}}</p>
             </div>
         </div>
 
