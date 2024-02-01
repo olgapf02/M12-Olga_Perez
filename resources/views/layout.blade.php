@@ -27,36 +27,6 @@
     </div>
 
 
-{{--    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>--}}
-
-    <script>
-        function cambiarIdioma(language) {
-            // Utiliza el método replace de JavaScript para insertar el valor de language
-            var url = '/change.language/' + language;
-
-            // Realiza una petición AJAX para cambiar el idioma
-            $.ajax({
-                url: url,
-                type: 'GET',
-                success: function(translations) {
-                    console.log('Idioma cambiado exitosamente');
-                    aplicarTraducciones(translations);
-                },
-                error: function() {
-                    console.error('Error al cambiar el idioma');
-                }
-            });
-        }
-
-        function aplicarTraducciones(translations) {
-            $('[data-translate]').each(function() {
-                var key = $(this).data('translate');
-                if (translations[key]) {
-                    $(this).text(translations[key]);
-                }
-            });
-        }
-    </script>
 
 </div>
 @include('header')

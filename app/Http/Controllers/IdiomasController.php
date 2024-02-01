@@ -25,11 +25,11 @@ class IdiomasController extends Controller
         // Guardar el idioma en una cookie que dura 15 años
         Cookie::queue(Cookie::forever('language', $language, 60 * 24 * 365 * 15));
 
-        // Cargar traducciones desde el archivo JSON correspondiente
-        $translations = File::get(resource_path('lang/'.$language.'.json'));
+        // Obtener traducciones desde el archivo JSON correspondiente
+        $translations = File::get(resource_path("lang/$language.json"));
         $translations = json_decode($translations, true);
 
-//        // Compartir las traducciones con la vista
-        return view('change.language')->with('translations', $translations);
+        // Redirigir a la página anterior o a una página específica
+        return back()->with('translations', $translations)->with('message', 'Idioma cambiado exitosamente');
     }
 }
