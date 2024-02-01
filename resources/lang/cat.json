@@ -1,8 +1,8 @@
 {
-    "about us": "Qui som",
+    "about_us": "Qui som",
     "events": "Events",
     "suppliers": "Proveedores",
-    "food card": "Menu",
+    "food_cart": "Menu",
 
 
     "Day": "Dia",
@@ -14,17 +14,17 @@
     "Friday": "Divendres",
     "Saturday": "Dissabe",
     "Sunday": "Diumenge",
-    "Reserve a table to eat at our bar":"Reserva una taula per menjar en el nostre bar",
+    "Reserve_a_table_to_eat_at_our_bar":"Reserva una taula per menjar en el nostre bar",
     "Reserve": "Reservar",
-    "Do you want to take the food from the canteen lab home": "Vols emportarte el menjar de la cantina lab a casa",
+    "Do_you_want_to_take_the_food_from_the_canteen_lab_home": "Vols emportarte el menjar de la cantina lab a casa",
     "home Lab": "LAB para Casa",
 
 
     "what do we do": "Que fem",
-    "text what we do": "La nostra activitat principal és la restauració. Oferim productes de qualitat elaborats amb molt d'afecte per professionals especialitzats i amb una gran passió per la cuina.\n  El nostre compromís parteix de la proximitat amb el territori, la sostenibilitat mediambiental i la diversitat gastronòmica.\n Els aliments són el més variats possible però amb la idea de promoure al màxim una dieta saludable, nutritiva i de temporada, donant opcions veganes i vegetarianes.",
-    "Our values": "Els nostres Valors",
-    "text Our values": "Som una cooperativa de treball sense ànim de lucre que es dedica a fer restauració sostenible des de l'economia social i solidària,\n amb l'objectiu de respectar unes jornades i uns salaris dignes i poder crear el màxim de llocs de treball que el negoci ens permeti, tenint en compte una àmplia diversitat en les persones que formen el grup de treball.\n Tot això sense perdre de vista la perspectiva de gènere i la visió d'arrelar al territori mitjançant la participació proactiva a la vida local del barri de Sants i la Bordeta. Els nostres valors es basen en la transparència, la participació, l'autoresponsabilitat, la incidència social i la gestió horitzontal.",
-    "Location of La Cantina Lab": "Localització de la cantina",
+    "texto what we do": "La nostra activitat principal és la restauració. Oferim productes de qualitat elaborats amb molt d'afecte per professionals especialitzats i amb una gran passió per la cuina.\n  El nostre compromís parteix de la proximitat amb el territori, la sostenibilitat mediambiental i la diversitat gastronòmica.\n Els aliments són el més variats possible però amb la idea de promoure al màxim una dieta saludable, nutritiva i de temporada, donant opcions veganes i vegetarianes.",
+    "Our_values": "Els nostres Valors",
+    "text_Our_values": "Som una cooperativa de treball sense ànim de lucre que es dedica a fer restauració sostenible des de l'economia social i solidària,\n amb l'objectiu de respectar unes jornades i uns salaris dignes i poder crear el màxim de llocs de treball que el negoci ens permeti, tenint en compte una àmplia diversitat en les persones que formen el grup de treball.\n Tot això sense perdre de vista la perspectiva de gènere i la visió d'arrelar al territori mitjançant la participació proactiva a la vida local del barri de Sants i la Bordeta. Els nostres valors es basen en la transparència, la participació, l'autoresponsabilitat, la incidència social i la gestió horitzontal.",
+    "Location_of_La_Cantina_Lab": "Localització de la cantina",
     "location": "Està situada al Carrer : Gran Via de les Corts Catalanes, 169, 08014 Barcelona",
 
 

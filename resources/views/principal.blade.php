@@ -30,8 +30,8 @@
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
         </div>
         <div class="contenido-equipo">
-            <h3>{{ __('what_do_we_do')}}</h3>
-            <p> {{ __('text_what_we_do')}} </p>
+            <h3>{{ __('what do we do')}}</h3>
+            <p> {{ __('texto what we do')}} </p>
         </div>
     </div>
 

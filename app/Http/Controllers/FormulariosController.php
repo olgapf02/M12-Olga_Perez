@@ -10,8 +10,8 @@ use Illuminate\Support\Facades\Mail;
 
 class FormulariosController extends Controller
 {
-    public function querer_evento()
-    {
+    public function querer_evento(){
+        app()->setLocale(session()->get('locale'));
         return view('formulario_evento');
     }
 
@@ -45,13 +45,12 @@ class FormulariosController extends Controller
 
 //**********************************************************************************************************************
 
-    public function querer_trabajo()
-    {
+    public function querer_trabajo(){
+        app()->setLocale(session()->get('locale'));
         return view('formulario_trabajo');
     }
 
-    public function submitrabajo(Request $request)
-    {
+    public function submitrabajo(Request $request){
         $request->validate([
             'name' => 'required|string|max:255',
             'lastname' => 'required|string|max:255',
@@ -72,8 +71,8 @@ class FormulariosController extends Controller
 
 
 //**********************************************************************************************************************
-    public function opiniones()
-    {
+    public function opiniones(){
+        app()->setLocale(session()->get('locale'));
         return view('formulario_opiniones');
     }
 
