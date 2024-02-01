@@ -13,23 +13,15 @@ class IdiomasController extends Controller
     public function cambiarLanguage($language)
     {
         // Validar si el idioma es válido
-        $languages = ['es', 'ing', 'cat'];
+        $languages = ['es', 'en', 'cat'];
+
         if (!in_array($language, $languages)) {
             abort(404);
         }
 
-        // Cambiar el idioma en la aplicación
-        App::setLocale($language);
-        Session::put('locale', $language);
-
-        // Guardar el idioma en una cookie que dura 15 años
-        Cookie::queue(Cookie::forever('language', $language, 60 * 24 * 365 * 15));
-
-        // Obtener traducciones desde el archivo JSON correspondiente
-        $translations = File::get(resource_path("lang/$language.json"));
-        $translations = json_decode($translations, true);
+        session()->put('locale', $language);
 
         // Redirigir a la página anterior o a una página específica
-        return back()->with('translations', $translations)->with('message', 'Idioma cambiado exitosamente');
+        return back()->with('message', 'Idioma cambiado exitosamente');
     }
 }

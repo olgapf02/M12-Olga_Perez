@@ -1,12 +1,24 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 
 class PortadaPrincipalController extends Controller
 {
     public function inicio(){
+
+
+
+        // Mirar si hay algun idioma guardado (en la cookie)
+        // setear el idioma (usando el de la cookie o uno por defecto)
+//recoge el idioma del usuario
+//        dump(session()->get('locale'));
+
+        // Aquí ponemos el fichero que queremos usar de idiomas
+        app()->setLocale(session()->get('locale'));
+
         return view('index',[
         ]);
     }

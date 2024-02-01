@@ -45,5 +45,4 @@ Route::post('/submit_opinion_form', [FormulariosController::class, 'submitOpinio
 Route::get('/prox eventos',[PortadaPrincipalController::class,"calendario"]);
 // *************************************************************************
 //lenguaje web
-//Route::get('/change-language/{language}', [IdiomasController::class, 'cambiarLanguage'])->name('change.language');
 Route::get('/change-language/{language}', [IdiomasController::class, 'cambiarLanguage'])->name('change.language');

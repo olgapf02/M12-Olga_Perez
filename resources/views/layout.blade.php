@@ -21,7 +21,7 @@
     <div class="language-dropdown">
         <div id="language-options" class="language-options">
             <a href="{{ route('change.language', ['language' => 'es']) }}">Esp |</a>
-            <a href="{{ route('change.language', ['language' => 'ing']) }}">Ing |</a>
+            <a href="{{ route('change.language', ['language' => 'en']) }}">Ing |</a>
             <a href="{{ route('change.language', ['language' => 'cat']) }}">Cat</a>
         </div>
     </div>
