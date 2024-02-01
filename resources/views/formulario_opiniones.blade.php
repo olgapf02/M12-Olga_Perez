@@ -26,21 +26,21 @@
     {{--**************************************************************************--}}
     <form action="{{ url('/submit_opinion_form') }}" method="post">
         @csrf
-        <h1>Tu Opinion Nos Importa</h1>
+        <h1>{{ __('Your Opinion Matters to Us')}}</h1>
 
-        <label for="name">Nombre:</label><br>
+        <label for="name">{{ __('Name')}}</label><br>
         <input type="text" id="name" name="name" required><br>
 
-        <label for="lastname">Apellido:</label><br>
+        <label for="lastname">{{ __('lastname')}}</label><br>
         <input type="text" id="lastname" name="lastname" required><br>
 
-        <label for="email">Correo Electrónico:</label><br>
+        <label for="email">{{ __('email')}}</label><br>
         <input type="email" id="email" name="mail" required><br>
 
-        <label for="phone">Teléfono de Contacto:</label><br>
+        <label for="phone">{{ __('tel contact')}}</label><br>
         <input type="text" id="phone" name="phone" required><br>
 
-        <label for="comment">Mensaje:</label><br>
+        <label for="comment">{{ __('message')}}</label><br>
         <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
 
         <input type="submit" value="Enviar">

@@ -12,6 +12,7 @@
 @section('content')
 
 <div class="home">
+<<<<<<< HEAD
     <h2 class="carta-title">Experiencias de La Cantina LAB</h2>
     <div class="carousel-container">
         <div class="carousel-slider" id="slider">
@@ -70,6 +71,8 @@
     </div>
     <script>
         let currentIndex = 0;
+=======
+>>>>>>> idiomas
 
         function changeSlide(direction) {
             const slider = document.getElementById('slider');
@@ -89,40 +92,41 @@
         <table class="custom-table">
             <h1></h1>
             <tr>
-                <th>Día</th>
-                <th>Horas</th>
+                <th>{{ __('Day') }}</th>
+                <th>{{ __('Hora') }}</th>
             </tr>
             <tr>
-                <td>Lunes</td>
+                <td>{{ __('Monday') }}</td>
                 <td>12:00 - 00:00</td>
             </tr>
             <tr>
-                <td>Martes</td>
+                <td>{{ __('Tuesday') }}</td>
                 <td>12:00 - 18:00</td>
             </tr>
             <tr>
-                <td>Miércoles</td>
+                <td>{{ __('Wednesday') }}</td>
                 <td>12:00 - 00:00</td>
             </tr>
             <tr>
-                <td>Jueves</td>
+                <td>{{ __('Thursday') }}</td>
                 <td>12:00 - 00:00</td>
             </tr>
             <tr>
-                <td>Viernes</td>
+                <td>{{ __('Friday') }}</td>
                 <td>12:00 - 00:00</td>
             </tr>
             <tr>
-                <td>Sábado</td>
+                <td>{{ __('Saturday') }}</td>
                 <td>12:00 - 00:00</td>
             </tr>
             <tr>
-                <td>Domingo</td>
+                <td>{{ __('Sunday') }}</td>
                 <td>12:00 - 00:00</td>
             </tr>
         </table>
     </div>
 
+<<<<<<< HEAD
     {{---------------------------------------------------------------------------------------------------------------------------------------}}
     <h2 class="carta-title">Nuestro Restaurante</h2>
     <div class="galeria">
@@ -161,27 +165,35 @@
     {{---------------------------------------------------------------------------------------------------------------------------------------}}
 
 
+=======
+>>>>>>> idiomas
     <div class="cuadrado">
         <div class="left-section">
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen-cuadrado">
             <div class="texto">
+<<<<<<< HEAD
                 <p>{{ __('Reserve a table to eat at our bar') }}</p>
+=======
+                <p>{{ __('Reserve_a_table_to_eat_at_our_bar') }}</p>
+>>>>>>> idiomas
             </div>
-            <a  href="https://www.dish.co/ES/es/" target="_blank" class="button">reservar</a>
+            <a  href="https://www.dish.co/ES/es/" target="_blank" class="button">{{ __('Reserve') }}</a>
         </div>
 
         <div class="right-section">
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen-cuadrado">
             <div class="texto">
-                <p>Quieres llevarte la comida de la
-                    cantina lab a casa
+                <p>{{ __('Do_you_want_to_take_the_food_from_the_canteen_lab_home') }}
                 </p>
             </div>
-            <a href="https://mensakas.coopcycle.org/es/" target="_blank" class="button">LAB para Casa</a>
+            <a href="https://mensakas.coopcycle.org/es/" target="_blank" class="button">{{ __('home Lab') }}</a>
         </div>
     </div>
 </div>
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> idiomas
 @endsection

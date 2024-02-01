@@ -7,10 +7,10 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="{{ url('/quienes-somos') }}">Quienes Somos</a></li>
-                <li><a href="{{ url('/events') }}">Eventos</a></li>
-                <li><a href="{{ url('/proveedor') }}">Proveedores</a></li>
-                <li><a href="{{ url('/menu') }}">Carta</a></li>
+                <li><a href="{{ url('/quienes-somos') }}">{{ __('about_us') }}</a></li>
+                <li><a href="{{ url('/events') }}">{{ __('events') }}</a></li>
+                <li><a href="{{ url('/proveedor') }}">{{ __('suppliers') }}</a></li>
+                <li><a href="{{ url('/menu') }}">{{ __('food_cart') }}</a></li>
                 <li>Tel: 937 44 47 99</li>
             </ul>
         </div>

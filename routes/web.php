@@ -4,7 +4,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PortadaPrincipalController;
 use App\Http\Controllers\FormulariosController;
-
+use App\Http\Controllers\IdiomasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,4 +43,6 @@ Route::post('/submit_opinion_form', [FormulariosController::class, 'submitOpinio
 // *************************************************************************
 //calendario de proximos eventos
 Route::get('/prox eventos',[PortadaPrincipalController::class,"calendario"]);
-
+// *************************************************************************
+//lenguaje web
+Route::get('/change-language/{language}', [IdiomasController::class, 'cambiarLanguage'])->name('change.language');

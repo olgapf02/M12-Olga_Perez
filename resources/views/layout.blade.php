@@ -14,8 +14,16 @@
                 src="https://lateral-production.s3.eu-west-3.amazonaws.com/public/icon/instagram.svg"
                 alt="Instagram"></a>
     </div>
-    <div class="language-icon">
-        <img src="{{ asset('imagenes/idiomas.png') }}" alt="Icono de usuario">
+{{--    <div class="language-icon">--}}
+{{--        <img src="{{ asset('imagenes/idiomas.png') }}" alt="Icono de idiomas">--}}
+{{--    </div>--}}
+
+    <div class="language-dropdown">
+        <div id="language-options" class="language-options">
+            <a href="{{ route('change.language', ['language' => 'es']) }}">Esp |</a>
+            <a href="{{ route('change.language', ['language' => 'en']) }}">Ing |</a>
+            <a href="{{ route('change.language', ['language' => 'cat']) }}">Cat</a>
+        </div>
     </div>
 
 
@@ -31,7 +39,11 @@
     <div class="right-strip"></div>
 </div>
 @include('footer')
+<<<<<<< HEAD
 <script src="{{ asset('js/carusell.js') }}"></script>
 
+=======
+{{--<script src="{{ asset('resources/js/idioma.js') }}"></script>--}}
+>>>>>>> idiomas
 </body>
 </html>
