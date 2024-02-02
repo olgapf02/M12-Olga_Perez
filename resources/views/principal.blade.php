@@ -5,11 +5,8 @@
             <img src="{{ asset('../imagenes/la-cantina.png') }}" class="imagen-fija">
         </div>
         <div class="titulo-container">
-<<<<<<< HEAD
             <h3>Quienes Somos</h3>
-=======
             <h1>{{ __('about us') }}</h1>
->>>>>>> idiomas
         </div>
     </div>
 @endsection

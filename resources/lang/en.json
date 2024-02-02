@@ -4,9 +4,10 @@
     "suppliers": "suppliers",
     "food_cart": "food card",
 
-
+    "canteen experiences": "canteen experiences",
     "Day": "Day",
     "Hour": "Hour",
+    "canteen hours": "canteen hours",
     "Monday": "Monday",
     "Tuesday": "Tuesday",
     "Wednesday": "Wednesday",
@@ -14,6 +15,7 @@
     "Friday": "Friday",
     "Saturday": "Saturday",
     "Sunday": "Sunday",
+    "Our restaurant": "Our restaurant",
     "Reserve_a_table_to_eat_at_our_bar":"Reserve a table to eat at our bar",
     "Reserve": "Reserve",
     "Do_you_want_to_take_the_food_from_the_canteen_lab_home": "Do you want to take the food from the canteen lab home",

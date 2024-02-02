@@ -12,8 +12,7 @@
 @section('content')
 
 <div class="home">
-<<<<<<< HEAD
-    <h2 class="carta-title">Experiencias de La Cantina LAB</h2>
+    <h2 class="carta-title">{{__('canteen experiences')}}</h2>
     <div class="carousel-container">
         <div class="carousel-slider" id="slider">
             <div class="carousel-item">
@@ -71,8 +70,7 @@
     </div>
     <script>
         let currentIndex = 0;
-=======
->>>>>>> idiomas
+
 
         function changeSlide(direction) {
             const slider = document.getElementById('slider');
@@ -87,7 +85,7 @@
         }
     </script>
 {{---------------------------------------------------------------------------------------------------------------------------------------}}
-    <h2 class="carta-title">Horarios La Cantina LAB</h2>
+    <h2 class="carta-title">{{__('canteen hours')}}</h2>
     <div class="container-horario">
         <table class="custom-table">
             <h1></h1>
@@ -126,9 +124,9 @@
         </table>
     </div>
 
-<<<<<<< HEAD
+
     {{---------------------------------------------------------------------------------------------------------------------------------------}}
-    <h2 class="carta-title">Nuestro Restaurante</h2>
+    <h2 class="carta-title">{{__('Our restaurant')}}</h2>
     <div class="galeria">
         <div class="photo" onclick="zoomIn(this)">
             <img src="{{ asset('imagenes/logo_cant.png') }}" alt="foto 1">
@@ -164,18 +162,11 @@
 
     {{---------------------------------------------------------------------------------------------------------------------------------------}}
 
-
-=======
->>>>>>> idiomas
     <div class="cuadrado">
         <div class="left-section">
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen-cuadrado">
             <div class="texto">
-<<<<<<< HEAD
-                <p>{{ __('Reserve a table to eat at our bar') }}</p>
-=======
                 <p>{{ __('Reserve_a_table_to_eat_at_our_bar') }}</p>
->>>>>>> idiomas
             </div>
             <a  href="https://www.dish.co/ES/es/" target="_blank" class="button">{{ __('Reserve') }}</a>
         </div>
@@ -191,9 +182,4 @@
     </div>
 </div>
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> idiomas
 @endsection

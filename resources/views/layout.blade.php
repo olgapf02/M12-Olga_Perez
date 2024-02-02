@@ -39,11 +39,9 @@
     <div class="right-strip"></div>
 </div>
 @include('footer')
-<<<<<<< HEAD
 <script src="{{ asset('js/carusell.js') }}"></script>
 
-=======
+
 {{--<script src="{{ asset('resources/js/idioma.js') }}"></script>--}}
->>>>>>> idiomas
 </body>
 </html>

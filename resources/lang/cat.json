@@ -5,8 +5,10 @@
     "food_cart": "Menu",
 
 
+    "canteen experiences": "experiències a la cantina",
     "Day": "Dia",
     "Hour": "Hora",
+    "canteen hours": "Horaris de la Cantina",
     "Monday": "Dilluns",
     "Tuesday": "Dimarts",
     "Wednesday": "Dimecres",
@@ -14,6 +16,7 @@
     "Friday": "Divendres",
     "Saturday": "Dissabe",
     "Sunday": "Diumenge",
+    "Our restaurant": "El nostre Restaurant",
     "Reserve_a_table_to_eat_at_our_bar":"Reserva una taula per menjar en el nostre bar",
     "Reserve": "Reservar",
     "Do_you_want_to_take_the_food_from_the_canteen_lab_home": "Vols emportarte el menjar de la cantina lab a casa",

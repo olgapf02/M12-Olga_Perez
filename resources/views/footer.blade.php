@@ -7,17 +7,10 @@
                             <a href="https://www.dish.co/ES/es/" class="footer-btn">{{ __('reserve')}}</a>
                         </div>
                         <div class="link-item">
-<<<<<<< HEAD
-                            <a href="https://mensakas.coopcycle.org/es/" class="footer-btn">La Cantina a CASA</a>
-                        </div>
-                        <div class="link-item">
-                            <a href="https://mensakas.coopcycle.org/es/" class="footer-btn">La Cantina to GO</a>
-=======
                             <a href="https://mensakas.coopcycle.org/es/" class="footer-btn">{{ __('La Cantina to home')}}</a>
                         </div>
                         <div class="link-item">
                             <a href="https://mensakas.coopcycle.org/es/" class="footer-btn">{{ __('La Cantina to GO')}}</a>
->>>>>>> idiomas
                         </div>
                     </div>
                 </div>

@@ -4,9 +4,10 @@
     "suppliers": "Proveedores",
     "food_cart": "Menú",
 
-
+    "canteen experiences": "canteen experiences",
     "Day": "Dia",
     "Hour": "Hora",
+    "canteen hours": "Horarios de la Cantina",
     "Monday": "Lunes",
     "Tuesday": "Martes",
     "Wednesday": "Miércoles",
@@ -14,6 +15,7 @@
     "Friday": "Viernes",
     "Saturday": "Sábado",
     "Sunday": "Domingo",
+    "Our restaurant": "Nuestro Restaurante",
     "Reserve_a_table_to_eat_at_our_bar":"Reserva una mesa para comer en nuestro bar",
     "Reserve": "Reservar",
     "Do_you_want_to_take_the_food_from_the_canteen_lab_home": " Quieres llevarte la comida de la cantina lab a casa",

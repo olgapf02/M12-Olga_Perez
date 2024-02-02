@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 class PortadaPrincipalController extends Controller
 {
     public function inicio(){
-<<<<<<< HEAD
-=======
+
+
         // Mirar si hay algun idioma guardado (en la cookie)
         // setear el idioma (usando el de la cookie o uno por defecto)
 //recoge el idioma del usuario
@@ -18,7 +18,7 @@ class PortadaPrincipalController extends Controller
         // Aquí ponemos el fichero que queremos usar de idiomas
         app()->setLocale(session()->get('locale'));
 
->>>>>>> idiomas
+
         return view('index',[
         ]);
     }
@@ -59,17 +59,17 @@ class PortadaPrincipalController extends Controller
         return view('bebidas');
 
     }
-<<<<<<< HEAD
+
 //    public function tapas(){
 //        return view('tapas');
 //    }
-=======
+
     public function tapas(){
 //        app()->setLocale(session()->get('locale'));
         return view('tapas');
 
     }
->>>>>>> idiomas
+
 
     public function calendario(){
 //        app()->setLocale(session()->get('locale'));

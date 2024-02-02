@@ -117,15 +117,11 @@
         </div>
 
         <div class="menu">
-<<<<<<< HEAD
-            <button class=""><a class="link-item" href="{{ url('/prox eventos') }}">Proximos Eventos</a></button>
-=======
             <var>
                 <ul>
                     <button class="botones button"><li><a href="{{ url('/prox eventos') }}">{{ __('prox events')}}Proximos Eventos</a></li></button>
                 </ul>
             </var>
->>>>>>> idiomas
         </div>
 
     </div>
