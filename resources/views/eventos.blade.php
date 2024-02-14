@@ -5,7 +5,7 @@
             <img src="{{ asset('../imagenes/cantina.png') }}" class="imagen-fija">
         </div>
         <div class="titulo-container">
-            <h3> Nuestros Eventos</h3>
+            <h3> {{__('Our events')}}</h3>
         </div>
     </div>
 @endsection
@@ -18,7 +18,7 @@
                 <img src="{{ asset('imagenes/aniversario-1.png') }}" class="imagen">
             </div>
             <div class="contenido">
-                <h3>{{ __('First anniversary of La Cantina Laab ')}}</h3>
+                <h3>{{ __('First anniversary of La Cantina Laab')}}</h3>
                 <p>{{ __('text anniversary')}}</p>
             </div>
         </div>
@@ -28,7 +28,7 @@
                 <img src="{{ asset('imagenes/aniversario-2.png') }}" class="imagen">
             </div>
             <div class="contenido">
-                <h3>{{ __('second anniversary ')}}</h3>
+                <h3>{{ __('second anniversary')}}</h3>
                 <p>{{ __('text anniversary2')}}</p>
             </div>
         </div>
@@ -111,7 +111,7 @@
                 <img src="{{ asset('imagenes/volante-flamenco.png') }}" class="imagen">
             </div>
             <div class="contenido">
-                <h3>{{ __('dance2')}}baile</h3>
+                <h3>{{ __('dance2')}}</h3>
                 <p>{{ __('texto flamenco')}}</p>
             </div>
         </div>
@@ -119,7 +119,7 @@
         <div class="menu">
             <var>
                 <ul>
-                    <button class="botones button"><li><a href="{{ url('/prox eventos') }}">{{ __('prox events')}}Proximos Eventos</a></li></button>
+                    <button class="botones button"><li><a href="{{ url('/prox eventos') }}">{{ __('prox events')}}</a></li></button>
                 </ul>
             </var>
         </div>

@@ -9,13 +9,8 @@ class PortadaPrincipalController extends Controller
 {
     public function inicio(){
 
-
-        // Mirar si hay algun idioma guardado (en la cookie)
-        // setear el idioma (usando el de la cookie o uno por defecto)
-//recoge el idioma del usuario
-//        dump(session()->get('locale'));
-
-        // Aquí ponemos el fichero que queremos usar de idiomas
+        // setear el idioma
+// Establece el idioma de la aplicación utilizando el valor almacenado en la sesión del usuario
         app()->setLocale(session()->get('locale'));
 
 
@@ -72,8 +67,8 @@ class PortadaPrincipalController extends Controller
 
 
     public function calendario(){
-//        app()->setLocale(session()->get('locale'));
-        return view('calendario');
+        app()->setLocale(session()->get('locale'));
+        return viºew('calendario');
 
     }
 

@@ -1,10 +1,16 @@
 {
+    "about us":"Quienes somos",
+    "Our events": "Nuestros eventos",
+    "Our Suppliers": "Nuestros Proveedores",
+    "next events": "Proximos eventos",
+
+
     "about_us": "Quienes somos",
     "events": "Eventos",
     "suppliers": "Proveedores",
     "food_cart": "Menú",
 
-    "canteen experiences": "canteen experiences",
+    "canteen experiences": "Experiencias cantineras",
     "Day": "Dia",
     "Hour": "Hora",
     "canteen hours": "Horarios de la Cantina",
@@ -21,7 +27,8 @@
     "Do_you_want_to_take_the_food_from_the_canteen_lab_home": " Quieres llevarte la comida de la cantina lab a casa",
     "home Lab": "LAB para Casa",
 
-
+    "project": "Nuestro projecto",
+    "text-project": "Somos un equipo formado mayoritariamente por vecinas del barrio de Sants y La Bordeta. Nuestro proyecto ha nacido y forma parte del Espacio Vecinal Autogestionado de Can Batlló, con el cual nos coordinamos y colaboramos. Vemos el proyecto como una oportunidad de ampliar las redes tanto al ámbito vecinal como con otros proyectos de restauración y movimientos sociales de la ciudad de Barcelona.\n",
     "what do we do": "Que Hacemos",
     "texto what we do": "Nuestra actividad principal es la restauración. Ofrecemos productos de calidad elaborados con mucho cariño por profesionales especializados y con una gran pasión por la cocina.\n Nuestro compromiso parte de la proximidad con el territorio , la sostenibilidad medioambiental y la diversidad gastronómica.\n Los alimentos son lo más variados posible pero con la idea de promover al máximo una dieta saludable, nutritiva y de temporada, dando opciones veganas y vegetarianas.",
     "Our_values": "Nuestros Valores",
@@ -37,7 +44,7 @@
     "Doppler":"Doppler",
     "texto_doppler":"Sábado 22 vuelve la electrónica con Doppler a la Cantina. Reserva tu mesa para disfrutar de nuestros platos de siempre con la música de Uri Callejo] , Fabio Ceron Rodriguez] y DJ A $ia]",
     "blablabar":"BlaBlaBar",
-    "text blablabar":"ESTRENAMOS BLABLABAR!!!!!!\n Un ciclo de encuentros con colectivos para charlar, compartir experiencias, birras y cafés.\n Tejer redes y construir espacios comunes es una necesidad política ante éste sistema, y ​​como no\n hay nada más común que un bar, allá vamos.\n Ven a birrear y cafetear con Putas Libertarias.\n Cada miércoles a las 19:00 tendremos una nueva charla.\n ¡Salud y cooperativa! ",
+    "text blabla":"ESTRENAMOS BLABLABAR!!!!!!\n Un ciclo de encuentros con colectivos para charlar, compartir experiencias, birras y cafés.\n Tejer redes y construir espacios comunes es una necesidad política ante éste sistema, y ​​como no\n hay nada más común que un bar, allá vamos.\n Ven a birrear y cafetear con Putas Libertarias.\n Cada miércoles a las 19:00 tendremos una nueva charla.\n ¡Salud y cooperativa! ",
     "pantyhose":"Calçotada",
     "text de pantyhose":"ya tenemos confirmadas las actuaciones de la Calçotada Popular de La Cantina!!\n - A las 16h actuará la banda del Espacio de Creación Musical de Can Batlló Mayer-Sánchez\n - A las 17h disfrutaremos de los ritmos del Numcut\n Y durante todo el día tendremos a disposición juegos infantiles y para mayores con la colaboración de La\n Nau espai familiar - Can Batlló\n Todo ello acompañado de los menús de calçotada con productos ecológicos de los nuestros proveedores locales.\n Todavía nos quedan los últimos tickets. ¡No te quedes sin!!",
     "cinema":"Cine al aire Libre",
@@ -49,7 +56,7 @@
     "dance":"baile",
     "text dance":"El All Dayer está de vuelta y esta vez hemos preparado un cartel increíble para ti para un Sunday\n Sesh\" en la Terraza de la Cantina Can Batlló.\n\n En esta ocasión, nuestro evento tiene un toque británico añadido con algo de sabor de México. No\n habrá límites para los djs, dando total libertad para tocar con la energía de la gente, así que\n espera escuchar #breaks, #dub, #house, ... Ver más\n — en Cantina Lab Can Batlló.",
     "dance2":"baile",
-    "text flamenco":"12:30h en una cafeta bien andaluza!!! volando de la pobla no necesita presentación, necesita vivirse y\n sentirse, llevan un directo de vértigo que no deja indiferente a nadie!! No podemos estar más felices\n que actúen en cantina!!!Se nos sale el corazón del pecho del emocioooon!!! Dos de nuestras andaluzas preferidas, Lena Na y Maria Ramos completan por arriba este cartel, que nos asegura una velada de lo más ardiente... Ver más — en Cantina Lab Can Batlló. ",
+    "texto flamenco":"12:30h en una cafeta bien andaluza!!! volando de la pobla no necesita presentación, necesita vivirse y\n sentirse, llevan un directo de vértigo que no deja indiferente a nadie!! No podemos estar más felices\n que actúen en cantina!!!Se nos sale el corazón del pecho del emocioooon!!! Dos de nuestras andaluzas preferidas, Lena Na y Maria Ramos completan por arriba este cartel, que nos asegura una velada de lo más ardiente... Ver más — en Cantina Lab Can Batlló. ",
     "prox events":"Proximos Eventos",
 
 
@@ -114,11 +121,11 @@
     "night": "Noche:",
     "Attach your CV:": "Adjunta Tu CV:",
 
-
+    "food card": "menu",
     "reserve": "Reservar",
     "La Cantina to home": "La Cantina para  casa",
     "La Cantina to GO": "La Cantina para llevar",
-    "Join " : "Unete a La Cantina",
+    "Join" : "Unete a La Cantina",
     "you want to do an event": "Quieres hacer un evento"
 }
 

@@ -5,8 +5,7 @@
             <img src="{{ asset('../imagenes/la-cantina.png') }}" class="imagen-fija">
         </div>
         <div class="titulo-container">
-            <h3>Quienes Somos</h3>
-            <h1>{{ __('about us') }}</h1>
+            <h3>{{ __('about us') }}</h3>
         </div>
     </div>
 @endsection
@@ -19,7 +18,8 @@
             <img src="{{ asset('../imagenes/equipo.jpg') }}" class="imagen">
         </div>
         <div class="contenido-equipo">
-            <h3>{{ __('what do we do') }}</h3>
+            <h3>{{ __('project') }}</h3>
+            <p>{{ __('text-project') }}</p>
             <p>
 
             </p>

@@ -19,10 +19,10 @@
                 <img src="{{ asset('imagenes/salchichada.png') }}" class="ima">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('imagenes/cine.png') }}" class="ima">
+                <img src="{{ asset('imagenes/swing.jpg') }}" class="ima">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('imagenes/doppler.png') }}" class="ima">
+                <img src="{{ asset('imagenes/aniversario-2.png') }}" class="ima">
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('imagenes/lgtbi.png') }}" class="ima">
@@ -43,7 +43,7 @@
                 <img src="{{ asset('imagenes/calcotada.png') }}" class="ima">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('imagenes/postre.png') }}" class="ima">
+                <img src="{{ asset('imagenes/tortilla.jpg') }}" class="ima">
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('imagenes/dj.png') }}" class="ima">
@@ -157,6 +157,9 @@
         </div>
         <div class="photo" onclick="zoomIn(this)">
             <img src="{{ asset('imagenes/terraza-sol.png') }}" alt="foto 9">
+        </div>
+        <div class="photo" onclick="zoomIn(this)">
+            <img src="{{ asset('imagenes/terraza-dia.jpg') }}" alt="foto 9">
         </div>
     </div>
 

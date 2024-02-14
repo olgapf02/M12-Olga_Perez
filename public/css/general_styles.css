@@ -20,21 +20,15 @@ body {
     font-family: 'Helvetica';
 }
 h1 {
-<<<<<<< HEAD
     font-family:'Helvetica 30px';
-=======
     font-family:'Helvetica 50px';
->>>>>>> idiomas
 }
 h2 {
     font-family: 'Helvetica';
 }
 h3{
-<<<<<<< HEAD
     font-family: 'Helvetica 20px ';
-=======
     font-family: 'Helvetica black 20px ';
->>>>>>> idiomas
     font-weight: bold;
 }
 p {
@@ -145,8 +139,7 @@ ul{
     margin-top: 190px;
 }
 .prev-btn::before, .next-btn::before {
-    /*content: '\2190'; !* Código unicode para la flecha izquierda '\2190' y derecha '\2192' *!*/
-    font-family: 'Arial', sans-serif; /* Puedes cambiar la fuente según tus preferencias */
+    font-family: 'Arial', sans-serif;
 }
 
 .prev-btn {
@@ -169,28 +162,76 @@ ul{
 .custom-table {
     border-collapse: collapse;
     width: 80%;
-    max-width: 600px; /* Establece un ancho máximo para evitar que la tabla sea demasiado ancha en pantallas grandes */
-    margin: 0 auto; /* Centra la tabla horizontalmente */
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    overflow: hidden;
+    border-radius: 8px;
+    overflow-x: auto;
 }
 
 .custom-table th,
 .custom-table td {
-    border: 1px solid #000000;
+    border: 1px solid #dee2e6;
     padding: 12px;
     text-align: center;
     font-size: 14px;
 }
 
+/*.custom-table th {*/
+/*    !*background-color: #f8f9fa; !* Cambia el fondo del encabezado *!*!*/
+/*    !*color: #495057;*!*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.custom-table tr:hover {*/
+/*    background-color: #e9ecef; !* Cambia el color de fondo al pasar el mouse *!*/
+/*}*/
 .custom-table th {
-    background-color: #f8f9fa; /* Cambia el fondo del encabezado */
+    background-color: #f8f9fa;
     color: #495057;
     font-weight: bold;
 }
 
 .custom-table tr:hover {
-    background-color: #e9ecef; /* Cambia el color de fondo al pasar el mouse */
+    background-color: #e9ecef;
 }
 
+/* Estilos alternados para las filas */
+.custom-table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* Estilos para la primera columna */
+.custom-table td:first-child,
+.custom-table th:first-child {
+    border-right: 2px solid #dee2e6;
+}
+
+/* Estilos para la última columna */
+.custom-table td:last-child,
+.custom-table th:last-child {
+    border-left: 2px solid #dee2e6;
+}
+
+/* Estilos para encabezados responsivos en dispositivos pequeños */
+@media screen and (max-width: 600px) {
+    .custom-table thead {
+        display: none;
+    }
+    .custom-table, .custom-table tbody, .custom-table tr, .custom-table td {
+        display: block;
+        width: 100%;
+    }
+    .custom-table td {
+        text-align: left;
+    }
+    .custom-table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}
 /**********************************************/
 /*cuadrado*/
 .cuadrado {
@@ -221,7 +262,7 @@ ul{
 /*galeria*/
 .galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -235,9 +276,9 @@ ul{
 
 .photo img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
-    grid-row-end: span 3;
+    object-fit: cover;
 }
 
 /* ********************************** */

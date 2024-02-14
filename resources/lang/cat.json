@@ -1,11 +1,16 @@
 {
+    "about us":"qui som",
+    "Our events": "Els Nostres events",
+    "Our Suppliers": "Els Nostres Proveedors",
+    "next events": "Proxims events",
+
     "about_us": "Qui som",
     "events": "Events",
     "suppliers": "Proveedores",
     "food_cart": "Menu",
 
 
-    "canteen experiences": "experiències a la cantina",
+    "canteen experiences": "experiències cantineres",
     "Day": "Dia",
     "Hour": "Hora",
     "canteen hours": "Horaris de la Cantina",
@@ -22,7 +27,8 @@
     "Do_you_want_to_take_the_food_from_the_canteen_lab_home": "Vols emportarte el menjar de la cantina lab a casa",
     "home Lab": "LAB para Casa",
 
-
+    "project": "El Nostre projecte",
+    "text-project":"Som un equip format majoritàriament per veïnes del barri de Sants i La Bordeta. El nostre projecte neix i forma part de l’Espai Veïnal Autogestionat de Can Batlló, amb el qual ens coordinem i col·laborem. Veiem el projecte com una oportunitat d’ampliar les xarxes tant a l’àmbit veïnal com amb altres projectes de restauració cooperativa i moviments socials de la ciutat.",
     "what do we do": "Que fem",
     "texto what we do": "La nostra activitat principal és la restauració. Oferim productes de qualitat elaborats amb molt d'afecte per professionals especialitzats i amb una gran passió per la cuina.\n  El nostre compromís parteix de la proximitat amb el territori, la sostenibilitat mediambiental i la diversitat gastronòmica.\n Els aliments són el més variats possible però amb la idea de promoure al màxim una dieta saludable, nutritiva i de temporada, donant opcions veganes i vegetarianes.",
     "Our_values": "Els nostres Valors",
@@ -33,7 +39,7 @@
 
     "First anniversary of La Cantina Laab": "Primer aniversari de La Cantina Laab",
     "text anniversary":"Fa un any Cantina Lab va obrir les seves portes, com vola el temps! Us convidem a passar a veure’ns\n aquesta última setmana de maig per celebrar-ho amb nosaltres\n Dijous 27: Hi haurà música a la tarda i brindis de 17h a 21h\n Dissabte 29: A la carta trobareu també una boníssima fideuà vegana amb productes de temporada i de\n proximitat\n Diumenge 30: Hi haurà vermut musical de 12h a 20h i bon ambient assegurat\n A més a més, durant tot el cap de setmana podreu tornar a assaborir les delicioses tapes estrella\n que hem cuinat al llarg d’aquest any i moltes més novetats\n Ens espera un cap de setmana ple d'alegria cantinera\n Per molts anys més!",
-    "Second anniversary":"Segon aniversari de La Cantina Laab",
+    "second anniversary":"Segon aniversari de La Cantina Laab",
     "text anniversary2": "Fa un any Cantina Lab va obrir les seves portes, com vola el temps! Us convidem a passar a veure’ns\n aquesta última setmana de maig per celebrar-ho amb nosaltres\n Dijous 27: Hi haurà música a la tarda i brindis de 17h a 21h\n Dissabte 29: A la carta trobareu també una boníssima fideuà vegana amb productes de temporada i de\n proximitat\n Diumenge 30: Hi haurà vermut musical de 12h a 20h i bon ambient assegurat\n A més a més, durant tot el cap de setmana podreu tornar a assaborir les delicioses tapes estrella\n que hem cuinat al llarg d’aquest any i moltes més novetats\n Ens espera un cap de setmana ple d'alegria cantinera\n Per molts anys més!",
     "Doppler":"Doppler",
     "texto_doppler":"Dissabte 22 torna l'electrònica amb Doppler a la Cantina. Reserva la teva taula per gaudir de\n els nostres plats de\n sempre amb la música d'Uri Callejo] , Fabio Ceron Rodriguez] i DJ A$ia]",
@@ -49,9 +55,9 @@
     "text sausage":"Fa un any Cantina Lab va obrir les seves portes, com vola el temps! Us convidem a passar a veure’ns\n aquesta última setmana de maig per celebrar-ho amb nosaltres\n Dijous 27: Hi haurà música a la tarda i brindis de 17h a 21h\n Dissabte 29: A la carta trobareu també una boníssima fideuà vegana amb productes de temporada i de\n proximitat\n Diumenge 30: Hi haurà vermut musical de 12h a 20h i bon ambient assegurat\n A més a més, durant tot el cap de setmana podreu tornar a assaborir les delicioses tapes estrella\n que hem cuinat al llarg d’aquest any i moltes més novetats\n Ens espera un cap de setmana ple d'alegria cantinera\n Per molts anys més!",
     "dj":"Taller de DJ",
     "text dj":"aquest dissabte 14 tindrem a la Cantina un taller de DJ amateur monografic de la ma de la Laila,\n acompanyada que tambe gestiona el taller regular de DJ de Can Batlló. Apunteu-vos sense cont\n enviant-nos un missatge de instagram",
-    "dance":"baile",
+    "dance":"ball",
     "text dance":"L'All Dayer està de tornada i aquesta vegada hem preparat un cartell increïble per a tu per a un Sunday\n Sesh\" a la Terrassa de la Cantina Can Batlló.\n\n En aquesta ocasió, el nostre esdeveniment té un toc britànic afegit amb una mica de sabor de Mèxic. No\n hi haurà límits per als djs, donant total llibertat per tocar amb l'energia de la gent, així que\n espera escoltar #breaks, #dub, #house, ... Veure més\n — a Cantina Lab Can Batlló.",
-    "dance2":"baile",
+    "dance2":"flamenco",
     "texto flamenco":"12:30h a una cafeta ben andalusa!!! volantdelapobla no necessita presentació, necessita viure's i\n sentir-se, porten un directe de vertigen que no deixa indiferent ningú!! No podem estar més feliços\n que actuïn en cantina!!! Se'ns surt el cor del pit de l'emocioooon!!! \uD83D\uDC83\uD83C\uDFFE\uD83D\uDC83\uD83C\uDFFE\uD83D\uDC83\uD83C\uDFFE\n\n Dues de les nostres andaluses preferides, Lena Na i Maria Ramos completen per dalt aquest cartell, que\n ens assegura una vetllada d'allò més ardent!! \uD83D\uDD25 ... Veure més\n — a Cantina Lab Can Batlló.",
     "prox events":"Proxims Events",
 
@@ -117,10 +123,10 @@
     "night": "Nit:",
     "Attach your CV:": "Adjunta El Teu CV:",
 
-
+    "food card": "menu",
     "reserve": "Reservar",
     "La Cantina to home": "La Cantina per a casa",
     "La Cantina to GO": "La Cantina per emportar",
-    "Join " : "Uneix-te a La Cantina",
+    "Join" : "Uneix-te a La Cantina",
     "you want to do an event": "Vols Fer un event"
 }

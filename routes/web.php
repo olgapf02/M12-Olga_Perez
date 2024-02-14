@@ -43,6 +43,11 @@ Route::post('/submit_opinion_form', [FormulariosController::class, 'submitOpinio
 // *************************************************************************
 //calendario de proximos eventos
 Route::get('/prox eventos',[PortadaPrincipalController::class,"calendario"]);
+Route::get('/calendario', [CalendarController::class, 'index']);
+Route::post('/evento/nuevo', [CalendarController::class, 'store']);
+Route::post('/evento/editar', [CalendarController::class, 'update']);
+Route::post('/evento/eliminar', [CalendarController::class, 'destroy']);
 // *************************************************************************
 //lenguaje web
 Route::get('/change-language/{language}', [IdiomasController::class, 'cambiarLanguage'])->name('change.language');
+// *************************************************************************

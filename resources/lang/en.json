@@ -1,10 +1,15 @@
 {
+    "about us":"about us",
+    "Our events": "Our events",
+    "Our Suppliers": "Our Suppliers",
+    "next events": "next events",
+
     "about_us": "about us",
     "events": "Events",
     "suppliers": "suppliers",
     "food_cart": "food card",
 
-    "canteen experiences": "canteen experiences",
+    "canteen experiences": "canteens experiences",
     "Day": "Day",
     "Hour": "Hour",
     "canteen hours": "canteen hours",
@@ -21,7 +26,8 @@
     "Do_you_want_to_take_the_food_from_the_canteen_lab_home": "Do you want to take the food from the canteen lab home",
     "home Lab": "home Lab",
 
-
+    "project": "Our Project",
+    "text-project":"We are a team made up mainly of residents of the neighborhood of Sants and La Bordeta. Our project was born and is part of the Can Batlló Self-Managed Neighborhood Space, with which we coordinate and collaborate. We see the project as a opportunity to expand networks both at the neighborhood level and with other restoration projects and social movements in the city of Barcelona.\n    ",
     "what do we do": "what do we do",
     "texto what we do": "Our main activity is restoration. We offer quality products prepared with great love by specialized professionals with a great passion for cooking.\n Our commitment is based on proximity to the territory, environmental sustainability and gastronomic diversity.\n The foods are as varied as possible but with the idea of ​​maximally promoting a healthy, nutritious and seasonal diet, providing vegan and vegetarian options.",
     "Our_values": "Our values",
@@ -33,7 +39,7 @@
     "First anniversary of La Cantina Laab": "First anniversary of La Cantina Laab",
     "text anniversary":"Cantina Lab opened its doors one year ago, how time flies! We invite you to come and see us\n this last week of May to celebrate with us\n Thursday 27: There will be music in the afternoon and toasts from 5pm to 9pm\n Saturday 29: On the menu you will also find a delicious vegan fideuà with seasonal and local\n products\n Sunday 30: There will be musical vermouth from 12pm to 8pm and a good atmosphere guaranteed \n In addition, throughout the weekend you will be able to re-savour the delicious star tapas\n that we have cooked throughout this year and many more novelties\n A weekend full of bartending joy awaits us\n n For many more years!",
     "Second anniversary":"Second anniversary of La Cantina Laab",
-    "text anniversary2": "Fa un any Cantina Lab va obrir les seves portes, com vola el temps! Us convidem a passar a veure’ns\n aquesta última setmana de maig per celebrar-ho amb nosaltres\n Dijous 27: Hi haurà música a la tarda i brindis de 17h a 21h\n Dissabte 29: A la carta trobareu també una boníssima fideuà vegana amb productes de temporada i de\n proximitat\n Diumenge 30: Hi haurà vermut musical de 12h a 20h i bon ambient assegurat\n A més a més, durant tot el cap de setmana podreu tornar a assaborir les delicioses tapes estrella\n que hem cuinat al llarg d’aquest any i moltes més novetats\n Ens espera un cap de setmana ple d'alegria cantinera\n Per molts anys més!",
+    "text anniversary2":"Cantina Lab opened its doors one year ago, how time flies! We invite you to come and see us\n this last week of May to celebrate with us\n Thursday 27: There will be music in the afternoon and toasts from 5pm to 9pm\n Saturday 29: On the menu you will also find a delicious vegan fideuà with seasonal and local\n products\n Sunday 30: There will be musical vermouth from 12pm to 8pm and a good atmosphere guaranteed \n In addition, throughout the weekend you will be able to re-savour the delicious star tapas\n that we have cooked throughout this year and many more novelties\n A weekend full of bartending joy awaits us\n n For many more years!",
     "Doppler":"Doppler",
     "texto_doppler":"Electronics returns with Doppler at La Cantina on Saturday 22nd. Reserve your table to enjoy\n our dishes from\n always with the music of Uri Callejo], Fabio Ceron Rodriguez] and DJ A $ia]",
     "blablabar":"BlaBlaBar",
@@ -118,7 +124,7 @@
     "reserve": "reserve",
     "La Cantina to home": "La Cantina to home",
     "La Cantina to GO": "La Cantina to GO",
-    "Join " : "join to La Cantina",
+    "Join" : "join to La Cantina",
     "you want to do an event": "you want to do an event"
 }
 

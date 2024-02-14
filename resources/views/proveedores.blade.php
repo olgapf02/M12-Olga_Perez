@@ -5,7 +5,7 @@
             <img src="{{ asset('../imagenes/comida.jpg') }}" class="imagen-fija">
         </div>
         <div class="titulo-container">
-            <h3>Nuestros Proveedores</h3>
+            <h3>{{__('Our Suppliers')}}</h3>
         </div>
     </div>
 @endsection
