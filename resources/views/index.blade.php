@@ -169,7 +169,7 @@
         <div class="left-section">
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen-cuadrado">
             <div class="texto">
-                <p>{{ __('Reserve_a_table_to_eat_at_our_bar') }}</p>
+                <p>{{ __('Reserve a table to eat at our bar') }}</p>
             </div>
             <a  href="https://www.dish.co/ES/es/" target="_blank" class="button">{{ __('Reserve') }}</a>
         </div>
@@ -177,7 +177,7 @@
         <div class="right-section">
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen-cuadrado">
             <div class="texto">
-                <p>{{ __('Do_you_want_to_take_the_food_from_the_canteen_lab_home') }}
+                <p>{{ __('Do you want to take the food from the canteen lab home') }}
                 </p>
             </div>
             <a href="https://mensakas.coopcycle.org/es/" target="_blank" class="button">{{ __('home Lab') }}</a>

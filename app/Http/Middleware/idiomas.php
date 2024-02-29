@@ -13,8 +13,15 @@ class idiomas
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next): Response
+    public function handle($request, Closure $next)
     {
-        return $next($request);
+//        // Obtener el idioma almacenado en la sesión o establecerlo en el idioma predeterminado si no está definido
+//        $locale = session::get('locale', config('session.locale'));
+//
+//        // Establecer el idioma de la aplicación
+//        App::setLocale($locale);
+//
+//        // Continuar con la solicitud
+//        return $next($request);
     }
 }

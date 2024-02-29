@@ -10,8 +10,7 @@ use Illuminate\Support\Facades\Session;
 
 class IdiomasController extends Controller
 {
-    public function cambiarLanguage($language)
-    {
+    public function cambiarLanguage($language){
         // Validar si el idioma es válido
         $languages = ['es', 'en', 'cat'];
 

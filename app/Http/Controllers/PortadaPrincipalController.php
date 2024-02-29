@@ -10,7 +10,7 @@ class PortadaPrincipalController extends Controller
     public function inicio(){
 
         // setear el idioma
-// Establece el idioma de la aplicación utilizando el valor almacenado en la sesión del usuario
+        // Establece el idioma de la aplicación utilizando el valor almacenado en la sesión del usuario
         app()->setLocale(session()->get('locale'));
 
 
@@ -45,7 +45,7 @@ class PortadaPrincipalController extends Controller
     }
 
     public function carta(){
-//        app()->setLocale(session()->get('locale'));
+        app()->setLocale(session()->get('locale'));
         return view('carta');
 
     }
@@ -68,7 +68,7 @@ class PortadaPrincipalController extends Controller
 
     public function calendario(){
         app()->setLocale(session()->get('locale'));
-        return viºew('calendario');
+        return view('calendario');
 
     }
 

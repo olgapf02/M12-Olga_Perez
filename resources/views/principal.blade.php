@@ -18,8 +18,8 @@
             <img src="{{ asset('../imagenes/equipo.jpg') }}" class="imagen">
         </div>
         <div class="contenido-equipo">
-            <h3>{{ __('project') }}</h3>
-            <p>{{ __('text-project') }}</p>
+            <h3 class="texto equipo">{{ __('project') }}</h3>
+            <p>{{ __('text project') }}</p>
             <p>
 
             </p>
@@ -31,8 +31,8 @@
             <img src="{{ asset('imagenes/logo_cant.png') }}" class="imagen">
         </div>
         <div class="contenido-equipo">
-            <h3>{{ __('what do we do')}}</h3>
-            <p> {{ __('texto what we do')}} </p>
+            <h3 class="texto equipo">{{ __('what do we do')}}</h3>
+            <p> {{ __('text what we do')}} </p>
         </div>
     </div>
 
@@ -41,7 +41,7 @@
             <img src="{{ asset('imagenes/canbatllo.png') }}" class="imagen">
         </div>
         <div class="contenido-equipo">
-            <h3>{{ __('Our_values')}}</h3>
+            <h3 class="texto equipo">{{ __('Our values')}}</h3>
             <p>{{ __('text_Our_values')}}</p>
         </div>
     </div>
