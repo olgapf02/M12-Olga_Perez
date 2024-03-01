@@ -1,130 +1,155 @@
-@extends('layout')
-@section('imagen_entera')
-    <div class="imagen-entera-container">
-        <div class="image-container">
-            <img src="{{ asset('../imagenes/cantina.png') }}" class="imagen-fija">
+{{--@extends('layout')--}}
+{{--@section('imagen_entera')--}}
+{{--    <div class="imagen-entera-container">--}}
+{{--        <div class="image-container">--}}
+{{--            <img src="{{ asset('../imagenes/cantina.png') }}" class="imagen-fija">--}}
+{{--        </div>--}}
+{{--        <div class="titulo-container">--}}
+{{--            <h3> {{__('Our events')}}</h3>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--@endsection--}}
+{{--@section('content')--}}
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+{{--    <link rel="stylesheet" href="styles.css">--}}
+</head>
+<body>
+<!-- El cuadro de login -->
+<div class="login-box">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <div class="input-group">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username">
         </div>
-        <div class="titulo-container">
-            <h3> {{__('Our events')}}</h3>
+        <div class="input-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password">
         </div>
-    </div>
-@endsection
-@section('content')
+        <button type="submit" href="{{ url('/') }}">Iniciar Sesión</button>
+    </form>
+</div>
+</body>
 
-    <div class="container-de-eventos">
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    }
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/aniversario-1.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('First anniversary of La Cantina Laab')}}</h3>
-                <p>{{ __('text anniversary')}}</p>
-            </div>
-        </div>
+    .usuario {
+    display: block;
+    margin-bottom: 20px;
+    }
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/aniversario-2.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('second anniversary')}}</h3>
-                <p>{{ __('text anniversary2')}}</p>
-            </div>
-        </div>
+    .login-box {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
+    }
 
+    .login-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    }
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/doppler.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('Doppler')}}</h3>
-                <p>{{ __('texto_doppler')}}</p>
-            </div>
-        </div>
+    .input-group label {
+    display: block;
+    font-weight: bold;
+    }
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/blablabar.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('blablabar')}}</h3>
-                <p>{{ __('text blabla')}}</p>
-            </div>
-        </div>
+    .input-group input[type="text"],
+    .input-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    }
 
+    button {
+        padding: 10px 20px;
+        background-color: #980b11;
+        border-radius: 4px;
+        margin-top: 10px;
+        color: white;
+        margin-top: 10px;
+        float: right;
+    }
+    button:hover {
+        background-color: #ff1a1f;
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/calcotada.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('pantyhose')}}</h3>
-                <p>{{ __('text de pantyhose')}}</p>
-            </div>
-        </div>
+        }
 
+    /*.butt-login{*/
+    /*    padding: 10px 20px;*/
+    /*    background-color: #980b11;*/
+    /*    border-radius: 4px;*/
+    /*    margin-top: 10px;*/
+    /*    color: white;*/
+    /*    margin-top: 10px;*/
+    /*    float: right;*/
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/cine.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('cinema')}}</h3>
-                <p>{{ __('text_cine')}}</p>
-            </div>
-        </div>
+    /*}*/
+    /*.but-login:hover {*/
+    /*    background-color: #ff1a1f;*/
+    /*}*/
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const passwordInput = document.getElementById("password");
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/lgtbi.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('queer')}}LGTBIQ+</h3>
-                <p>{{ __('text queer')}}</p>
-            </div>
-        </div>
+        passwordInput.addEventListener("input", function() {
+            const maskedValue = maskPassword(this.value);
+            this.value = maskedValue;
+        });
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/dj.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('dj')}}</h3>
-                <p>{{ __('text dj')}}</p>
-            </div>
-        </div>
+        function maskPassword(value) {
+            return "•".repeat(value.length);
+        }
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/baile.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('dance')}}</h3>
-                <p>{{ __('text dance')}}</p>
-            </div>
-        </div>
+        const loginForm = document.getElementById("loginForm");
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/volante-flamenco.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('dance2')}}</h3>
-                <p>{{ __('texto flamenco')}}</p>
-            </div>
-        </div>
+        loginForm.addEventListener("submit", function(event) {
+            event.preventDefault();
 
-        <div class="menu">
-            <var>
-                <ul>
-                    <button class="botones button"><li><a href="{{ url('/prox eventos') }}">{{ __('prox events')}}</a></li></button>
-                </ul>
-            </var>
-        </div>
+            const username = this.username.value;
+            const password = this.password.value;
 
-    </div>
+            // Aquí puedes enviar los datos del formulario
+            console.log("Username:", username);
+            console.log("Password:", password);
 
+            // Puedes hacer una petición AJAX aquí para enviar los datos
+            // Por ejemplo:
+            /*
+            fetch("url_del_servidor/login", {
+                method: "POST",
+                body: JSON.stringify({ username, password }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+            */
+        });
+    });
 
-@endsection
+</script>
+</html>
+
+{{--@endsection--}}

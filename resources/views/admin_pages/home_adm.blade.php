@@ -1,3 +1,5 @@
+@extends('admin_pages/layout_adm')
+@section('content')
 <h2 class="carta-title">{{__('canteen hours')}}</h2>
 <div class="container-horario">
     <table class="custom-table">
@@ -36,3 +38,5 @@
         </tr>
     </table>
 </div>
+
+@endsection

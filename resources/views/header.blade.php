@@ -16,8 +16,9 @@
         </div>
     </div>
 
-        <a href="{{ url('/') }}" class="usuario">
-            <img src="{{ asset('imagenes/usuarios.png') }}" alt="usuario">
+{{--        <a href="{{ url('/') }}" class="usuario">--}}
+        <a href="{{ url('/login') }}" class="usuario">
+            <img src="{{ asset('imagenes/usuarios.png') }}" alt="usuario" >
         </a>
 
 </header>

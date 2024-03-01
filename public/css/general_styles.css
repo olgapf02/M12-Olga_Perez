@@ -685,6 +685,8 @@ input[type="submit"]:hover {
 
 @media (max-width: 767px) {
     .container {
-        width: 90%; /* Ajusta el ancho de la container para pantallas más pequeñas */
+        width: 90%; /* Ajusta el ancho de la container para pantallas más pequeñas*/
 }
 }
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*administrador y sus pantallas*/
