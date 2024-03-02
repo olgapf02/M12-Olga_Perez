@@ -16,18 +16,11 @@
     </div>
 </div>
 @include('admin_pages/header_adm')
-<div>
-    @yield('imagen_entera')
-</div>
-<div class="container">
-    <div class="left-strip"></div>
+
     @yield('content')
-    <div class="right-strip"></div>
-</div>
+
 @include('footer')
 {{--<script src="{{ asset('js/carusell.js') }}"></script>--}}
 
-
-{{--<script src="{{ asset('resources/js/idioma.js') }}"></script>--}}
 </body>
 </html>

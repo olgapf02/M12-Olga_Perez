@@ -11,6 +11,7 @@
             <ul>
                 <li><a href="{{ url('admin/events') }}">eventos</a></li>
                 <li><a href="{{ url('admin/proveedores') }}">proveedor</a></li>
+                <li><a href="{{ url('admin/prox_events') }}">proximos eventos</a></li>
                 <li>Tel: 937 44 47 99</li>
             </ul>
         </div>

@@ -14,9 +14,6 @@
                 src="https://lateral-production.s3.eu-west-3.amazonaws.com/public/icon/instagram.svg"
                 alt="Instagram"></a>
     </div>
-{{--    <div class="language-icon">--}}
-{{--        <img src="{{ asset('imagenes/idiomas.png') }}" alt="Icono de idiomas">--}}
-{{--    </div>--}}
 
     <div class="language-dropdown">
         <div id="language-options" class="language-options">
@@ -25,8 +22,6 @@
             <a href="{{ route('change.language', ['language' => 'cat']) }}">Cat</a>
         </div>
     </div>
-
-
 
 </div>
 @include('header')

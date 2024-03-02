@@ -178,15 +178,7 @@ ul{
     font-size: 14px;
 }
 
-/*.custom-table th {*/
-/*    !*background-color: #f8f9fa; !* Cambia el fondo del encabezado *!*!*/
-/*    !*color: #495057;*!*/
-/*    font-weight: bold;*/
-/*}*/
 
-/*.custom-table tr:hover {*/
-/*    background-color: #e9ecef; !* Cambia el color de fondo al pasar el mouse *!*/
-/*}*/
 .custom-table th {
     background-color: #f8f9fa;
     color: #495057;
