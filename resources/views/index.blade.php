@@ -150,13 +150,16 @@
             <img src="{{ asset('imagenes/opertura.png') }}" alt="foto 7">
         </div>
         <div class="photo" onclick="zoomIn(this)">
-            <img src="{{ asset('imagenes/plantas-cantina.png') }}" alt="foto 8">
+            <img src="{{ asset('imagenes/terraza-event.jpg') }}" alt="foto 8">
         </div>
         <div class="photo" onclick="zoomIn(this)">
-            <img src="{{ asset('imagenes/terraza.png') }}" alt="foto 9">
+            <img src="{{ asset('imagenes/plantas-cantina.png') }}" alt="foto 9">
         </div>
         <div class="photo" onclick="zoomIn(this)">
-            <img src="{{ asset('imagenes/terraza-sol.png') }}" alt="foto 9">
+            <img src="{{ asset('imagenes/terraza.png') }}" alt="foto 10">
+        </div>
+        <div class="photo" onclick="zoomIn(this)">
+            <img src="{{ asset('imagenes/terraza-sol.png') }}" alt="foto 11">
         </div>
         <div class="photo" onclick="zoomIn(this)">
             <img src="{{ asset('imagenes/terraza-dia.jpg') }}" alt="foto 9">
