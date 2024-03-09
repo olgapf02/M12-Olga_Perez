@@ -1,6 +1,6 @@
 @extends('admin_pages/layout_adm')
 @section('content')
-    <h2 class="carta-title">Nuestro Restaurante</h2>
+    <h2 class="carta-title">Nuestro restaurante</h2>
     <div class="galeria">
         <div class="photo" onclick="zoomIn(this)">
             <img src="{{ asset('imagenes/logo_cant.png') }}" alt="foto 1">
@@ -24,13 +24,16 @@
             <img src="{{ asset('imagenes/opertura.png') }}" alt="foto 7">
         </div>
         <div class="photo" onclick="zoomIn(this)">
-            <img src="{{ asset('imagenes/plantas-cantina.png') }}" alt="foto 8">
+            <img src="{{ asset('imagenes/terraza-event.jpg') }}" alt="foto 8">
         </div>
         <div class="photo" onclick="zoomIn(this)">
-            <img src="{{ asset('imagenes/terraza.png') }}" alt="foto 9">
+            <img src="{{ asset('imagenes/plantas-cantina.png') }}" alt="foto 9">
         </div>
         <div class="photo" onclick="zoomIn(this)">
-            <img src="{{ asset('imagenes/terraza-sol.png') }}" alt="foto 9">
+            <img src="{{ asset('imagenes/terraza.png') }}" alt="foto 10">
+        </div>
+        <div class="photo" onclick="zoomIn(this)">
+            <img src="{{ asset('imagenes/terraza-sol.png') }}" alt="foto 11">
         </div>
         <div class="photo" onclick="zoomIn(this)">
             <img src="{{ asset('imagenes/terraza-dia.jpg') }}" alt="foto 9">

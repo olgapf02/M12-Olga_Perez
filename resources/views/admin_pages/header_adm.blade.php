@@ -1,7 +1,7 @@
 <header>
     <div class="menu2">
         <div class="logo">
-            <a href="{{ url('/') }}">
+            <a href="{{ url('admin/home') }}">
 {{--                <img src="{{ asset('imagenes/logo_rojo.png') }}" alt="Logo">--}}
                 <img src="{{ asset('imagenes/usuarios.png') }}" alt="usuario" >
 

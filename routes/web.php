@@ -63,3 +63,8 @@ Route::get('admin/prox_events',[admController::class,"prox_events"]);
 Route::get('admin/proveedores',[admController::class,"proveedor"]);
 Route::get('admin/home',[admController::class,"home"]);
 
+
+Route::get('admin/nuevo_evento',[admController::class,"nuevo_evento"]);
+Route::get('admin/nuevo_proveedor',[admController::class,"nuevo_proveedor"]);
+Route::get('admin/nuevo_prox_evento',[admController::class,"nuevo_proximo_evento"]);
+

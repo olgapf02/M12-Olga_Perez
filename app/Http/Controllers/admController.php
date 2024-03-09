@@ -58,4 +58,19 @@ class admController extends Controller
         app()->setLocale(session()->get('locale'));
         return view('admin_pages/home_adm');
     }
+
+    public function nuevo_evento(){
+        app()->setLocale(session()->get('locale'));
+        return view('admin_pages/forms/nuevo_event');
+    }
+
+    public function nuevo_proximo_evento(){
+        app()->setLocale(session()->get('locale'));
+        return view('admin_pages/forms/nuevo-prox-event');
+    }
+
+    public function nuevo_proveedor(){
+        app()->setLocale(session()->get('locale'));
+        return view('admin_pages/forms/nuevo_proveedor');
+    }
 }
