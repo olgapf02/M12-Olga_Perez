@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('eventos', function (Blueprint $table) {
+        Schema::create('evento', function (Blueprint $table) {
             $table->id();
             $table->string('nombre_organizador');
             $table->string('email');

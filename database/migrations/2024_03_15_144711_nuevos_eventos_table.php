@@ -9,9 +9,15 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
-        //
+        Schema::create('eventos', function (Blueprint $table) {
+            $table->id();
+            $table->string('titulo');
+            $table->text('texto');
+            $table->string('telefono');
+            $table->date('imagen');
+        });
     }
 
     /**
