@@ -8,125 +8,88 @@
     </a>
 </div>
 
-
-
-
-{{--<div class="row justify-content-center mt-4">--}}
-{{--    <div class="col-md-8 mb-3">--}}
-{{--        <div class="card flex-row h-100">--}}
-{{--            <img src="{{ asset('imagenes/aniversario-1.png') }}" class="card-img-top" style="height: 250px; object-fit: cover;" alt="...">--}}
-{{--            <div class="card-body d-flex flex-column justify-content-between" style="height: 100px;">--}}
-{{--                <div>--}}
-{{--                    <h5 class="card-title">Card title</h5>--}}
-{{--                    <p class="card-text text-start ms-4" style="font-size: 18px;">jskmkofvkdmknjhbgvbnkvvibhdbskficvuhfdbn--}}
-{{--                        fcviufdjhnficvudjfhnficvujhdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-
-
-
+@foreach($eventos as $evento)
     <div class="row justify-content-center mt-4">
-        <div class="col-md-8 mb-3">
-            <div class="card flex-row h-100 flex-grow-1">
-                <img src="{{ asset('imagenes/aniversario-1.png') }}" class="card-img-top" style="height: 150px; object-fit: cover;" alt="...">
+        <div class="col mb-3 m-15px">
+            <div class="card flex-row h-100">
+                <img src="{{ asset('storage/' . $evento->imagen) }}" class="card-img-top" style="height: 250px; object-fit: cover;" alt="...">
                 <div class="card-body d-flex flex-column justify-content-between" style="height: 100px;">
                     <div>
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text text-start ms-4" style="font-size: 18px;">jskmkofvkdmknjhbgvbnkvvibhdfghmhngfgdewrtrdtfjgvkhvmgcfhdrgsear54seydrtufjfhd4a5wedufycgfgear5w6e5ufdbskficvuhfdbn
-                            fcviufdjhnficvudjfhnficvujh,vlkjhgfdsedl,kmnjbhgvfcdxszazsxdcfgvhbjnknhgfdsaweszddxfcgrftghb vcdrftvcbnmhjkyhtredscvbnmjkliuytredscvbnmjkiuytgf56215485214875214852148521hfgxdbnchjdftsrgfxnghref<gvcxdftgvcftdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>
+                        <h5 class="card-title">{{ $evento->titulo }}</h5>
+                        <p class="card-text text-start ms-4" style="font-size: 18px;">{{ $evento->texto }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+@endforeach
 
 
-
-{{----------------------------------------------------------------------------------------------------}}
-
-    <div class="row justify-content-center mt-4">
-        <div class="col-md-8 mb-3">
-            <div class="card flex-row h-100 flex-grow-1">
-                <img src="{{ asset('imagenes/aniversario-1.png') }}" class="card-img-top" style="height: 150px; object-fit: cover;" alt="...">
-                <div class="card-body d-flex flex-column justify-content-between" style="height: 100px;">
-                    <div>
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text text-start ms-4" style="font-size: 18px;">jskmkofvkdmknjhbgvbnkvvibhdbskficvuhfdbn
-                            fcviufdjhnficvudjfhnficvujhdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>
-                    </div>
+<div class="row justify-content-center mt-4">
+    <div class="col mb-3 ">
+        <div class="card flex-row h-100">
+            <img src="{{ asset('imagenes/aniversario-1.png') }}" class="card-img-top" style="height: 250px; object-fit: cover;" alt="...">
+            <div class="card-body d-flex flex-column justify-content-between" style="height: 100px;">
+                <div>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text text-start ms-4" style="font-size: 18px;">jskmkofvkdmknjhbgvbnkvvibhdfghmhngfgdewrtrdtfjgvkhvmgcfhdrgsear54seydrtufjfhd4a5wedufycgfgear5w6e5ufdbskficvuhfdbn--}}
+                        fcviufdjhnficvudjfhnficvujh,vlkjhgfdsedl,kmnjbhgvfcdxszazsxdcfgvhbjnknhgfdsaweszddxfcgrftghb vcdrftvcbnmhjkyhtredscvbnmjkliuytredscvbnmjkiuytgf56215485214875214852148521hfgxdbnchjdftsrgfxnghref<gvcxdftgvcftdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>
+                    fcviufdjhnficvudjfhnficvujh,vlkjhgfdsedl,kmnjbhgvfcdxszazsxdcfgvhbjnknhgfdsaweszddxfcgrftghb vcdrftvcbnmhjkyhtredscvbnmjkliuytredscvbnmjkiuytgf56215485214875214852148521hfgxdbnchjdftsrgfxnghref<gvcxdftgvcftdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="row justify-content-center mt-4">
-        <div class="col-md-8 mb-3">
-            <div class="card flex-row h-100 flex-grow-1">
-                <img src="{{ asset('imagenes/aniversario-1.png') }}" class="card-img-top" style="height: 150px; object-fit: cover;" alt="...">
-                <div class="card-body d-flex flex-column justify-content-between" style="height: 100px;">
-                    <div>
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text text-start ms-4" style="font-size: 18px;">jskmkofvkdmknjhbgvbnkvvibhdbskficvuhfdbn
-                            fcviufdjhnficvudjfhnficvujhdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>
-                    </div>
+
+<div class="row justify-content-center mt-4">
+    <div class="col mb-3 m-15px">
+        <div class="card flex-row h-100">
+            <img src="{{ asset('imagenes/aniversario-1.png') }}" class="card-img-top" style="height: 250px; object-fit: cover;" alt="...">
+            <div class="card-body d-flex flex-column justify-content-between" style="height: 100px;">
+                <div>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text text-start ms-4" style="font-size: 18px;">jskmkofvkdmknjhbgvbnkvvibhdfghmhngfgdewrtrdtfjgvkhvmgcfhdrgsear54seydrtufjfhd4a5wedufycgfgear5w6e5ufdbskficvuhfdbn
+                        fcviufdjhnficvudjfhnficvujh,vlkjhgfdsedl,kmnjbhgvfcdxszazsxdcfgvhbjnknhgfdsaweszddxfcgrftghb vcdrftvcbnmhjkyhtredscvbnmjkliuytredscvbnmjkiuytgf56215485214875214852148521hfgxdbnchjdftsrgfxnghref<gvcxdftgvcftdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>
+                    fcviufdjhnficvudjfhnficvujh,vlkjhgfdsedl,kmnjbhgvfcdxszazsxdcfgvhbjnknhgfdsaweszddxfcgrftghb vcdrftvcbnmhjkyhtredscvbnmjkliuytredscvbnmjkiuytgf56215485214875214852148521hfgxdbnchjdftsrgfxnghref<gvcxdftgvcftdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
-    <div class="row justify-content-center mt-4">
-        <div class="col-md-8 mb-3">
-            <div class="card flex-row h-100 flex-grow-1">
-                <img src="{{ asset('imagenes/aniversario-1.png') }}" class="card-img-top" style="height: 150px; object-fit: cover;" alt="...">
-                <div class="card-body d-flex flex-column justify-content-between" style="height: 100px;">
-                    <div>
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text text-start ms-4" style="font-size: 18px;">jskmkofvkdmknjhbgvbnkvvibhdbskficvuhfdbn
-                            fcviufdjhnficvudjfhnficvujhdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>
-                    </div>
+<div class="row justify-content-center mt-4">
+    <div class="col mb-3 m-15px">
+        <div class="card flex-row h-100">
+            <img src="{{ asset('imagenes/aniversario-1.png') }}" class="card-img-top" style="height: 250px; object-fit: cover;" alt="...">
+            <div class="card-body d-flex flex-column justify-content-between" style="height: 100px;">
+                <div>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text text-start ms-4" style="font-size: 18px;">jskmkofvkdmknjhbgvbnkvvibhdfghmhngfgdewrtrdtfjgvkhvmgcfhdrgsear54seydrtufjfhd4a5wedufycgfgear5w6e5ufdbskficvuhfdbn
+                        fcviufdjhnficvudjfhnficvujh,vlkjhgfdsedl,kmnjbhgvfcdxszazsxdcfgvhbjnknhgfdsaweszddxfcgrftghb vcdrftvcbnmhjkyhtredscvbnmjkliuytredscvbnmjkiuytgf56215485214875214852148521hfgxdbnchjdftsrgfxnghref<gvcxdftgvcftdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>
+                    fcviufdjhnficvudjfhnficvujh,vlkjhgfdsedl,kmnjbhgvfcdxszazsxdcfgvhbjnknhgfdsaweszddxfcgrftghb vcdrftvcbnmhjkyhtredscvbnmjkliuytredscvbnmjkiuytgf56215485214875214852148521hfgxdbnchjdftsrgfxnghref<gvcxdftgvcftdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
-    <div class="row justify-content-center mt-4">
-        <div class="col-md-8 mb-3">
-            <div class="card flex-row h-100 flex-grow-1">
-                <img src="{{ asset('imagenes/aniversario-1.png') }}" class="card-img-top" style="height: 150px; object-fit: cover;" alt="...">
-                <div class="card-body d-flex flex-column justify-content-between" style="height: 100px;">
-                    <div>
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text text-start ms-4" style="font-size: 18px;">jskmkofvkdmknjhbgvbnkvvibhdbskficvuhfdbn
-                            fcviufdjhnficvudjfhnficvujhdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>
-                    </div>
+<div class="row justify-content-center mt-4">
+    <div class="col mb-3 m-15px">
+        <div class="card flex-row h-100">
+            <img src="{{ asset('imagenes/aniversario-1.png') }}" class="card-img-top" style="height: 250px; object-fit: cover;" alt="...">
+            <div class="card-body d-flex flex-column justify-content-between" style="height: 100px;">
+                <div>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text text-start ms-4" style="font-size: 18px;">jskmkofvkdmknjhbgvbnkvvibhdfghmhngfgdewrtrdtfjgvkhvmgcfhdrgsear54seydrtufjfhd4a5wedufycgfgear5w6e5ufdbskficvuhfdbn
+                        fcviufdjhnficvudjfhnficvujh,vlkjhgfdsedl,kmnjbhgvfcdxszazsxdcfgvhbjnknhgfdsaweszddxfcgrftghb vcdrftvcbnmhjkyhtredscvbnmjkliuytredscvbnmjkiuytgf56215485214875214852148521hfgxdbnchjdftsrgfxnghref<gvcxdftgvcftdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>
+                    fcviufdjhnficvudjfhnficvujh,vlkjhgfdsedl,kmnjbhgvfcdxszazsxdcfgvhbjnknhgfdsaweszddxfcgrftghb vcdrftvcbnmhjkyhtredscvbnmjkliuytredscvbnmjkiuytgf56215485214875214852148521hfgxdbnchjdftsrgfxnghref<gvcxdftgvcftdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="row justify-content-center mt-4">
-        <div class="col-md-8 mb-3">
-            <div class="card flex-row h-100 flex-grow-1">
-                <img src="{{ asset('imagenes/aniversario-1.png') }}" class="card-img-top" style="height: 150px; object-fit: cover;" alt="...">
-                <div class="card-body d-flex flex-column justify-content-between" style="height: 100px;">
-                    <div>
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text text-start ms-4" style="font-size: 18px;">jskmkofvkdmknjhbgvbnkvvibhdbskficvuhfdbn
-                            fcviufdjhnficvudjfhnficvujhdnficvujfnedfivcujnfdsfnwedkfoivfkdfnmfifjkfdt amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
+</div>
 @endsection
 

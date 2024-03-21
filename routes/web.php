@@ -6,7 +6,9 @@ use App\Http\Controllers\PortadaPrincipalController;
 use App\Http\Controllers\FormulariosController;
 use App\Http\Controllers\IdiomasController;
 use App\Http\Controllers\admController;
-use App\Http\Controllers\formsadminController;
+use App\Http\Controllers\loginadminController;
+use App\Http\Controllers\eventosadminController;
+use App\Http\Controllers\proveedoresadminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,19 +51,21 @@ Route::get('/prox eventos',[PortadaPrincipalController::class,"calendario"]);
 Route::get('/change-language/{language}', [IdiomasController::class, 'cambiarLanguage'])->name('change.language');
 // ****************************************************************
 //paguinas del admin
-Route::get('admin/events',[admController::class,"eventoss"]);
+Route::get('admin/events',[admController::class,"eventos"])->name('admin.events');
 Route::get('admin/prox_events',[admController::class,"prox_events"]);
 Route::get('admin/proveedores',[admController::class,"proveedor"]);
 Route::get('admin/home',[admController::class,"home"])->name('admin.home');
 // ********************************************************************************************************************
-// forms del admin
-Route::get('/login',[formsadminController::class,"login"]);
-Route::post('/submit_user', [formsadminController::class, 'submitlogin'])->name('submit_user');
-
-Route::get('admin/nuevo_evento',[formsadminController::class,"nuevo_evento"]);
-Route::post('/submit_event_form', [FormulariosController::class, 'submitEventForm'])->name('submit_event');
-
-Route::get('admin/nuevo_proveedor',[formsadminController::class,"nuevo_proveedor"]);
-//Route::post('/submit_event_form', [FormulariosController::class, 'submitproveedorForm'])->name('submit_proveedor');
+// loginadmin
+Route::get('/login',[loginadminController::class,"login"]);
+Route::post('/submit_user', [loginadminController::class, 'submitlogin'])->name('submit_user');
+// ********************************************************************************************************************
+//eventos admin
+Route::get('admin/nuevo_evento',[eventosadminController::class,"nuevo_evento"]);
+Route::post('/submit_event_form', [eventosadminController::class, 'submitEventForm'])->name('submit_event');
+// ********************************************************************************************************************
+//proveedores admin
+Route::get('admin/nuevo_proveedor',[proveedoresadminController::class,"nuevo_proveedor"]);
+Route::post('/submit_event_form', [proveedoresadminController::class, 'submitproveedorForm'])->name('submit_proveedor');
 
 

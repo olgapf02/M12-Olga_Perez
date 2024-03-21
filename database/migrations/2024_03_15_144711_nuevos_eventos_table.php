@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('titulo');
             $table->text('texto');
-            $table->string('telefono');
+            $table->date('fecha');
             $table->date('imagen');
         });
     }
