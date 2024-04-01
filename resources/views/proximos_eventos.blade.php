@@ -13,7 +13,7 @@
 
 
     @if ($eventos->isEmpty())
-        <p>{{ __('No hay eventos próximos.') }}</p>
+        <h1>{{ __('No hay próximos eventos.') }}</h1>
     @else
         <div class="eventos-container">
             @foreach ($eventos as $evento)
@@ -24,6 +24,7 @@
                     <div class="contenido">
                         <h3>{{ $evento->titulo }}</h3>
                         <p>{{ $evento->texto }}</p>
+                        <h3>{{ $evento->fecha }}</h3>
                     </div>
                 </div>
             @endforeach
