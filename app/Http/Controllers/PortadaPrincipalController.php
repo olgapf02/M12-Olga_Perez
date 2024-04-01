@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+use Google\Service\AdMob\App;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
+use App\Models\Evento;
 
 class PortadaPrincipalController extends Controller
 {
@@ -33,43 +35,28 @@ class PortadaPrincipalController extends Controller
         ]);
 
     }
-//        return view('map', ['locationData' => $locationData, 'place' => $place]);
+//    public function eventos(){
+//        app()->setLocale(session()->get('locale'));
+//        return view('eventos');
+//    }
+//        App\Models\Evento::where('fecha', '>', now())->get();
+
     public function eventos(){
         app()->setLocale(session()->get('locale'));
-        return view('eventos');
+
+        $eventos = Evento::where('fecha', '>', now())->get();
+
+        return view('eventos', compact('eventos'));
     }
+
+
 
     public function proveedores(){
         app()->setLocale(session()->get('locale'));
         return view('proveedores');
-    }
-
-    public function carta(){
-        app()->setLocale(session()->get('locale'));
-        return view('carta');
-
-    }
-    public function bebidas(){
-//        app()->setLocale(session()->get('locale'));
-        return view('bebidas');
-
-    }
-
-//    public function tapas(){
-//        return view('tapas');
-//    }
-
-    public function tapas(){
-//        app()->setLocale(session()->get('locale'));
-        return view('tapas');
 
     }
 
 
-    public function calendario(){
-        app()->setLocale(session()->get('locale'));
-        return view('calendario');
-
-    }
 
 }

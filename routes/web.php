@@ -1,6 +1,6 @@
 <?php
 
-//use App\Http\Controllers\FormulariosController;
+use App\Http\Controllers\AdminEventosGeneralesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PortadaPrincipalController;
 use App\Http\Controllers\FormulariosController;
@@ -51,21 +51,26 @@ Route::get('/prox eventos',[PortadaPrincipalController::class,"calendario"]);
 Route::get('/change-language/{language}', [IdiomasController::class, 'cambiarLanguage'])->name('change.language');
 // ****************************************************************
 //paguinas del admin
-Route::get('admin/events',[admController::class,"eventos"])->name('admin.events');
 Route::get('admin/prox_events',[admController::class,"prox_events"]);
 Route::get('admin/proveedores',[admController::class,"proveedor"]);
 Route::get('admin/home',[admController::class,"home"])->name('admin.home');
 // ********************************************************************************************************************
 // loginadmin
-Route::get('/login',[loginadminController::class,"login"]);
+Route::get('/login',[loginadminController::class,"login"])->name('user');
 Route::post('/submit_user', [loginadminController::class, 'submitlogin'])->name('submit_user');
 // ********************************************************************************************************************
-//eventos admin
-Route::get('admin/nuevo_evento',[eventosadminController::class,"nuevo_evento"]);
-Route::post('/submit_event_form', [eventosadminController::class, 'submitEventForm'])->name('submit_event');
 // ********************************************************************************************************************
 //proveedores admin
 Route::get('admin/nuevo_proveedor',[proveedoresadminController::class,"nuevo_proveedor"]);
-Route::post('/submit_event_form', [proveedoresadminController::class, 'submitproveedorForm'])->name('submit_proveedor');
+Route::post('/submit_event_form', [proveedoresadminController::class, 'submitproveedorForm'])->name('submit.proveedor');
+
+
+//eventos admin
+Route::get('admin/eventos-generales', [AdminEventosGeneralesController::class, 'index'])->name('eventosGenerales.index'); // Mostramos todos los eventos
+Route::get('admin/eventos-generales/create', [AdminEventosGeneralesController::class, 'create'])->name('eventosGenerales.create'); // Mostramos un formulario para crear un evento
+Route::post('admin/eventos-generales', [AdminEventosGeneralesController::class, 'store'])->name('eventosGenerales.store'); // Guardamos un nuevo evento
+Route::get('admin/eventos-generales/{eventoGeneral}/edit', [AdminEventosGeneralesController::class, 'edit'])->name('eventosGenerales.edit'); // Mostramos un formulario con la information del evento
+Route::post('admin/eventos-generales/{eventoGeneral}', [AdminEventosGeneralesController::class, 'update'])->name('eventosGenerales.update'); // Actualizamos el evento
+Route::get('admin/eventos-generales/{eventoGeneral}/delete', [AdminEventosGeneralesController::class, 'destroy'])->name('eventosGenerales.destroy'); // Borramos el evento
 
 

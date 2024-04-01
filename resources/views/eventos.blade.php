@@ -11,120 +11,139 @@
 @endsection
 @section('content')
 
-    <div class="container-de-eventos">
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/aniversario-1.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('First anniversary of La Cantina Laab')}}</h3>
-                <p>{{ __('text anniversary')}}</p>
-            </div>
+    @if ($eventos->isEmpty())
+        <p>{{ __('No hay eventos próximos.') }}</p>
+    @else
+        <div class="eventos-container">
+            @foreach ($eventos as $evento)
+                <div class="item">
+                    <div class="photo">
+                        <img src="{{ asset($evento->imagen) }}" class="imagen" alt="">
+                    </div>
+                    <div class="contenido">
+                        <h3>{{ $evento->titulo }}</h3>
+                        <p>{{ $evento->texto }}</p>
+                    </div>
+                </div>
+            @endforeach
         </div>
+    @endif
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/aniversario-2.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('second anniversary')}}</h3>
-                <p>{{ __('text anniversary2')}}</p>
-            </div>
-        </div>
+{{--    <div class="container-de-eventos">--}}
 
+{{--        <div class="item">--}}
+{{--            <div class="photo">--}}
+{{--                <img src="{{ asset('imagenes/aniversario-1.png') }}" class="imagen">--}}
+{{--            </div>--}}
+{{--            <div class="contenido">--}}
+{{--                <h3>{{ __('First anniversary of La Cantina Laab')}}</h3>--}}
+{{--                <p>{{ __('text anniversary')}}</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/doppler.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('Doppler')}}</h3>
-                <p>{{ __('texto_doppler')}}</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/blablabar.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('blablabar')}}</h3>
-                <p>{{ __('text blabla')}}</p>
-            </div>
-        </div>
+{{--        <div class="item">--}}
+{{--            <div class="photo">--}}
+{{--                <img src="{{ asset('imagenes/aniversario-2.png') }}" class="imagen">--}}
+{{--            </div>--}}
+{{--            <div class="contenido">--}}
+{{--                <h3>{{ __('second anniversary')}}</h3>--}}
+{{--                <p>{{ __('text anniversary2')}}</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/calcotada.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('pantyhose')}}</h3>
-                <p>{{ __('text de pantyhose')}}</p>
-            </div>
-        </div>
+{{--        <div class="item">--}}
+{{--            <div class="photo">--}}
+{{--                <img src="{{ asset('imagenes/doppler.png') }}" class="imagen">--}}
+{{--            </div>--}}
+{{--            <div class="contenido">--}}
+{{--                <h3>{{ __('Doppler')}}</h3>--}}
+{{--                <p>{{ __('texto_doppler')}}</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+
+{{--        <div class="item">--}}
+{{--            <div class="photo">--}}
+{{--                <img src="{{ asset('imagenes/blablabar.png') }}" class="imagen">--}}
+{{--            </div>--}}
+{{--            <div class="contenido">--}}
+{{--                <h3>{{ __('blablabar')}}</h3>--}}
+{{--                <p>{{ __('text blabla')}}</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/cine.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('cinema')}}</h3>
-                <p>{{ __('text_cine')}}</p>
-            </div>
-        </div>
+{{--        <div class="item">--}}
+{{--            <div class="photo">--}}
+{{--                <img src="{{ asset('imagenes/calcotada.png') }}" class="imagen">--}}
+{{--            </div>--}}
+{{--            <div class="contenido">--}}
+{{--                <h3>{{ __('pantyhose')}}</h3>--}}
+{{--                <p>{{ __('text de pantyhose')}}</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/lgtbi.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('queer')}}LGTBIQ+</h3>
-                <p>{{ __('text queer')}}</p>
-            </div>
-        </div>
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/dj.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('dj')}}</h3>
-                <p>{{ __('text dj')}}</p>
-            </div>
-        </div>
+{{--        <div class="item">--}}
+{{--            <div class="photo">--}}
+{{--                <img src="{{ asset('imagenes/cine.png') }}" class="imagen">--}}
+{{--            </div>--}}
+{{--            <div class="contenido">--}}
+{{--                <h3>{{ __('cinema')}}</h3>--}}
+{{--                <p>{{ __('text_cine')}}</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/baile.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('dance')}}</h3>
-                <p>{{ __('text dance')}}</p>
-            </div>
-        </div>
+{{--        <div class="item">--}}
+{{--            <div class="photo">--}}
+{{--                <img src="{{ asset('imagenes/lgtbi.png') }}" class="imagen">--}}
+{{--            </div>--}}
+{{--            <div class="contenido">--}}
+{{--                <h3>{{ __('queer')}}LGTBIQ+</h3>--}}
+{{--                <p>{{ __('text queer')}}</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
-        <div class="item">
-            <div class="photo">
-                <img src="{{ asset('imagenes/volante-flamenco.png') }}" class="imagen">
-            </div>
-            <div class="contenido">
-                <h3>{{ __('dance2')}}</h3>
-                <p>{{ __('texto flamenco')}}</p>
-            </div>
-        </div>
+{{--        <div class="item">--}}
+{{--            <div class="photo">--}}
+{{--                <img src="{{ asset('imagenes/dj.png') }}" class="imagen">--}}
+{{--            </div>--}}
+{{--            <div class="contenido">--}}
+{{--                <h3>{{ __('dj')}}</h3>--}}
+{{--                <p>{{ __('text dj')}}</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
-        <div class="menu">
-            <var>
-                <ul>
-                    <button class="botones button"><li><a href="{{ url('/prox eventos') }}">{{ __('prox events')}}</a></li></button>
-                </ul>
-            </var>
-        </div>
+{{--        <div class="item">--}}
+{{--            <div class="photo">--}}
+{{--                <img src="{{ asset('imagenes/baile.png') }}" class="imagen">--}}
+{{--            </div>--}}
+{{--            <div class="contenido">--}}
+{{--                <h3>{{ __('dance')}}</h3>--}}
+{{--                <p>{{ __('text dance')}}</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
-    </div>
+{{--        <div class="item">--}}
+{{--            <div class="photo">--}}
+{{--                <img src="{{ asset('imagenes/volante-flamenco.png') }}" class="imagen">--}}
+{{--            </div>--}}
+{{--            <div class="contenido">--}}
+{{--                <h3>{{ __('dance2')}}</h3>--}}
+{{--                <p>{{ __('texto flamenco')}}</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+
+{{--        <div class="menu">--}}
+{{--            <var>--}}
+{{--                <ul>--}}
+{{--                    <button class="botones button"><li><a href="{{ url('/prox eventos') }}">{{ __('prox events')}}</a></li></button>--}}
+{{--                </ul>--}}
+{{--            </var>--}}
+{{--        </div>--}}
+
+{{--    </div>--}}
 
 
 @endsection
