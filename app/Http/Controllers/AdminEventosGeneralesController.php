@@ -12,12 +12,11 @@ class AdminEventosGeneralesController extends Controller
         // Mostramos todos los eventos
         if (!$request->session()->has('user')) {
             // Redirige al usuario al login
-            return redirect()->route('user'); // Reemplaza 'login' con la ruta de tu página de inicio de sesión
+            return redirect()->route('user'); // la ruta de tu página de inicio de sesión (user)
         }
-
         return view('admin_pages/events_adm', [
             //llamar al modelo con una variable y poner que se enseñen los eventos paguinados a partir de  un limite de eventos
-            "eventos" => Evento::paginate(25),
+            "eventos" => Evento::paginate(10),
         ]);
     }
 
@@ -25,9 +24,8 @@ class AdminEventosGeneralesController extends Controller
     {
         if (!$request->session()->has('user')) {
             // Redirige al usuario al login
-            return redirect()->route('login'); // Reemplaza 'login' con la ruta de tu página de inicio de sesión
+            return redirect()->route('login'); // redigiremos a la paguina de inicio del login
         }
-
         // Mostramos un formulario para crear un evento
         return view('admin_pages/forms/nuevo_event');
     }
@@ -37,7 +35,7 @@ class AdminEventosGeneralesController extends Controller
     {
         if (!$request->session()->has('user')) {
             // Redirige al usuario al login
-            return redirect()->route('login'); // Reemplaza 'login' con la ruta de tu página de inicio de sesión
+            return redirect()->route('login');
         }
         $validatedData = $request->validate([
             'titulo' => 'required|string|max:255',
@@ -48,7 +46,6 @@ class AdminEventosGeneralesController extends Controller
 
         // Procesar el archivo de imagen y guardarlo en el directorio
 //        $imagen = $request->file('archivo')->store('public/imagenes');
-
 
         // Crear un nuevo evento con los datos validados
         $evento = new Evento();
@@ -82,9 +79,8 @@ class AdminEventosGeneralesController extends Controller
     public function update(Request $request)
     {        if (!$request->session()->has('user')) {
         // Redirige al usuario al login
-        return redirect()->route('login'); // Reemplaza 'login' con la ruta de tu página de inicio de sesión
+        return redirect()->route('login');
     }
-
             $validatedData = $request->validate([
             'titulo' => 'required|string|max:255',
             'texto' => 'required|string',

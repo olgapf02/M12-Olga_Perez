@@ -16,6 +16,7 @@
                             <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                             <p class="text-white-50 mb-5">Please enter your login and password!</p>
 
+                        {{-- esto validara las validaciones del controller--}}
                             @if ($errors->any())
                                 <div class="alert alert-danger">
                                     <ul>
@@ -25,7 +26,7 @@
                                     </ul>
                                 </div>
                             @endif
-
+                            {{-- esto validara si hay un mensaje de error en la session--}}
                             @if (session('error'))
                                 <div class="alert alert-danger">
                                     {{ session('error') }}

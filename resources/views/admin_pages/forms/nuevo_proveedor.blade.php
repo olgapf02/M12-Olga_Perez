@@ -4,7 +4,7 @@
     <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
         <div class="card" style="width: 500px; max-width: 90%;">
             <div class="card-body">
-                <form>
+                <form method="POST" action="{{ route('proveedores.store') }}">
                     @csrf
                     <h1>Nuevo Proveedor</h1>
                     <div class="mb-3">

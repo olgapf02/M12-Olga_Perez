@@ -7,12 +7,14 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
-class loginadminController extends Controller{
+class AdminloginController extends Controller{
     public function login(){
         return view('admin_pages/forms/login_adm');
     }
+    //login
     public function submitlogin(Request $request){
-//login
+
+//     validamos los datos que meteremos en nuestro formulario
        $request->validate([
             'email' => 'required|string',
             'password' => 'required|string',
@@ -25,7 +27,6 @@ class loginadminController extends Controller{
        // si no existe el email. return error
         if (!$user) {
             return ('error, El correo electrónico no está registrado');
-//            redirect()->route('/login')->with
         }
 
         // costraseña formulario == contreña de base de datos

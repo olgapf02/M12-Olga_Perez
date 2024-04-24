@@ -35,18 +35,25 @@ class PortadaPrincipalController extends Controller
         ]);
 
     }
-//    public function eventos(){
-//        app()->setLocale(session()->get('locale'));
-//        return view('eventos');
-//    }
-//        App\Models\Evento::where('fecha', '>', now())->get();
 
     public function eventos(){
         app()->setLocale(session()->get('locale'));
+        return view('events');
+    }
 
+    public function eventos_anteriores(){
+        app()->setLocale(session()->get('locale'));
+
+        $eventos = Evento::where('fecha', '<', now())->get();
+
+        return view('eventos_pasados')->with('eventos', $eventos);
+    }
+
+    public function prox_eventos(){
+        app()->setLocale(session()->get('locale'));
         $eventos = Evento::where('fecha', '>', now())->get();
 
-        return view('eventos', compact('eventos'));
+        return view('proximos_eventos')->with('eventos', $eventos);
     }
 
 

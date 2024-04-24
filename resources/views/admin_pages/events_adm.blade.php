@@ -11,7 +11,6 @@
 <div class="container-fluid">
     <div class="row justify-content-center mt-4">
         <div class="col-lg-10 col-xl-8">
-            <!-- Utiliza col-lg-10 para pantallas grandes y col-xl-8 para extra grandes -->
             @foreach($eventos as $evento)
                 <div class="card mb-4">
                     <!-- Agregamos la clase mb-4 para un margen inferior -->

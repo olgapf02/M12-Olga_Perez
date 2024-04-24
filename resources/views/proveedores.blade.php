@@ -182,6 +182,18 @@
                     <a href="https://instagram.com/subversivacoop?igshid=MzRlODBiNWFlZA==" target="_blank" class="button">{{ __('know more')}}</a>
                 </div>
             </div>
-    </div>
+
+
+           <div class="item">
+               <div class="photo">
+                   <img src="{{ asset('imagenes/brots.png') }}" class="imagen">
+               </div>
+               <div class="contenido">
+                   <h3>{{ __('Brots')}}</h3>
+                   <p>{{ __('Brots text')}} </p>
+                   <a href="https://www.brotsecosocial.org/" target="_blank" class="button">{{ __('know more')}}</a>
+               </div>
+           </div>
+   </div>
 
 @endsection

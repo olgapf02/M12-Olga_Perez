@@ -9,9 +9,15 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
-        //
+        Schema::create('proveedores_generales', function (Blueprint $table) {
+            $table->id();
+            $table->string('titulo');
+            $table->text('texto');
+            $table->string('imagen');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -19,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('proveedores_generales');
     }
 };

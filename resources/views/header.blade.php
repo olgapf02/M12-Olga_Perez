@@ -1,4 +1,4 @@
-<header>
+<header class="fixed-top">
     <div class="menu2">
         <div class="logo">
             <a href="{{ url('/') }}">
