@@ -46,7 +46,7 @@ class AdminproveedoresController extends Controller
         ]);
 
         // Procesar el archivo de imagen y guardarlo en el directorio
-        //        $imagen = $request->file('archivo')->store('public/imagenes');
+                $imagen = $request->file('archivo')->store('public/imagenes');
 
         // Crear un nuevo proveedor con los datos validados
         $proveedor = new Proveedor();
@@ -88,53 +88,31 @@ public function update(Request $request)
             'archivo' => 'required|image|max:2000'|'mimes:png,jpg',
         ]);
 
-    $proveedorId = $request->route('eventoGeneral');
+    $proveedorId = $request->route('proveedorGeneral');
     $proveedorGeneral = Proveedor::where('id', $proveedorId)->first();
 //        dd($validatedData);
 //            dd($proveedorGeneral);
+//    dd($proveedorId);
     $proveedorGeneral->titulo = $validatedData['titulo'];
     $proveedorGeneral->texto = $validatedData['texto'];
     $proveedorGeneral->imagen = ''; // temporal
     $proveedorGeneral->save();
-    return redirect()->route('proveedores.index')->with('success', 'Evento actualizado con éxito');
+    return redirect()->route('proveedores.indexe')->with('success', 'Evento actualizado con éxito');
 }
 
-//    public function update(Request $request)
-//    {        if (!$request->session()->has('user')) {
-//        // Redirige al usuario al login
-//        return redirect()->route('login');
-//    }
-//        $validatedData = $request->validate([
-//            'titulo' => 'required|string|max:255',
-//            'texto' => 'required|string',
-//            'fecha' => 'required|date',
-//            'archivo' => 'required|image|max:2000'|'mimes:png,jpg',
-//        ]);
-//
-//        $eventoGeneralId = $request->route('eventoGeneral');
-//        $eventoGeneral = Evento::where('id', $eventoGeneralId)->first();
-//
-//        $eventoGeneral->titulo = $validatedData['titulo'];
-//        $eventoGeneral->texto = $validatedData['texto'];
-//        $eventoGeneral->fecha = $validatedData['fecha'];
-//        $eventoGeneral->imagen = ''; // temporal
-//        $eventoGeneral->save();
-//
-//        return redirect()->route('eventosGenerales.index')->with('success', 'Evento actualizado con éxito');
-//    }
     // Borramos el evento
-//    public function destroy(Request $request)
-//    {
-//        if (!$request->session()->has('user')) {
-//            // Redirige al usuario al login
-//            return redirect()->route('login'); // Reemplaza 'login' con la ruta de tu página de inicio de sesión
-//        }
-//
-//        $proveedorId = $request->route('eventoGeneral');
-//        $proveedorGeneral = Proveedor::where('id', $proveedorId)->first();
-//
-//        $proveedorGeneral->delete();
-//
-//        return redirect()->route('proveedores.index')->with('success', 'Evento borrado con éxito');
-//    }
+    public function destroy(Request $request)
+    {
+        if (!$request->session()->has('user')) {
+            // Redirige al usuario al login
+            return redirect()->route('login'); // Reemplaza 'login' con la ruta de tu página de inicio de sesión
+        }
+
+        $proveedorId = $request->route('proveedorGeneral');
+        $proveedorGeneral = Proveedor::where('id', $proveedorId)->first();
+
+        $proveedorGeneral->delete();
+
+        return redirect()->route('proveedores.indexe')->with('success', 'Evento borrado con éxito');
+    }
 }
