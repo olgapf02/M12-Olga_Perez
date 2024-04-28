@@ -123,18 +123,18 @@ public function update(Request $request)
 //        return redirect()->route('eventosGenerales.index')->with('success', 'Evento actualizado con éxito');
 //    }
     // Borramos el evento
-    public function destroy(Request $request)
-    {
-        if (!$request->session()->has('user')) {
-            // Redirige al usuario al login
-            return redirect()->route('login'); // Reemplaza 'login' con la ruta de tu página de inicio de sesión
-        }
-
-        $proveedorId = $request->route('eventoGeneral');
-        $proveedorGeneral = Proveedor::where('id', $proveedorId)->first();
-
-        $proveedorGeneral->delete();
-
-        return redirect()->route('proveedores.index')->with('success', 'Evento borrado con éxito');
-    }
+//    public function destroy(Request $request)
+//    {
+//        if (!$request->session()->has('user')) {
+//            // Redirige al usuario al login
+//            return redirect()->route('login'); // Reemplaza 'login' con la ruta de tu página de inicio de sesión
+//        }
+//
+//        $proveedorId = $request->route('eventoGeneral');
+//        $proveedorGeneral = Proveedor::where('id', $proveedorId)->first();
+//
+//        $proveedorGeneral->delete();
+//
+//        return redirect()->route('proveedores.index')->with('success', 'Evento borrado con éxito');
+//    }
 }

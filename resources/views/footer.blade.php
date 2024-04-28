@@ -17,7 +17,7 @@
             </div>
 
         <div class="logo-fotter">
-            <img src="{{ asset('imagenes/logo_cant.png') }}" alt="Logo">
+            <img src="{{ asset('imagenes/logo_rojo.png') }}" alt="Logo">
             <h1>937 44 47 99</h1>
         </div>
 

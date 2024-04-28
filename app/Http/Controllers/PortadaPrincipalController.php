@@ -64,6 +64,30 @@ class PortadaPrincipalController extends Controller
 
     }
 
+    public function carta(){
+        app()->setLocale(session()->get('locale'));
+        return view('carta');
+
+//            $usuarioId = $request->input('usuario_id');
+//            $tokenDeAcceso = $request->input('token_de_acceso');
+//
+//            // Realizar la solicitud a la API de Instagram
+//            $response = Http::get("https://graph.facebook.com/v11.0/{ig-user-id}/stories", [
+//                'access_token' => $tokenDeAcceso
+//            ]);
+//
+//            // Verificar si la solicitud fue exitosa
+//            if ($response->ok()) {
+//                $historias = $response->json()['data'];
+//                // Procesar las historias y pasarlas a la vista
+//                return view('historias')->with('historias', $historias);
+//            } else {
+//                // Manejar errores
+//                return response()->json(['error' => 'Error al obtener las historias'], $response->status());
+//            }
+        }
+
+
 
 
 }

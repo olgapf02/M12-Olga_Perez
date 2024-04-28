@@ -33,8 +33,8 @@ Route::get('/eventos_proximos',[PortadaPrincipalController::class,"prox_eventos"
 
 Route::get('/proveedor',[PortadaPrincipalController::class,"proveedores"]);
 Route::get('/menu',[PortadaPrincipalController::class,"carta"]);
-Route::get('/bebidas',[PortadaPrincipalController::class,"bebidas"]);
-Route::get('/tapas',[PortadaPrincipalController::class,"tapas"]);
+//Route::get('/bebidas',[PortadaPrincipalController::class,"bebidas"]);
+//Route::get('/tapas',[PortadaPrincipalController::class,"tapas"]);
 
 // *************************************************************************
 //formularios

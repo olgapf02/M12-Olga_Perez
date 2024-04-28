@@ -95,11 +95,11 @@
             </tr>
             <tr>
                 <td>{{ __('Monday') }}</td>
-                <td>12:00 - 00:00</td>
+                <td>CERRADO</td>
             </tr>
             <tr>
                 <td>{{ __('Tuesday') }}</td>
-                <td>12:00 - 18:00</td>
+                <td>12:00 - 00:00</td>
             </tr>
             <tr>
                 <td>{{ __('Wednesday') }}</td>
