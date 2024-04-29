@@ -19,6 +19,7 @@
                             <div>
                                 <h5 class="card-title">{{ $proveedor->titulo }}</h5>
                                 <p class="card-text text-start ms-4" style="font-size: 18px;">{{ $proveedor->texto }}</p>
+                                <a href="{{ $proveedor->url }}" class="btn btn-primary" target="_blank">Ir a la URL</a>
                                 <a href="{{ route('proveedores.edit', ['proveedorGeneral' => $proveedor->id]) }}" class="btn btn-primary">Edit</a>
                                 <a href="{{ route('proveedores.destroy', ['proveedorGeneral' => $proveedor->id]) }}" class="btn btn-primary">Delete</a>
                             </div>

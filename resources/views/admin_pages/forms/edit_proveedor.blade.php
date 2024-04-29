@@ -18,6 +18,11 @@
                         <textarea class="form-control" id="texto" name="texto" rows="5" style="height: 150px;" required>{{ $proveedorGeneral->texto }}</textarea>
                     </div>
 
+                    <div class="form-group">
+                        <label for="url">URL:</label>
+                        <input type="url" class="form-control" id="url" name="url" value="{{ $proveedorGeneral->url }}">
+                    </div>
+
                     <div class="mb-3">
                         <label for="exampleFormControlFile1" class="form-label">Adjuntar Archivo</label>
                         <input type="file" class="form-control-file" id="exampleFormControlFile1">

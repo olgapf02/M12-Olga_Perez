@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Proveedor;
 use Google\Service\AdMob\App;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Http;
@@ -60,7 +61,9 @@ class PortadaPrincipalController extends Controller
 
     public function proveedores(){
         app()->setLocale(session()->get('locale'));
-        return view('proveedores');
+        $proveedores = Proveedor::get();
+        return view('proveedores')->with('proveedores', $proveedores);
+
 
     }
 

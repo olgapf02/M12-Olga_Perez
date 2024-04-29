@@ -17,7 +17,7 @@ class AdminproveedoresController extends Controller
 
         return view('admin_pages/proveedor_adm', [
             //llamar al modelo con una variable y poner que se enseñen los eventos paguinados a partir de  un limite de eventos
-            "proveedores" => Proveedor::paginate(25),
+            "proveedores" => Proveedor::paginate(30),
         ]);
     }
 
@@ -43,16 +43,21 @@ class AdminproveedoresController extends Controller
             'titulo' => 'required|string|max:255',
             'texto' => 'required|string',
             'archivo' => 'required|image|max:2000' | 'mimes:png,jpg',
+            'url' => 'required|url',
         ]);
 
         // Procesar el archivo de imagen y guardarlo en el directorio
-                $imagen = $request->file('archivo')->store('public/imagenes');
+//        $imagen = $request->file('archivo')->store('public/imagenes');
+        // Obtener la ruta relativa de la imagen (sin el "public/")
+//        $imagenUrl = str_replace('public', 'storage', $imagen);
+//        $imagenUrl
 
         // Crear un nuevo proveedor con los datos validados
         $proveedor = new Proveedor();
         $proveedor->titulo = $validatedData['titulo'];
         $proveedor->texto = $validatedData['texto'];
-        $proveedor->imagen = ''; // temporal
+        $proveedor->imagen = '';
+        $proveedor->url = $validatedData['url'];
         $proveedor->save();
 
         // Redirigir a la página de eventos con un mensaje de éxito
@@ -86,16 +91,16 @@ public function update(Request $request)
             'titulo' => 'required|string|max:255',
             'texto' => 'required|string',
             'archivo' => 'required|image|max:2000'|'mimes:png,jpg',
+            'url' => 'required|url',
         ]);
 
     $proveedorId = $request->route('proveedorGeneral');
     $proveedorGeneral = Proveedor::where('id', $proveedorId)->first();
-//        dd($validatedData);
-//            dd($proveedorGeneral);
-//    dd($proveedorId);
+
     $proveedorGeneral->titulo = $validatedData['titulo'];
     $proveedorGeneral->texto = $validatedData['texto'];
     $proveedorGeneral->imagen = ''; // temporal
+    $proveedorGeneral->url = $validatedData['url'];
     $proveedorGeneral->save();
     return redirect()->route('proveedores.indexe')->with('success', 'Evento actualizado con éxito');
 }

@@ -18,6 +18,11 @@
                     </div>
 
                     <div class="mb-3">
+                        <label for="url" class="form-label">URL:</label>
+                        <input type="text" class="form-control" id="url" name="url" placeholder="Ingrese la URL">
+                    </div>
+
+                    <div class="mb-3">
                         <label for="exampleFormControlFile1" class="form-label">Adjuntar Archivo</label>
                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
                     </div>

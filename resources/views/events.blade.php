@@ -1,13 +1,5 @@
 @extends('layout')
 @section('imagen_entera')
-{{--    <div class="imagen-entera-container">--}}
-{{--        <div class="image-container">--}}
-{{--            <img src="{{ asset('../imagenes/cantina.png') }}" class="imagen-fija">--}}
-{{--        </div>--}}
-{{--        <div class="titulo-container">--}}
-{{--            <h3> {{__('Our events')}}</h3>--}}
-{{--        </div>--}}
-{{--    </div>--}}
 @endsection
 @section('content')
 
@@ -19,6 +11,5 @@
             </div>
         </div>
     </div>
-
 
 @endsection
