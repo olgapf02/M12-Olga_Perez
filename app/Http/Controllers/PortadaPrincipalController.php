@@ -1,9 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Proveedor;
+use Google\Service\AdMob\App;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
+use App\Models\Evento;
 
 class PortadaPrincipalController extends Controller
 {
@@ -12,8 +15,6 @@ class PortadaPrincipalController extends Controller
         // setear el idioma
         // Establece el idioma de la aplicación utilizando el valor almacenado en la sesión del usuario
         app()->setLocale(session()->get('locale'));
-
-
         return view('index',[
         ]);
     }
@@ -33,43 +34,62 @@ class PortadaPrincipalController extends Controller
         ]);
 
     }
-//        return view('map', ['locationData' => $locationData, 'place' => $place]);
+
     public function eventos(){
         app()->setLocale(session()->get('locale'));
-        return view('eventos');
+        return view('events');
+
     }
+
+    public function eventos_anteriores(){
+        app()->setLocale(session()->get('locale'));
+
+        $eventos = Evento::where('fecha', '<', now())->get();
+
+        return view('eventos_pasados')->with('eventos', $eventos);
+    }
+
+    public function prox_eventos(){
+        app()->setLocale(session()->get('locale'));
+        $eventos = Evento::where('fecha', '>', now())->get();
+
+        return view('proximos_eventos')->with('eventos', $eventos);
+    }
+
+
 
     public function proveedores(){
         app()->setLocale(session()->get('locale'));
-        return view('proveedores');
+        $proveedores = Proveedor::get();
+        return view('proveedores')->with('proveedores', $proveedores);
+
+
     }
 
     public function carta(){
         app()->setLocale(session()->get('locale'));
         return view('carta');
 
-    }
-    public function bebidas(){
-//        app()->setLocale(session()->get('locale'));
-        return view('bebidas');
+//            $usuarioId = $request->input('usuario_id');
+//            $tokenDeAcceso = $request->input('token_de_acceso');
+//
+//            // Realizar la solicitud a la API de Instagram
+//            $response = Http::get("https://graph.facebook.com/v11.0/{ig-user-id}/stories", [
+//                'access_token' => $tokenDeAcceso
+//            ]);
+//
+//            // Verificar si la solicitud fue exitosa
+//            if ($response->ok()) {
+//                $historias = $response->json()['data'];
+//                // Procesar las historias y pasarlas a la vista
+//                return view('historias')->with('historias', $historias);
+//            } else {
+//                // Manejar errores
+//                return response()->json(['error' => 'Error al obtener las historias'], $response->status());
+//            }
+        }
 
-    }
-
-//    public function tapas(){
-//        return view('tapas');
-//    }
-
-    public function tapas(){
-//        app()->setLocale(session()->get('locale'));
-        return view('tapas');
-
-    }
 
 
-    public function calendario(){
-        app()->setLocale(session()->get('locale'));
-        return view('calendario');
-
-    }
 
 }

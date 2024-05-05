@@ -90,6 +90,10 @@
     "text mas glosset": "We are Mas Glosset, a family business located in Marganell, a small town at the foot of the Montserrat mountain.\n Our history with curds and cheeses begins with Grandma Roseta, when she went up to sell bull and four chickens in Montserrat at 4 in the morning.\n Later on, grandfather Josep already started distributing four bulls around Barcelona and little by little the company expanded, as well as the range of our\n products: fresh cheese, custards, cheese cake, yogurts etc...",
     "Subversiva": "Subversiva - Eloi Serra Farres",
     "text Subversiva": "We are a brewery that has been making craft beer for a long time and what we like: making and distributing beers with a special character, innovating as much as we can with the beers we make and participating in the expansion of beer culture.",
+    "Brots": "BROTS social inclusion - Sustainable hort",
+    "Brots text": "This project was born by and for people.\n\nBrots is a large family made up of our team, small local farmers and beneficiaries, who work every day to bring food to the kitchens of our community. a quality, sustainable and safe product.",
+
+
 
     "Do you want to do an event with us?": " Do you want to do an event with us?",
     "name organizer": "name organizer:",
@@ -125,6 +129,9 @@
     "La Cantina to home": "La Cantina to home",
     "La Cantina to GO": "La Cantina to GO",
     "Join" : "join to La Cantina",
-    "you want to do an event": "you want to do an event"
+    "you want to do an event": "you want to do an event",
+
+
+    "field_name.required": "The :attribute field is required. :attribute"
 }
 

@@ -92,6 +92,12 @@
     "text mas glosset": "Sóm Mas Glosset, una empresa familiar ubicada a Marganell, un petit poble al peu de la muntanya de Montserrat.\n La nostra història amb el mató i els formatges comença amb la iaia Roseta, quan pujava a vendre mató i quatre gallines a Montserrat a les 4 del matí.\n Més endavant l’avi Josep ja va començar a distribuir quatre matons per Barcelona i mica en mica la empresa es va anar ampliant, així com la gamma dels nostres\n productes: formatge fresc, flams, pastís de formatge, iogurts etc...",
     "Subversiva": "Subversiva - Eloi Serra Farres",
     "text Subversiva": "Som una cerveseria quefacerveça artesana desde fa molt de temps i el que ens agrada: elaborar i distribuir cerveses amb un caràcter especial,\n innovant tant com podem amb les cerveses que fem i participant de l’expansió de la cultura cervesera.",
+    "Brots": "BROTS inclusió social - Hort sostenible",
+    "Brots text": "Aquest projecte va néixer per a les persones.\n\nBrots és una gran família formada pel nostre equip, petits agricultors locals i beneficiaris, que treballem cada dia per portar aliments a les cuines de la nostra comunitat. producte de qualitat, sostenible i segur.",
+
+
+
+
 
     "Do you want to do an event with us?": " Vols fer un Event amb Nosaltres",
     "name organizer": "Nom del Organizador:",
@@ -127,5 +133,9 @@
     "La Cantina to home": "La Cantina per a casa",
     "La Cantina to GO": "La Cantina per emportar",
     "Join" : "Uneix-te a La Cantina",
-    "you want to do an event": "Vols Fer un event"
+    "you want to do an event": "Vols Fer un event",
+
+    "field_name.required": "The :attribute field is required. :attribute",
+
+    "validation.required": "esto funciona?"
 }

@@ -178,15 +178,7 @@ ul{
     font-size: 14px;
 }
 
-/*.custom-table th {*/
-/*    !*background-color: #f8f9fa; !* Cambia el fondo del encabezado *!*!*/
-/*    !*color: #495057;*!*/
-/*    font-weight: bold;*/
-/*}*/
 
-/*.custom-table tr:hover {*/
-/*    background-color: #e9ecef; !* Cambia el color de fondo al pasar el mouse *!*/
-/*}*/
 .custom-table th {
     background-color: #f8f9fa;
     color: #495057;
@@ -403,6 +395,16 @@ ul{
 
 /* ********************************** */
 /*header*/
+/*.fixed-top {*/
+/*    position: fixed;*/
+/*    top: 55px; !* Ajusta la altura según el tamaño de la franja superior *!*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    background-color: #e9e4e4;*/
+/*    z-index: 200; !* Ajusta el índice z según sea necesario *!*/
+/*    padding: 20px;*/
+/*}*/
+
 .menu2,header {
     display: flex;
     justify-content: space-between;
@@ -513,7 +515,7 @@ footer {
     margin-top: auto;
     width: 100%;
     max-height: 60%;
-    background-color: #ff2931;
+    background-color: #646363;
 }
 
 /* Estilos del logo */
@@ -559,6 +561,7 @@ footer {
     margin-bottom: 100px;
     order: 1;
     margin-right: 40px;
+    color: black;
 
 }
 
@@ -685,6 +688,60 @@ input[type="submit"]:hover {
 
 @media (max-width: 767px) {
     .container {
-        width: 90%; /* Ajusta el ancho de la container para pantallas más pequeñas */
+        width: 90%; /* Ajusta el ancho de la container para pantallas más pequeñas*/
 }
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*administrador y sus pantallas*/
+
+.custom-btn {
+    background-color: #ff000c;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+.custom-btn:first-child {
+    margin-right: 10px;
+}
+.custom-btn:last-child {
+    margin-left: 10px;
+}
+.custom-padding {
+    padding-top: 50px;
+}
+
+/*url*/
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-container {
+    margin-top: auto; /* Empuja el contenedor del botón hacia abajo */
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+}
+
+.btn-url {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-url:hover {
+    background-color: darkred;
+}
+
+.custom-btn {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.telefono{
+    color: black;
 }

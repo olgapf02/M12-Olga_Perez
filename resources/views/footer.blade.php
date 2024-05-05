@@ -17,8 +17,10 @@
             </div>
 
         <div class="logo-fotter">
-            <img src="{{ asset('imagenes/logo_cant.png') }}" alt="Logo">
-            <h1>937 44 47 99</h1>
+            <img src="{{ asset('imagenes/logo_rojo.png') }}" alt="Logo">
+            <h1 >
+                <a href="tel:+937444799" class="telefono">937 44 47 99</a>
+            </h1>
         </div>
 
                 <div class="redes">
@@ -32,6 +34,7 @@
                         <a href="{{ url('/quieres_un_evento') }}">{{ __('you want to do an event')}}</a>
                         <a href="{{ url('/opiniones') }}" >{{ __('your opinion matters to us')}}</a>
                         <h4>937 44 47 99</h4>
+                        <a href="#" id="go-top" class="bi bi-arrow-up">Ir al Menu</a>
                     </div>
                 </div>
 

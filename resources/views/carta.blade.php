@@ -74,4 +74,13 @@
         </ul>
     </div>
 </div>
+
+{{--<div class="historias-container">--}}
+{{--    @foreach($historias as $historia)--}}
+{{--        <div class="historia">--}}
+{{--            <img src="{{ $historia['media_url'] }}" alt="Historia de Instagram">--}}
+{{--            <p>{{ $historia['caption'] }}</p>--}}
+{{--        </div>--}}
+{{--    @endforeach--}}
+{{--</div>--}}
 @endsection
