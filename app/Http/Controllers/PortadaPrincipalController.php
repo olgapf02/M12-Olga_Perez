@@ -15,8 +15,6 @@ class PortadaPrincipalController extends Controller
         // setear el idioma
         // Establece el idioma de la aplicación utilizando el valor almacenado en la sesión del usuario
         app()->setLocale(session()->get('locale'));
-
-
         return view('index',[
         ]);
     }
@@ -40,6 +38,7 @@ class PortadaPrincipalController extends Controller
     public function eventos(){
         app()->setLocale(session()->get('locale'));
         return view('events');
+
     }
 
     public function eventos_anteriores(){

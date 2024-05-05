@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<div class="top-bar">
+<div class="top-bar container-fluid">
     <div class="social-icons">
         <span> tel: 937 44 47 99</span>
         <a target="_blank" href="https://www.facebook.com/cantinalab.coop/?locale=es_ES"><img

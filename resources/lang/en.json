@@ -129,6 +129,9 @@
     "La Cantina to home": "La Cantina to home",
     "La Cantina to GO": "La Cantina to GO",
     "Join" : "join to La Cantina",
-    "you want to do an event": "you want to do an event"
+    "you want to do an event": "you want to do an event",
+
+
+    "field_name.required": "The :attribute field is required. :attribute"
 }
 

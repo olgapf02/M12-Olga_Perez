@@ -15,7 +15,7 @@
        @foreach($proveedores as $proveedor)
            <div class="item">
                <div class="photo">
-                   <img src="{{ asset($proveedor->imagen) }}" class="imagen">
+                   <img src="{{ asset('/imagenes/' . $proveedor->imagen) }}" class="imagen">
                </div>
                <div class="contenido">
                    <h3>{{ $proveedor->titulo }}</h3>

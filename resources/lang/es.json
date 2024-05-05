@@ -128,6 +128,11 @@
     "La Cantina to home": "La Cantina para  casa",
     "La Cantina to GO": "La Cantina para llevar",
     "Join" : "Unete a La Cantina",
-    "you want to do an event": "Quieres hacer un evento"
+    "you want to do an event": "Quieres hacer un evento",
+
+    "validation.required": "El campo :attribute es obligatorio.",
+
+    "pagination.previous": "anterior",
+    "pagination.next": "siguiente"
 }
 

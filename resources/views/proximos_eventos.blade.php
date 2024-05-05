@@ -10,8 +10,6 @@
     </div>
 @endsection
 @section('content')
-
-
     @if ($eventos->isEmpty())
         <h1>{{ __('No hay próximos eventos.') }}</h1>
     @else
@@ -19,7 +17,7 @@
             @foreach ($eventos as $evento)
                 <div class="item">
                     <div class="photo">
-                        <img src="{{ asset($evento->imagen) }}" class="imagen" alt="">
+                        <img src="{{ asset('/imagenes/' . $evento->imagen) }}" class="imagen" alt="">
                     </div>
                     <div class="contenido">
                         <h3>{{ $evento->titulo }}</h3>
@@ -28,9 +26,10 @@
                     </div>
                 </div>
             @endforeach
+                <button class="btn-url">
+                    <a href="{{ url('/events')}}">Ver eventos</a>
+                </button>
         </div>
     @endif
-
-
 
 @endsection

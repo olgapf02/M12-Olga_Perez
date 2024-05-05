@@ -22,7 +22,7 @@
                 <img src="{{ asset('imagenes/swing.jpg') }}" class="ima">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('imagenes/aniversario-2.png') }}" class="ima">
+                <img src="{{ asset('imagenes/can-batllo.jpg') }}" class="ima">
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('imagenes/lgtbi.png') }}" class="ima">
@@ -55,7 +55,7 @@
                 <img src="{{ asset('imagenes/vermut.png') }}" class="ima">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('imagenes/aniversario-1.png') }}" class="ima">
+                <img src="{{ asset('imagenes/1714820358.png') }}" class="ima">
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('imagenes/ensalada.png') }}" class="ima">

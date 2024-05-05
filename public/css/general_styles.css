@@ -395,6 +395,16 @@ ul{
 
 /* ********************************** */
 /*header*/
+/*.fixed-top {*/
+/*    position: fixed;*/
+/*    top: 55px; !* Ajusta la altura según el tamaño de la franja superior *!*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    background-color: #e9e4e4;*/
+/*    z-index: 200; !* Ajusta el índice z según sea necesario *!*/
+/*    padding: 20px;*/
+/*}*/
+
 .menu2,header {
     display: flex;
     justify-content: space-between;
@@ -505,7 +515,7 @@ footer {
     margin-top: auto;
     width: 100%;
     max-height: 60%;
-    background-color: #9f9f9f;
+    background-color: #646363;
 }
 
 /* Estilos del logo */
@@ -551,6 +561,7 @@ footer {
     margin-bottom: 100px;
     order: 1;
     margin-right: 40px;
+    color: black;
 
 }
 
@@ -723,4 +734,14 @@ input[type="submit"]:hover {
 
 .btn-url:hover {
     background-color: darkred;
+}
+
+.custom-btn {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.telefono{
+    color: black;
 }

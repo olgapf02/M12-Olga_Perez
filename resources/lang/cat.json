@@ -97,6 +97,8 @@
 
 
 
+
+
     "Do you want to do an event with us?": " Vols fer un Event amb Nosaltres",
     "name organizer": "Nom del Organizador:",
     "mail": "Correu electrónic:",
@@ -131,5 +133,9 @@
     "La Cantina to home": "La Cantina per a casa",
     "La Cantina to GO": "La Cantina per emportar",
     "Join" : "Uneix-te a La Cantina",
-    "you want to do an event": "Vols Fer un event"
+    "you want to do an event": "Vols Fer un event",
+
+    "field_name.required": "The :attribute field is required. :attribute",
+
+    "validation.required": "esto funciona?"
 }

@@ -14,7 +14,7 @@
             @foreach($eventos as $evento)
                 <div class="card mb-4">
                     <!-- Agregamos la clase mb-4 para un margen inferior -->
-                    <img src="{{ asset('public/imagenes/' . $evento->imagen) }}" class="card-img-top" style="height: 250px; object-fit: cover;" alt="...">
+                    <img src="{{ asset('/imagenes/' . $evento->imagen) }}" class="card-img-top" style="height: 250px; object-fit: cover;" alt="...">
                     <div class="card-body d-flex flex-column justify-content-between">
                         <div>
                             <h5 class="card-title">{{ $evento->titulo }}</h5>
@@ -25,9 +25,9 @@
                     </div>
                 </div>
             @endforeach
+                {{ $eventos->links() }}
         </div>
 
-        {{ $eventos->links() }}
     </div>
 </div>
 @endsection
