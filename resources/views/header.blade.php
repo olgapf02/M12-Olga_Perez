@@ -10,7 +10,7 @@
                 <li><a href="{{ url('/quienes-somos') }}">{{ __('about us') }}</a></li>
                 <li><a href="{{ url('/events') }}">{{ __('events') }}</a></li>
                 <li><a href="{{ url('/proveedor') }}">{{ __('suppliers') }}</a></li>
-                <li><a href="{{ url('/menu') }}">{{ __('food cart') }}</a></li>
+                <li><a href="{{ url('/tiempo') }}">tiempo</a></li>
                 <li> 937 44 47 99</li>
             </ul>
         </div>

@@ -7,7 +7,8 @@ use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 use App\Models\Evento;
-
+use Illuminate\HttpSupport\Facades;
+use Carbon\Carbon;
 class PortadaPrincipalController extends Controller
 {
     public function inicio(){
@@ -66,30 +67,19 @@ class PortadaPrincipalController extends Controller
 
     }
 
-    public function carta(){
-        app()->setLocale(session()->get('locale'));
-        return view('carta');
+    public function carta(Request $request){
 
-//            $usuarioId = $request->input('usuario_id');
-//            $tokenDeAcceso = $request->input('token_de_acceso');
-//
-//            // Realizar la solicitud a la API de Instagram
-//            $response = Http::get("https://graph.facebook.com/v11.0/{ig-user-id}/stories", [
-//                'access_token' => $tokenDeAcceso
-//            ]);
-//
-//            // Verificar si la solicitud fue exitosa
-//            if ($response->ok()) {
-//                $historias = $response->json()['data'];
-//                // Procesar las historias y pasarlas a la vista
-//                return view('historias')->with('historias', $historias);
-//            } else {
-//                // Manejar errores
-//                return response()->json(['error' => 'Error al obtener las historias'], $response->status());
-//            }
-        }
+        $apiKey = '173772d42b398e917dd548e73bc94a48';
+        $city = 'Barcelona';
+        $url = "http://api.openweathermap.org/data/2.5/weather?q={$city}&appid={$apiKey}";
+        $response = Http::get($url);
+        $json=$response->json();
 
+        return view('carta',[
+            "nombre"=>$json
+        ]);
 
+    }
 
 
 }
